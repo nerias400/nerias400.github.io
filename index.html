@@ -1,0 +1,3360 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications, Fibre Optique, Support Informatique N1. Diplômé Licence Génie Télécom &amp; TIC, Cotonou, Bénin.">
+  <meta name="keywords"
+    content="Nérias Metombou, technicien réseaux, fibre optique, Cisco, Laravel, Bénin, Cotonou, support informatique">
+  <meta property="og:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
+  <meta property="og:description"
+    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/nerias400">
+  <link rel="canonical" href="https://neriasmetombou.github.io/portfolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/nerias400">
+  <meta name="theme-color" content="#0A0F1E">
+  <!-- FONTS & ICONS -->
+  <link rel="stylesheet" href="Fonts/webfronts/fontawesome-free-6.5.1-web/css/all.min.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "METOMBOU Nérias Sènakpon Ivan Prosper",
+  "jobTitle": "Technicien Réseaux & Télécommunications",
+  "email": "neriasmetombou@gmail.com",
+  "telephone": "+2290152240507",
+  "address": {"@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "BJ"},
+  "sameAs": ["https://linkedin.com/in/metombounerias","https://github.com/nerias400","https://wa.me/2290152240507"]
+}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    /* ==================================================================
+       EMAILJS CONFIGURATION
+       EmailJS (https://dashboard.emailjs.com/) :
+         - EMAILJS_PUBLIC_KEY  → Account > General > Public Key
+         - EMAILJS_SERVICE_ID  → Email Services > votre service
+         - EMAILJS_TEMPLATE_ID → Email Templates > votre template
+       ================================================================== */
+    const EMAILJS_PUBLIC_KEY = "9FyY8RROB-N2PWySt";
+    const EMAILJS_SERVICE_ID = "service_cnkjq9j";
+    const EMAILJS_TEMPLATE_ID = "template_1bf789a";
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    const MAINTENANCE_MODE = false;
+    if (MAINTENANCE_MODE) {
+      window.location.replace("maintenance.html");
+    }
+  </script>
+  <title>METOMBOU Nérias — Technicien Réseaux &amp; Télécoms</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ================================================================
+   TOKENS — Dark / Light
+   Signature : terminal typing line dans le hero
+   Palette bleu professionnel (#1f6feb) sur fond très sombre
+================================================================ */
+    :root {
+      --bg: #0A0F1E;
+      --surface: #111827;
+      --surface2: #1a2236;
+      --border: rgba(59, 130, 246, 0.18);
+      --bg2: #161b22;
+      --bg3: #1c2128;
+      --bordered: #21262d;
+      --border2: #30363d;
+      --accent: #1f6feb;
+      --accent-h: #388bfd;
+      --accent-bg: rgba(31, 111, 235, .10);
+      --accent-bd: rgba(31, 111, 235, .30);
+      --green: #2ea043;
+      --green-bg: rgba(46, 160, 67, .12);
+      --amber: #d29922;
+      --amber-bg: rgba(210, 153, 34, .12);
+      --red: #f85149;
+      --t1: #e6edf3;
+      --t2: #8b949e;
+      --t3: #484f58;
+      --sans: 'Inter', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+      --r: 8px;
+      --sh: 0 4px 20px rgba(0, 0, 0, .4);
+      --tr: .18s ease;
+      --royal-blue: #2463eb;
+      --royal-glow: #3b82f6;
+      --royal-light: #60a5fa;
+      --royal-ultra: #8b5cf6;
+      --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+      --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      --card-blur: blur(16px);
+      --radius-xl: 24px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --bg2: #f6f8fa;
+      --bg3: #eaeef2;
+      --border: #d0d7de;
+      --border2: #b1bac4;
+      --t1: #1f2328;
+      --t2: #57606a;
+      --t3: #b1bac4;
+      --sh: 0 4px 20px rgba(0, 0, 0, .10);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 15px
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--t1);
+      font-family: var(--sans), 'Inter', system-ui, sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+      line-height: 1.65;
+      transition: background var(--tr), color var(--tr)
+    }
+
+    /* ── BACKGROUND MESH ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(30, 64, 175, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 80%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      cursor: pointer;
+      font-family: var(--sans)
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg)
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border2);
+      border-radius: 2px
+    }
+
+    ::selection {
+      background: var(--accent-bg);
+      color: var(--accent-h)
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+      }
+    }
+
+    /* ================================================================
+   NAV
+================================================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      height: 56px;
+      background: rgba(13, 17, 23, .92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      transition: border-color var(--tr), background var(--tr);
+    }
+
+    [data-theme="light"] .nav {
+      background: rgba(255, 255, 255, .92)
+    }
+
+    .nav-brand {
+      font-family: var(--mono);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--t1);
+      letter-spacing: .5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.5px;
+      background-clip: text;
+      background: linear-gradient(135deg, #fff, var(--royal-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-brand-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 6px var(--green);
+      animation: blink 2.5s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      align-items: center
+    }
+
+    .nav-links a {
+      font-size: .78rem;
+      color: var(--t2);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: color var(--tr), color var(--t1);
+      background: var(--bg3);
+    }
+
+    .nav-links a.active {
+      color: var(--accent-h)
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    /* Dark/light toggle */
+    .theme-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--r);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+    }
+
+    .theme-btn:hover {
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    /* Hamburger */
+    .ham {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      padding: 6px;
+    }
+
+    .ham span {
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--t2);
+      transition: all .25s
+    }
+
+    .ham.open span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg)
+    }
+
+    .ham.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .ham.open span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg)
+    }
+
+    .mob-menu {
+      display: none;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      z-index: 199;
+      padding: 10px 0 14px;
+      flex-direction: column;
+    }
+
+    .mob-menu.open {
+      display: flex
+    }
+
+    .mob-menu a {
+      padding: 11px 24px;
+      font-size: .88rem;
+      color: var(--t2);
+      transition: color var(--tr), background var(--tr)
+    }
+
+    .mob-menu a:hover {
+      color: var(--t1);
+      background: var(--bg3)
+    }
+
+    /* ================================================================
+   LAYOUT HELPERS
+================================================================ */
+    .page-wrap {
+      padding-top: 56px
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1080px;
+      margin: 0 auto;
+      scroll-margin-top: 72px
+    }
+
+    .section-sm {
+      padding: 70px 40px;
+      max-width: 1080px;
+      margin: 0 auto;
+      scroll-margin-top: 72px
+    }
+
+    #hero {
+      scroll-margin-top: 72px
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: var(--border);
+      margin: 0
+    }
+
+    .sec-eyebrow {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .sec-title {
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .sec-sub {
+      font-size: .88rem;
+      color: var(--t2);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal.on {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-l {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal-l.on {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-r {
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal-r.on {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ================================================================
+   HERO
+================================================================ */
+    #hero {
+      min-height: calc(100vh - 56px);
+      display: flex;
+      align-items: center;
+      padding: 60px 40px;
+    }
+
+    .hero-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+    }
+
+
+    .hero-available {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--green);
+      letter-spacing: 1px;
+      background: var(--green-bg);
+      border: 1px solid rgba(46, 160, 67, .25);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 22px;
+    }
+
+    .hero-available::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+      animation: blink 1.8s ease-in-out infinite;
+    }
+
+    .hero-name {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: var(--t1);
+      line-height: 1.05;
+      margin-bottom: 10px;
+      letter-spacing: -.5px;
+    }
+
+    .hero-name span {
+      color: var(--accent-h)
+    }
+
+    .hero-role {
+      font-size: clamp(.9rem, 1.4vw, 1.1rem);
+      color: var(--t2);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+
+    /* Terminal typing line — signature element */
+    .hero-terminal {
+      font-family: var(--mono);
+      font-size: .8rem;
+      color: var(--accent);
+      margin-bottom: 26px;
+      min-height: 1.4em;
+    }
+
+    .hero-terminal::before {
+      content: '$ ';
+      color: var(--t3)
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1em;
+      background: var(--accent);
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: cursor-blink .9s step-end infinite;
+    }
+
+    @keyframes cursor-blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0
+      }
+    }
+
+    .hero-bio {
+      font-size: .88rem;
+      color: var(--t2);
+      line-height: 1.8;
+      max-width: 540px;
+      margin-bottom: 30px;
+    }
+
+    .hero-bio strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .2px;
+      padding: 9px 20px;
+      border-radius: var(--r);
+      transition: all var(--tr);
+      border: 1px solid transparent;
+    }
+
+    .btn-loading {
+      pointer-events: none;
+      opacity: .8;
+    }
+
+    .form-spinner {
+      display: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, .35);
+      border-top-color: #fff;
+      animation: form-spin .7s linear infinite;
+    }
+
+    .btn-loading .form-spinner {
+      display: inline-block;
+    }
+
+    @keyframes form-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .field-err-msg {
+      font-size: .68rem;
+      color: var(--red);
+      min-height: 14px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .field-err-msg.show {
+      display: block;
+    }
+
+    .form-ctrl.fc-err {
+      border-color: var(--red) !important;
+      box-shadow: 0 0 0 3px rgba(248, 81, 73, .14);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent)
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-h);
+      border-color: var(--accent-h);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(31, 111, 235, .35)
+    }
+
+    .btn-ghost {
+      background: var(--bg3);
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-1px);
+      border-color: var(--border2)
+    }
+
+    .btn-icon {
+      font-size: .85rem
+    }
+
+    .btn-mail {
+      background: var(--green);
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    /* Hero contact strip */
+    .hero-contact {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--t3);
+    }
+
+    .hero-contact a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color var(--tr)
+    }
+
+    .hero-contact a:hover {
+      color: var(--accent-h)
+    }
+
+    /* Right — Avatar */
+    .hero-avatar-wrap {
+      position: relative;
+      flex-shrink: 0
+    }
+
+    .hero-avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, #5e8ce4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -1px;
+      font-family: var(--sans);
+      border: 3px solid var(--border2);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 0 6px var(--accent-bg), var(--sh);
+      animation: avatar-float 5s ease-in-out infinite;
+      /* Pour ajouter votre photo : remplacez le div.hero-avatar par
+     <img src="photo.jpg" alt="Nérias Metombou" class="hero-avatar" style="object-fit:cover;animation:avatar-float 5s ease-in-out infinite"> */
+
+
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: linear-gradient(135deg, var(--royal-blue), var(--royal-ultra));
+      border-radius: 50%;
+      filter: blur(40px);
+      opacity: 0.3;
+      animation: pulse 4s ease-in-out infinite;
+
+
+    }
+
+    @keyframes avatar-float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-8px)
+      }
+    }
+
+    .hero-avatar::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .3));
+    }
+
+    .hero-location {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-family: var(--mono);
+      font-size: .6rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* ================================================================
+   STATS
+================================================================ */
+    .stats-band {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 20px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+      border-right: none
+    }
+
+    .stat-val {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent-h);
+      font-family: var(--mono);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-lbl {
+      font-size: .72rem;
+      color: var(--t2)
+    }
+
+    /* ================================================================
+   ABOUT
+================================================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: .88rem;
+      color: var(--t2);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .about-text p strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0
+    }
+
+    .about-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+
+    .about-card-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background var(--tr);
+    }
+
+    .about-card-row:last-child {
+      border-bottom: none
+    }
+
+    .about-card-row:hover {
+      background: var(--bg3)
+    }
+
+    .about-card-ico {
+      font-size: .9rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 18px;
+      text-align: center
+    }
+
+    .about-card-lbl {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .about-card-val {
+      font-size: .82rem;
+      color: var(--t1)
+    }
+
+    /* ================================================================
+   SKILLS
+================================================================ */
+    .skills-layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .skill-group {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 22px;
+      transition: border-color var(--tr);
+    }
+
+    .skill-group:hover {
+      border-color: var(--border2)
+    }
+
+    .skill-group-title {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--t1);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-item {
+      margin-bottom: 12px
+    }
+
+    .skill-item:last-child {
+      margin-bottom: 0
+    }
+
+    .skill-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-size: .76rem;
+      color: var(--t2);
+    }
+
+    .skill-row span:last-child {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--accent-h)
+    }
+
+    .skill-track {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden
+    }
+
+    .skill-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .9s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .skill-fill.go {
+      transform: scaleX(1)
+    }
+
+    /* ================================================================
+   EXPERIENCE
+================================================================ */
+    .exp-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0;
+      position: relative;
+    }
+
+    .exp-left {
+      padding: 0 24px 0 0;
+      text-align: right;
+      position: relative;
+    }
+
+    /* Vertical line */
+    .exp-item::after {
+      content: '';
+      position: absolute;
+      left: 130px;
+      top: 10px;
+      bottom: -1px;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .exp-item:last-child::after {
+      display: none
+    }
+
+    .exp-dot {
+      position: absolute;
+      right: -6px;
+      top: 5px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--accent);
+      z-index: 1;
+    }
+
+    .exp-period {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--t3);
+      line-height: 1.5;
+    }
+
+    .exp-right {
+      padding: 0 0 40px 28px
+    }
+
+    .exp-role {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px;
+    }
+
+    .exp-org {
+      font-size: .78rem;
+      color: var(--accent-h);
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .exp-tasks {
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .exp-task {
+      font-size: .78rem;
+      color: var(--t2);
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .exp-task::before {
+      content: '·';
+      color: var(--accent);
+      flex-shrink: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 12px
+    }
+
+    .exp-tag {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    /* ================================================================
+   PROJECTS
+================================================================ */
+    .proj-filters {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 28px
+    }
+
+    .pf-btn {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: none;
+      color: var(--t3);
+      transition: all var(--tr);
+    }
+
+    .pf-btn:hover {
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    .pf-btn.active {
+      color: var(--accent-h);
+      border-color: var(--accent-bd);
+      background: var(--accent-bg)
+    }
+
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .proj-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr);
+    }
+
+    .proj-card:hover {
+      border-color: var(--border2);
+      transform: translateY(-3px);
+      box-shadow: var(--sh)
+    }
+
+    .proj-thumb {
+      height: 160px;
+      background: var(--bg3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proj-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(13, 17, 23, .8));
+    }
+
+    .proj-body {
+      padding: 20px
+    }
+
+    .proj-cat {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .proj-name {
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 7px;
+      line-height: 1.3;
+      transition: color var(--tr);
+    }
+
+    .proj-card:hover .proj-name {
+      color: var(--accent-h)
+    }
+
+    .proj-desc {
+      font-size: .76rem;
+      color: var(--t2);
+      line-height: 1.6;
+      margin-bottom: 14px
+    }
+
+    .proj-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 14px
+    }
+
+    .proj-tech {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 2px 7px;
+      border-radius: 3px;
+    }
+
+    .proj-links {
+      display: flex;
+      gap: 7px
+    }
+
+    .proj-lk {
+      font-family: var(--mono);
+      font-size: .6rem;
+      border: 1px solid var(--accent-bd);
+      padding: 4px 10px;
+      border-radius: 5px;
+      transition: all var(--tr);
+      color: var(--accent-h);
+      background: none;
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .proj-lk:hover {
+      background: var(--accent-bg);
+    }
+
+    /* ================================================================
+   CERTIFICATIONS
+================================================================ */
+
+
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .cert-card {
+      background: var(--bg2,rgba(255, 255, 255, 0.02));
+      border: 1px solid var(--border , --glass-border);
+      border-radius: var(--r,--radius-md);
+      padding: 20px;
+      transition: border-color var(--tr), transform var(--tr);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transition: var(--transition-smooth);
+
+    }
+
+    .cert-card:hover {
+      border-color: var(--border2,--royal-blue);
+      transform: translateY(-4px);
+    }
+
+    .cert-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--royal-blue);
+      margin-bottom: .4rem;
+    }
+
+    .cert-issuer {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .cert-name {
+      font-size: .90rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 10px
+    }
+
+    .cert-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px
+    }
+
+    .cert-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--mono);
+      font-size: .58rem;
+      padding: 2px 8px;
+      border-radius: 3px;
+      border: 1px solid;
+    }
+
+    .status-done {
+      color: var(--green);
+      border-color: rgba(46, 160, 67, .3);
+      background: var(--green-bg)
+    }
+
+    .status-progress {
+      color: var(--amber);
+      border-color: rgba(210, 153, 34, .3);
+      background: var(--amber-bg)
+    }
+
+    .status-planned {
+      color: var(--t3);
+      border-color: var(--border)
+    }
+
+    .cert-view-btn {
+      font-family: var(--mono);
+      font-size: .56rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 2px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all var(--tr);
+    }
+
+    .cert-view-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent)
+    }
+
+    /* ================================================================
+   FORMATION
+================================================================ */
+    .edu-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+
+    .edu-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 22px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: flex-start;
+      transition: border-color var(--tr);
+    }
+
+    .edu-card:hover {
+      border-color: var(--border2)
+    }
+
+    .edu-year {
+      font-family: var(--mono);
+      font-size: .68rem;
+      color: var(--accent);
+      text-align: right;
+      white-space: nowrap;
+      padding-top: 2px;
+      min-width: 80px;
+    }
+
+    .edu-degree {
+      font-size: .92rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px
+    }
+
+    .edu-school {
+      font-size: .78rem;
+      color: var(--accent-h);
+      margin-bottom: 6px
+    }
+
+    .edu-desc {
+      font-size: .76rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    .edu-badge {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 2px 9px;
+      border-radius: 3px;
+    }
+
+    /* ================================================================
+   SERVICES
+================================================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .svc-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 24px;
+      transition: border-color var(--tr), transform var(--tr);
+    }
+
+    .svc-card:hover {
+      border-color: var(--accent-bd,--royal-blue);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 30px 50px -20px var(--royal-blue);
+    }
+
+    .svc-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px
+    }
+
+    .svc-title {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 6px
+    }
+
+    .svc-desc {
+      font-size: .76rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    /* ================================================================
+   CONTACT
+================================================================ */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 48px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .contact-block {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      transition: border-color var(--tr);
+    }
+
+    .contact-block:hover {
+      border-color: var(--border2)
+    }
+
+    .ci-icon {
+      font-size: .9rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 20px;
+      text-align: center
+    }
+
+    .ci-lbl {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2px
+    }
+
+    .ci-val {
+      font-size: .82rem;
+      color: var(--t1)
+    }
+
+    .ci-val a {
+      transition: color var(--tr)
+    }
+
+    .ci-val a:hover {
+      color: var(--accent-h)
+    }
+
+    .contact-avail {
+      margin-top: 8px;
+      padding: 14px 16px;
+      background: var(--green-bg);
+      border: 1px solid rgba(46, 160, 67, .25);
+      border-radius: var(--r);
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.6;
+    }
+
+    .contact-avail strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    /* Form */
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 3.5rem;
+      border-radius: var(--radius-xl);
+      border: var(--glass-border);
+      backdrop-filter: blur(20px);
+    }
+
+    .form-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text-primary);
+      transition: var(--transition-smooth);
+    }
+
+    .form-lbl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase
+    }
+
+    .form-ctrl {
+      font-family: var(--sans);
+      font-size: .82rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t1);
+      padding: 9px 12px;
+      border-radius: var(--r);
+      outline: none;
+      transition: border-color var(--tr), box-shadow var(--tr);
+      resize: none;
+    }
+
+    .form-ctrl:focus {
+      border-color: var(--accent-bd);
+      box-shadow: 0 0 0 3px var(--accent-bg)
+    }
+
+    .form-ctrl::placeholder {
+      color: var(--t3)
+    }
+
+    .form-ctrl[rows] {
+      height: 108px
+    }
+
+    .form-msg {
+      font-family: var(--mono);
+      font-size: .62rem;
+      text-align: center;
+      padding: 6px;
+      border-radius: 4px;
+      min-height: 24px
+    }
+
+    .msg-ok {
+      color: var(--green);
+      background: var(--green-bg)
+    }
+
+    .msg-err {
+      color: var(--red);
+      background: rgba(248, 81, 73, .08)
+    }
+
+    /* ================================================================
+   FOOTER
+================================================================ */
+    footer {
+      background: rgba(13, 17, 23, .92);
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      max-width: 100%;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--bordered);
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-family: var(--mono);
+      font-size: .75rem;
+      color: var(--t2)
+    }
+
+    .footer-brand span {
+      color: var(--accent-h)
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 8px
+    }
+
+    .footer-soc {
+      font-family: var(--mono);
+      font-size: .6rem;
+      border: 1px solid var(--accent-bd);
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: all var(--tr);
+      color: var(--accent-h);
+    }
+
+    .footer-copy {
+      font-size: .72rem;
+      color: var(--t3)
+    }
+
+    /* ================================================================
+   BACK TO TOP
+================================================================ */
+    .btt {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 100;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--r);
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--sh);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--tr), color var(--tr), border-color var(--tr), transform var(--tr);
+    }
+
+    .btt.show {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .btt:hover {
+      color: var(--accent-h);
+      border-color: var(--accent-bd,--royal-light);
+      transform: translateY(-2px);
+      box-shadow: 0 30px 50px -20px var(--royal-blue);
+    }
+
+    /* ================================================================
+   RESPONSIVE
+================================================================ */
+    @media(max-width:900px) {
+      .nav {
+        padding: 0 20px
+      }
+
+      .nav-links {
+        display: none
+      }
+
+      .ham {
+        display: flex
+      }
+
+      .section,
+      .section-sm {
+        padding: 60px 20px
+      }
+
+      .divider {
+        margin: 0 20px
+      }
+
+      #hero {
+        padding: 40px 20px
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px
+      }
+
+      .hero-avatar-wrap {
+        display: flex;
+        justify-content: center
+      }
+
+      .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0
+      }
+
+      .stat-item:nth-child(2) {
+        border-right: none
+      }
+
+      .stat-item:nth-child(3) {
+        border-right: 1px solid var(--border);
+        border-top: 1px solid var(--border)
+      }
+
+      .stat-item:nth-child(4) {
+        border-top: 1px solid var(--border)
+      }
+
+      .stat-item {
+        padding: 16px
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px
+      }
+
+      .skills-layout {
+        grid-template-columns: 1fr
+      }
+
+      .exp-item {
+        grid-template-columns: 90px 1fr
+      }
+
+      .proj-grid {
+        grid-template-columns: 1fr
+      }
+
+      .certs-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .contact-wrap {
+        grid-template-columns: 1fr;
+        gap: 32px
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .footer-social {
+        justify-content: center
+      }
+    }
+
+    @media(max-width:560px) {
+      .hero-name {
+        font-size: 1.8rem
+      }
+
+      .hero-avatar {
+        width: 150px;
+        height: 150px;
+        font-size: 2.6rem
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        align-items: flex-start
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .form-2col {
+        grid-template-columns: 1fr
+      }
+
+      .certs-grid {
+        grid-template-columns: 1fr
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr
+      }
+
+      .edu-card {
+        grid-template-columns: 1fr;
+        gap: 4px
+      }
+
+      .edu-year {
+        text-align: left;
+        padding-top: 0
+      }
+
+      .exp-item {
+        grid-template-columns: 1fr;
+        padding-left: 20px
+      }
+
+      .exp-left {
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 4px
+      }
+
+      .exp-item::after {
+        left: 0;
+        top: 0
+      }
+
+      .exp-dot {
+        right: auto;
+        left: -6px
+      }
+    }
+
+    /* Print for CV section */
+    @media print {
+
+      .nav,
+      .mob-menu,
+      .hero-btns,
+      .proj-filters,
+      .btt,
+      footer,
+      .svc-card,
+      .form,
+      .contact-info .contact-avail {
+        display: none !important
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12px
+      }
+
+      .section,
+      .section-sm {
+        padding: 24px 0;
+        max-width: 100%
+      }
+
+      .about-grid,
+      .skills-layout,
+      .proj-grid,
+      .certs-grid,
+      .services-grid,
+      .contact-wrap {
+        grid-template-columns: 1fr
+      }
+
+      .stats-inner {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    /* ================================================================
+   PRELOADER
+================================================================ */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transition: opacity .55s ease, visibility .55s ease;
+    }
+
+    #preloader.done {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none
+    }
+
+    .pre-logo {
+      font-family: var(--mono);
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--accent-h);
+      letter-spacing: 3px;
+    }
+
+    .pre-bar {
+      width: 120px;
+      height: 2px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .pre-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h));
+      border-radius: 2px;
+      animation: preload .95s ease forwards;
+    }
+
+    @keyframes preload {
+      to {
+        width: 100%
+      }
+    }
+
+    /* ================================================================
+   MODAL CERTIFICAT
+================================================================ */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 800;
+      background: rgba(0, 0, 0, .82);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .28s ease, visibility .28s ease;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .modal-box {
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      border-radius: var(--r);
+      width: 100%;
+      max-width: 780px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      transform: scale(.95) translateY(14px);
+      transition: transform .28s ease;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .65);
+      overflow: hidden;
+    }
+
+    .modal-overlay.open .modal-box {
+      transform: none
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+      gap: 12px;
+    }
+
+    .modal-title {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--t1);
+      flex: 1;
+      min-width: 0
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-shrink: 0
+    }
+
+    .modal-dl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 5px 12px;
+      border-radius: 5px;
+      transition: all var(--tr);
+      text-decoration: none;
+    }
+
+    .modal-dl:hover {
+      background: var(--accent);
+      color: #fff
+    }
+
+    .modal-close-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: var(--r);
+      color: var(--t2);
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+      background: none;
+      cursor: pointer;
+    }
+
+    .modal-close-btn:hover {
+      color: var(--red);
+      border-color: rgba(248, 81, 73, .4);
+      background: rgba(248, 81, 73, .08)
+    }
+
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .modal-pdf-wrap {
+      width: 100%;
+      min-height: 400px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--bg3)
+    }
+
+    .modal-pdf-wrap iframe,
+    .modal-pdf-wrap embed {
+      width: 100%;
+      height: 480px;
+      border: none;
+      display: block
+    }
+
+    .modal-pdf-fallback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 12px;
+      text-align: center;
+      padding: 32px;
+    }
+
+    .modal-pdf-fallback .pdf-icon {
+      font-size: 2.5rem;
+      opacity: .5
+    }
+
+    .modal-pdf-fallback p {
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    .modal-pdf-fallback small {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3)
+    }
+  </style>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader" role="status" aria-label="Chargement du portfolio">
+    <div class="pre-logo">_NM_</div>
+    <div class="pre-bar">
+      <div class="pre-fill"></div>
+    </div>
+  </div>
+  <!-- MODAL CERTIFICAT -->
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title" id="cert-modal-title">Certificat</div>
+        <div class="modal-actions">
+          <a class="modal-dl" id="cert-modal-dl" href="#" download aria-label="Télécharger le certificat">↓
+            Télécharger</a>
+          <button class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-pdf-wrap" id="cert-modal-pdf"></div>
+      </div>
+    </div>
+  </div>
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-brand">
+      <div class="nav-brand-dot"></div>
+      ✦ Nérias Metombou
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" data-sec="hero">Accueil</a></li>
+      <li><a href="#about" data-sec="about">À propos</a></li>
+      <li><a href="#skills" data-sec="skills">Compétences</a></li>
+      <li><a href="#exp" data-sec="exp">Expérience</a></li>
+      <li><a href="#projects" data-sec="projects">Projets</a></li>
+      <li><a href="#certs" data-sec="certs">Certifications</a></li>
+      <li><a href="#edu" data-sec="edu">Formation</a></li>
+      <li><a href="#contact" data-sec="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" title="Changer de thème"
+        aria-label="Basculer thème sombre/clair">🌙</button>
+      <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <nav class="mob-menu" id="mob-menu">
+    <a href="#hero" onclick="closeMob()">Accueil</a>
+    <a href="#about" onclick="closeMob()">À propos</a>
+    <a href="#skills" onclick="closeMob()">Compétences</a>
+    <a href="#exp" onclick="closeMob()">Expérience</a>
+    <a href="#projects" onclick="closeMob()">Projets</a>
+    <a href="#certs" onclick="closeMob()">Certifications</a>
+    <a href="#edu" onclick="closeMob()">Formation</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+  </nav>
+  <div class="page-wrap">
+
+    <!-- ================================================================
+     HERO
+================================================================ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-available">Disponible — Stage / Emploi</div>
+
+          <h1 class="hero-name">
+            METOMBOU<br><span>Nérias Sènakpon</span>
+          </h1>
+
+          <p class="hero-role">Technicien Réseaux &amp; Télécommunications · Fibre Optique · Support Informatique N1</p>
+
+          <div class="hero-terminal">
+            <span id="typed-text"></span><span class="cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Jeune technicien diplômé en <strong>Génie Télécom &amp; TIC</strong> à l'UCAO-UUC de Cotonou.
+            Expérience pratique en maintenance réseau et support informatique au
+            <strong>Ministère de l'Économie et des Finances du Bénin</strong>.
+            À l'aise sur Cisco, Linux, la virtualisation et le développement web PHP/Laravel.
+            Je cherche à contribuer à des projets techniques concrets.
+          </p>
+
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="Documents/CV_METOMBOU_Nerias.pdf">
+              <span class="btn-icon">↓</span> Voir mon CV
+            </a>
+            <a class="btn btn-mail" href="#contact">
+              <span class="btn-icon">✉</span> Email
+            </a>
+            <a class="btn btn-primary" href="https://linkedin.com/in/metombounerias" target="_blank"
+              rel="noopener noreferrer">
+              <span class="btn-icon">in</span> LinkedIn
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
+              <span class="btn-icon">⌥</span> GitHub
+            </a>
+          </div>
+
+          <div class="hero-contact">
+            <a href="tel:+2290152240507">📞 +229 01 52 24 05 07</a>
+            <a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+            <a href="mailto:neriasmetombou@gmail.com">✉ neriasmetombou@gmail.com</a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Cotonou%2C+B%C3%A9nin" target="_blank"
+              rel="noopener noreferrer">📍 Cotonou, Bénin</a>
+          </div>
+        </div>
+        <div class="hero-avatar-wrap">
+          <div class="hero-image">
+            <img src="img/Profile.jpg" alt="Nérias Metombou - Portrait professionnel">
+            <style>
+              .hero-image {
+                position: relative;
+              }
+
+              .hero-image::before {
+                content: '';
+                position: absolute;
+                inset: -20px;
+                background: linear-gradient(135deg, var(--royal-blue), var(--royal-ultra));
+                border-radius: 50%;
+                filter: blur(40px);
+                opacity: 0.3;
+                animation: pulse 4s ease-in-out infinite;
+              }
+
+              .hero-image img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                border: 3px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+                transition: var(--transition-smooth);
+                animation: morph 10s ease-in-out infinite;
+                position: relative;
+                z-index: 2;
+              }
+
+              @keyframes morph {
+
+                0%,
+                100% {
+                  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                }
+
+                33% {
+                  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+                }
+
+                66% {
+                  border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%;
+                }
+              }
+            </style>
+
+
+          </div>
+        </div>
+    </section>
+    <!-- STATS -->
+    <div class="stats-band">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="1">0</div>
+          <div class="stat-lbl">An d'expérience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="2">0</div>
+          <div class="stat-lbl">Projets réalisés</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="1">0</div>
+          <div class="stat-lbl">Certifications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="3">0</div>
+          <div class="stat-lbl">Années de formation</div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     À PROPOS
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="about">
+      <div class="sec-eyebrow">À propos</div>
+      <h2 class="sec-title">Qui suis-je ?</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Je m'appelle <strong>Nérias Sènakpon Ivan Prosper Metombou</strong>, diplômé d'une
+            <strong>Licence en Génie Télécom &amp; TIC</strong> à l'UCAO-UUC de Cotonou (Bénin), promotion 2025.
+          </p>
+          <p>
+            Pendant mon stage au <strong>Ministère de l'Économie et des Finances</strong> (mars–juin 2025),
+            j'ai assuré la maintenance des postes de travail, la surveillance du réseau Wi-Fi interne,
+            le diagnostic de pannes réseau .
+          </p>
+          <p>
+            Mon projet de fin d'études portait sur la conception d'une
+            <strong>infrastructure Wi-Fi MeSH sécurisée</strong> (WPA2-Enterprise, VLAN, portail captif,
+            contrôleur centralisé) simulée sur GNS3 et VMware pour le siège de l'UCAO-UUC.
+          </p>
+          <p>
+            Polyvalent, je combine des compétences en réseaux Cisco, fibre optique, sécurité réseau,
+            administration Linux et développement web front-end avec PHP/Laravel.
+            Rigoureux et autonome, je cherche à intégrer une équipe technique pour y apporter
+            une contribution concrète.
+          </p>
+        </div>
+
+        <div class="about-card reveal-l">
+          <div class="about-card-row">
+            <span class="about-card-ico">🎓</span>
+            <div>
+              <div class="about-card-lbl">Diplôme</div>
+              <div class="about-card-val">Licence Génie Télécom &amp; TIC</div>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-ico">🏛</span>
+            <div>
+              <div class="about-card-lbl">Établissement</div>
+              <div class="about-card-val">UCAO-UUC — Cotonou, Bénin</div>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-ico">💼</span>
+            <div>
+              <div class="about-card-lbl">Expérience</div>
+              <div class="about-card-val">Stage — Ministère Économie &amp; Finances BJ</div>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-ico">📍</span>
+            <div>
+              <div class="about-card-lbl">Localisation</div>
+              <div class="about-card-val">Cotonou, Bénin · Remote possible</div>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-ico">🌐</span>
+            <div>
+              <div class="about-card-lbl">Langues</div>
+              <div class="about-card-val">Français · Anglais technique · Fon</div>
+            </div>
+          </div>
+          <div class="about-card-row">
+            <span class="about-card-ico">🚀</span>
+            <div>
+              <div class="about-card-lbl">Disponibilité</div>
+              <div class="about-card-val">Stage / Emploi — dès maintenant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     COMPÉTENCES
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="skills">
+      <div class="sec-eyebrow">Compétences</div>
+      <h2 class="sec-title">Savoir-faire technique</h2>
+      <p class="sec-sub">Niveaux évalués honnêtement à la fin de ma licence — ils refléteront mon expérience
+        professionnelle à venir.</p>
+
+      <div class="skills-layout">
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">🌐 Réseaux Cisco &amp; IP</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Adressage IP / Subnetting</span><span>80%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>VLANs / STP / HSRP</span><span>74%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".74"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>OSPF / Routage dynamique</span><span>70%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>DHCP / NAT / VPN (notions)</span><span>68%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".68"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>EIGRP / BGP — notions</span><span>42%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".42"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">📡 Fibre optique &amp; Télécoms</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Simulation fibre (OptiSystem)</span><span>60%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".60"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Notions FTTH / FTTB</span><span>58%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".58"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Architecture GSM / 2G / 3G</span><span>40%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".40"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>4G LTE — principes</span><span>30%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".30"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">🔐 Sécurité réseau &amp; Firewall</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>ACL Cisco</span><span>68%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".68"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>OPNsense / pfSense — bases</span><span>42%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".42"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Wi-Fi sécurisé — WPA2-Enterprise</span><span>32%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".32"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Kali Linux — introduction</span><span>28%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".28"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">🐧 Systèmes &amp; Virtualisation</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Ubuntu Linux / Bash</span><span>20%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".20"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Windows Server — bases</span><span>30%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".30"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>VirtualBox / VMware</span><span>74%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".74"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Packet Tracer / GNS3</span><span>60%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".60"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">💻 Développement web</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>HTML5 / CSS3</span><span>73%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".73"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>JavaScript — DOM / interactions</span><span>33%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".33"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>PHP / Laravel</span><span>48%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".48"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Bootstrap 5 / MySQL</span><span>62%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".62"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group-title">🛠 Outils &amp; Autres</div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Git / GitHub</span><span>43%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".43"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Python — scripts de base</span><span>48%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".48"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Adobe Photoshop / Premiere</span><span>40%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".40"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span>Documentation technique / Rapport</span><span>60%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" data-w=".60"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================================
+     EXPÉRIENCE
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="exp">
+      <div class="sec-eyebrow">Expérience</div>
+      <h2 class="sec-title">Parcours professionnel</h2>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period">Mars 2025<br>Juin 2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Stagiaire — Maintenance Systèmes &amp; Réseau</div>
+            <div class="exp-org">Ministère de l'Économie et des Finances · Cotonou, Bénin</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Installation, configuration et restauration de systèmes d'exploitation (Windows,
+                Linux) sur les postes de travail du ministère.</div>
+              <div class="exp-task">Contrôle, surveillance et maintenance des points d'accès Wi-Fi du réseau interne
+                ministériel.</div>
+              <div class="exp-task">Diagnostic et résolution de pannes réseau (connectivité, DNS, DHCP) pour les agents.
+              </div>
+              <div class="exp-task">Déploiement et activation de suites Microsoft Office sur les PC.</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Windows</span>
+              <span class="exp-tag">Linux</span>
+              <span class="exp-tag">Wi-Fi</span>
+              <span class="exp-tag">DHCP</span>
+              <span class="exp-tag">DNS</span>
+              <span class="exp-tag">Support N1</span>
+              <span class="exp-tag">Inventaire</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period">2022<br>2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Projets académiques — Technicien en formation</div>
+            <div class="exp-org">UCAO-UUC · Cotonou, Bénin</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Conception et déploiement simulé d'une infrastructure réseau Wi-Fi MeSH sécurisée
+                (WPA2-Enterprise, VLAN, contrôleur centralisé, portail captif) sur GNS3 et VMware — Projet de fin
+                d'études.</div>
+              <div class="exp-task">Déployement d'une architecture réseau hiérarchisée en trois
+                couches (Core, Distribution, Access), intégrant les services réseau essentiels tels que le
+                DHCP, le DNS et la journalisation (Syslog) sur GNS3.</div>
+              <div class="exp-task">Intégration d'un contrôleur sans fil (WLC) permettant la gestion centralisée des
+                points d’accès Mesh ; </div>
+              <div class="exp-task">Assurer la sécurité du réseau à l’aide d’un pare-feu OPNsense, incluant un
+                portail captif pour l’authentification des utilisateurs, et une segmentation
+                logique en zones réseau (DMZ, LAN, WAN).</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">GNS3</span>
+              <span class="exp-tag">VMware</span>
+              <span class="exp-tag">Wi-Fi MeSH</span>
+              <span class="exp-tag">WPA2-Enterprise</span>
+              <span class="exp-tag">Cisco</span>
+              <span class="exp-tag">Laravel</span>
+              <span class="exp-tag">OptiSystem</span>
+            </div>
+          </div>
+        </div>
+
+           <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period"> 2024<br>Juin 2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Ancien membre &amp; UCAO Tech</div>
+            <div class="exp-org">Université Catholique de l'Afrique de l'Ouest — 2024 - 2025</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Participation aux activités du Digital club</div>
+              <div class="exp-task">Colaboration sur des mini-projets de développement web</div>
+              <div class="exp-task">Initiation à des outils pro tels que Git / Github.</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">HTML / CSS</span>
+              <span class="exp-tag">Wordpres</span>
+              <span class="exp-tag">Laravel</span>
+              <span class="exp-tag">PHP</span>
+              <span class="exp-tag">Js</span>
+              <span class="exp-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     PROJETS
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="projects">
+      <div class="sec-eyebrow">Projets</div>
+      <h2 class="sec-title">Réalisations</h2>
+
+      <div class="proj-filters reveal">
+        <button class="pf-btn active" data-f="all">Tous</button>
+        <button class="pf-btn" data-f="reseau">Réseaux</button>
+        <button class="pf-btn" data-f="web">Web</button>
+        <button class="pf-btn" data-f="sec">Sécurité</button>
+        <button class="pf-btn" data-f="telco">Télécoms</button>
+      </div>
+
+      <div class="proj-grid">
+
+        <div class="proj-card reveal" data-cat="reseau sec">
+          <div class="proj-thumb">
+            <img src="Img/Projets/Projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
+              loading="lazy" width="600" height="240">
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Réseaux · Sécurité — PFE Licence</div>
+            <div class="proj-name">Infrastructure Wi-Fi MeSH sécurisée — UCAO-UUC</div>
+            <div class="proj-desc">
+              Conception et déploiement simulé d'un réseau Wi-Fi MeSH complet pour le siège de l'UCAO-UUC.
+              Authentification WPA2-Enterprise , segmentation VLAN, contrôleur centralisé et portail captif.
+              Entièrement simulé sur GNS3 + VMware Workstation.
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tech">GNS3</span>
+              <span class="proj-tech">VMware</span>
+              <span class="proj-tech">WPA2-Enterprise</span>
+              <span class="proj-tech">VLAN</span>
+              <span class="proj-tech">Syslog</span>
+              <span class="proj-tech">Portail captif</span>
+            </div>
+            <div class="proj-links">
+              <button type="button" class="proj-lk"
+                onclick="openCertModal('Mémoire de Licence Professionnelle — UCAO-UUC','Documents/mémoire licence professionnelle version finale.pdf')"
+              aria-label="Voir le rapport PDF du projet">Rapport PDF</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" data-cat="web">
+          <div class="proj-thumb">
+            <img src="Img/Projets/Projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
+              height="240">
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat">Développement Web </div>
+            <div class="proj-name">Portfolio professionnel (ce projet)</div>
+            <div class="proj-desc">
+              Portfolio web responsive en HTML5/CSS3/JS , sans dépendance externe.
+              Dark/light mode, animations au scroll, formulaire de contact sécurisé.
+              Directement publiable sur GitHub Pages.
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tech">HTML5</span>
+              <span class="proj-tech">CSS3</span>
+              <span class="proj-tech">JavaScript</span>
+              <span class="proj-tech">Responsive</span>
+              <span class="proj-tech">GitHub Pages</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-lk" href="https://github.com/nerias400" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+              <button type="button" class="proj-lk"
+                onclick="openVideoModal('Portfolio Professionnel','Videos/Demo_Portfolio_vid.mp4')"
+                aria-label="Voir la démo vidéo du portfolio">Démo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     CERTIFICATIONS
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="certs">
+      <div class="sec-eyebrow">Certifications</div>
+      <h2 class="sec-title">Certifications &amp; Badges</h2>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-issuer">UCAO-UUC</div>
+          <div class="cert-name">Licence — Génie Télécom &amp; TIC (Réseaux &amp; Télécommunications)</div>
+          <div class="cert-footer">
+            <span class="cert-status status-done">✓ Obtenu — 2025</span>
+            <button type="button" class="cert-view-btn"
+              onclick="openCertModal('Attestation de réussite — Licence GIT/TIC, UCAO-UUC','Documents/Attestation-de-succes-de-licence.pdf')"
+              aria-label="Voir le diplôme UCAO-UUC">Voir diplôme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⚠️ Renommez vos fichiers PDF réels dans /Documents pour qu'ils correspondent
+       exactement à ces noms (sans espaces ni accents) :
+         - memoire-licence-professionnelle.pdf
+         - attestation-succes-licence-ucao.pdf
+         - attestation-succes-licence-nationale.pdf -->
+
+    <!-- ================================================================
+     MODAL DES DEMOS
+================================================================ -->
+    <div class="modal-overlay" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title" id="video-title">Démonstration</div>
+
+          <button type="button" class="modal-close-btn" id="video-modal-close" onclick="closeVideoModal()"
+            aria-label="Fermer la vidéo">
+            ✕
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <video id="project-video" controls autoplay playsinline style="width:100%;border-radius:10px;">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     FORMATION
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="edu">
+      <div class="sec-eyebrow">Formation</div>
+      <h2 class="sec-title">Parcours académique</h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2022<br>↓<br>2025</div>
+          <div>
+            <div class="edu-degree">Licence en Génie Télécom &amp; TIC</div>
+            <div class="edu-school">UCAO-UUC — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Spécialité : Réseaux et Télécommunications.<br>
+              Enseignements : protocoles réseau Cisco, fibre optique (OptiSystem), réseaux mobiles (GSM/4G),
+              sécurité réseau, systèmes Linux, virtualisation, développement web PHP/Laravel, bases de données MySQL.
+            </div>
+            <span class="edu-badge">PFE : Infrastructure Wi-Fi MeSH sécurisée — GNS3 &amp; VMware</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2021<br>↓<br>2022</div>
+          <div>
+            <div class="edu-degree">Baccalauréat Série D — Biologie &amp; Géologie</div>
+            <div class="edu-school">CEG DANTOKPA — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Sciences naturelles, mathématiques, physique-chimie.
+              Obtenu en juin 2022.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- ================================================================
+     SERVICES
+================================================================ -->
+    <hr class="divider">
+    <div class="section section-sm" id="services">
+      <div class="sec-eyebrow">Services</div>
+      <h2 class="sec-title">Ce que je peux apporter</h2>
+
+      <div class="services-grid">
+        <div class="svc-card reveal">
+          <div class="svc-icon">🌐</div>
+          <div class="svc-title">Support réseau N1</div>
+          <div class="svc-desc">Diagnostic de pannes, configuration d'équipements réseau Cisco, surveillance Wi-Fi,
+            DHCP/DNS.</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🖥</div>
+          <div class="svc-title">Maintenance informatique</div>
+          <div class="svc-desc">Installation / restauration d'OS (Windows, Linux), déploiement logiciels, inventaire
+            parc
+            matériel.</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🔐</div>
+          <div class="svc-title">Sécurité réseau (base)</div>
+          <div class="svc-desc">Configuration ACL, firewall OPNsense/pfSense, mise en place Wi-Fi WPA2-Enterprise, VLAN.
+          </div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">💻</div>
+          <div class="svc-title">Développement web</div>
+          <div class="svc-desc">Sites web responsive HTML/CSS/JS, applications PHP/Laravel, formulaires, gestion de base
+            de données MySQL.</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">⚙</div>
+          <div class="svc-title">Simulation réseau</div>
+          <div class="svc-desc">Conception et documentation d'architectures réseau sur Packet Tracer et GNS3.</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">📝</div>
+          <div class="svc-title">Documentation technique</div>
+          <div class="svc-desc">Rédaction de rapports techniques, inventaires, procédures d'exploitation, présentations.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     CONTACT
+================================================================ -->
+    <hr class="divider">
+    <div class="section" id="contact">
+      <div class="sec-eyebrow">Contact</div>
+      <h2 class="sec-title">Me contacter</h2>
+
+      <div class="contact-wrap">
+        <div class="contact-info reveal-l">
+          <div class="contact-block">
+            <span class="ci-icon">📞</span>
+            <div>
+              <div class="ci-lbl">Téléphone</div>
+              <div class="ci-val"><a href="tel:+2290152240507">+229 01 52 24 05 07</a></div>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="ci-icon">✉</span>
+            <div>
+              <div class="ci-lbl">Email</div>
+              <div class="ci-val"><a href="mailto:neriasmetombou@gmail.com">neriasmetombou@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="ci-icon">💼</span>
+            <div>
+              <div class="ci-lbl">LinkedIn</div>
+              <div class="ci-val"><a href="https://linkedin.com/in/metombounerias" target="_blank"
+                  rel="noopener noreferrer">linkedin.com/in/metombounerias</a></div>
+            </div>
+          </div>
+          <div class="contact-avail">
+            Je suis disponible pour un <strong>stage</strong>, une <strong>alternance</strong>
+            ou un <strong>premier emploi</strong> en support réseau, technicien télécom
+            ou développeur web junior.<br>
+            Réponse habituelle sous 24h.
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-2col">
+              <div class="form-field">
+                <label class="form-lbl" for="c-name">Votre nom</label>
+                <input class="form-ctrl" id="c-name" name="from_name" type="text" placeholder="Jean Dupont"
+                  autocomplete="name" aria-describedby="err-name">
+                <span class="field-err-msg" id="err-name">Merci d'indiquer votre nom (2 caractères minimum).</span>
+              </div>
+              <div class="form-field">
+                <label class="form-lbl" for="c-email">Email</label>
+                <input class="form-ctrl" id="c-email" name="from_email" type="email" placeholder="jean@email.com"
+                  autocomplete="email" aria-describedby="err-email">
+                <span class="field-err-msg" id="err-email">Merci d'indiquer une adresse email valide.</span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-lbl" for="c-sub">Sujet</label>
+              <input class="form-ctrl" id="c-sub" name="subject" type="text"
+                placeholder="Stage · Emploi · Collaboration · Question" aria-describedby="err-sub">
+              <span class="field-err-msg" id="err-sub">Merci d'indiquer un sujet (3 caractères minimum).</span>
+            </div>
+            <div class="form-field">
+              <label class="form-lbl" for="c-msg">Message</label>
+              <textarea class="form-ctrl" id="c-msg" name="message" rows="5" placeholder="Votre message..."
+                aria-describedby="err-msg"></textarea>
+              <span class="field-err-msg" id="err-msg">Votre message doit contenir au moins 10 caractères.</span>
+            </div>
+            <button class="btn btn-primary" type="submit" id="form-submit-btn" style="align-self:flex-start">
+              <span id="form-btn-text">Envoyer le message</span>
+              <span class="form-spinner" aria-hidden="true"></span>
+               <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+            </button>
+            <div class="form-msg" id="form-msg" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end page-wrap -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>METOMBOU Nérias</span> · Cotonou, Bénin · 2026
+      </div>
+      <div class="footer-social">
+        <a class="footer-soc btn-ghost" href="mailto:neriasmetombou@gmail.com"> <span class="btn-icon">✉</span>
+          Email</a>
+        <a class="footer-soc btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
+          rel="noopener noreferrer">
+          <span class="btn-icon">in</span> LinkedIn</a>
+        <a class="footer-soc btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
+          <span class="btn-icon">⌥</span> GitHub</a>
+      </div>
+      <div class="footer-copy">
+        Technicien Réseaux &amp; Télécommunications · Licence GIT/TIC
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Retour en haut">↑</button>
+
+  <!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
+  <script>
+    /* ── Sanitize helper (XSS protection) ── */
+    function esc(s) {
+      const d = document.createElement('div');
+      d.appendChild(document.createTextNode(String(s)));
+      return d.innerHTML;
+    }
+
+    /* ── Theme toggle ── */
+    const html = document.documentElement;
+    const themeBtn = document.getElementById('theme-btn');
+
+    function setTheme(t) {
+      html.setAttribute('data-theme', t);
+      themeBtn.textContent = t === 'dark' ? '🌙' : '☀️';
+      try { localStorage.setItem('theme', t); } catch (e) { }
+    }
+
+    themeBtn.addEventListener('click', () => {
+      setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    // Apply saved theme
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) setTheme(saved);
+    } catch (e) { }
+
+    /* ── Mobile menu ── */
+    const ham = document.getElementById('ham');
+    const mobMenu = document.getElementById('mob-menu');
+
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      mobMenu.classList.toggle('open');
+    });
+
+    function closeMob() {
+      ham.classList.remove('open');
+      mobMenu.classList.remove('open');
+    }
+
+    /* ── Active nav link on scroll ──
+       Scoped to the top-level page sections only (not modal/preloader
+       internals, which also carry ids and would otherwise be observed). */
+    const sections = document.querySelectorAll('.page-wrap > [id]');
+    const navAs = document.querySelectorAll('.nav-links a[data-sec]');
+
+    const secObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navAs.forEach(a => a.classList.toggle('active', a.dataset.sec === e.target.id));
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(s => secObserver.observe(s));
+
+    /* ── Back to top ── */
+    const btt = document.getElementById('btt');
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    /* ── Reveal on scroll ── */
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('on'), i * 65);
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => revealObs.observe(el));
+
+    /* ── Skill bars ── */
+    const skillObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.skill-fill').forEach((bar, i) => {
+            const w = parseFloat(bar.dataset.w);
+            bar.style.transitionDelay = `${i * 90}ms`;
+            bar.style.transform = `scaleX(${w})`;
+            bar.classList.add('go');
+          });
+          skillObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.skill-group').forEach(g => skillObs.observe(g));
+
+    /* ── Counters ── */
+    const ctrObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          countUp(e.target);
+          ctrObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter').forEach(el => ctrObs.observe(el));
+
+    function countUp(el) {
+      const target = parseInt(el.dataset.t, 10);
+      const dur = 1200;
+      const start = performance.now();
+      function step(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = p < .5 ? 2 * p * p : (4 - 2 * p) * p - 1;
+        el.textContent = Math.round(ease * target);
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    }
+
+    /* ── Terminal typing — hero signature ── */
+    const roles = [
+      'Technicien Réseaux & Télécommunications',
+      'Support Informatique N1',
+      'Fibre Optique & Réseaux Mobiles',
+      'Sécurité Réseau — notions',
+      'Développeur Web PHP / Laravel',
+    ];
+    let ri = 0, ci = 0, deleting = false;
+    const typedEl = document.getElementById('typed-text');
+
+    function typeLoop() {
+      const current = roles[ri];
+      if (!deleting) {
+        typedEl.textContent = current.slice(0, ++ci);
+        if (ci === current.length) {
+          deleting = true;
+          setTimeout(typeLoop, 2000);
+          return;
+        }
+        setTimeout(typeLoop, 55);
+      } else {
+        typedEl.textContent = current.slice(0, --ci);
+        if (ci === 0) {
+          deleting = false;
+          ri = (ri + 1) % roles.length;
+          setTimeout(typeLoop, 300);
+          return;
+        }
+        setTimeout(typeLoop, 28);
+      }
+    }
+    typeLoop();
+
+    /* ── Project filters ── */
+    document.querySelectorAll('[data-f]').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-f]').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const f = this.dataset.f;
+        document.querySelectorAll('.proj-card').forEach(card => {
+          const cats = card.dataset.cat || '';
+          card.style.display = (f === 'all' || cats.split(' ').includes(f)) ? '' : 'none';
+        });
+      });
+    });
+
+    /* ── Preloader ── */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const pl = document.getElementById('preloader');
+        if (pl) {
+          pl.classList.add('done');
+          let removed = false;
+          const removePl = () => {
+            if (removed) return;
+            removed = true;
+            pl.remove();
+          };
+          pl.addEventListener('transitionend', removePl, { once: true });
+          // Safety net: if the transition never fires (e.g. tab in background,
+          // reduced-motion, or a style conflict), remove it anyway.
+          setTimeout(removePl, 1000);
+        }
+      }, 1600);
+    });
+
+    /* ── Reveal-r observer ── */
+    document.querySelectorAll('.reveal-r').forEach(el => revealObs.observe(el));
+
+    /* ── Modal Certificat ── */
+    const certModal = document.getElementById('cert-modal');
+    const certModalTitle = document.getElementById('cert-modal-title');
+    const certModalPdf = document.getElementById('cert-modal-pdf');
+    const certModalDl = document.getElementById('cert-modal-dl');
+    const certModalClose = document.getElementById('cert-modal-close');
+    let lastFocusedEl = null; // shared by both modals to restore focus on close
+
+    function openCertModal(name, file) {
+      lastFocusedEl = document.activeElement;
+      certModalTitle.textContent = name;
+      certModalDl.href = file;
+      certModalDl.download = file;
+      certModalPdf.innerHTML =
+        `<object data="${esc(file)}" type="application/pdf" width="100%" height="480" style="border:none;display:block">
+       <div class="modal-pdf-fallback">
+         <div class="pdf-icon">📄</div>
+         <p>Ce navigateur ne peut pas afficher le PDF directement.<br>Utilisez le bouton Télécharger.</p>
+         <small>Fichier attendu : ${esc(file)}</small>
+       </div>
+     </object>`;
+      certModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => certModalClose.focus(), 80);
+    }
+
+    function closeCertModal() {
+      certModal.classList.remove('open');
+      document.body.style.overflow = '';
+      certModalPdf.innerHTML = '';
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    certModalClose.addEventListener('click', closeCertModal);
+    certModal.addEventListener('click', e => { if (e.target === certModal) closeCertModal(); });
+    /* Note: Escape-key handling for this modal is registered once, together
+       with the video modal, in the unified keydown listener further down. */
+    /* Focus trap */
+    certModal.addEventListener('keydown', e => {
+      if (e.key !== 'Tab' || !certModal.classList.contains('open')) return;
+      const focusable = [...certModal.querySelectorAll('button,a,[tabindex]:not([tabindex="-1"])')];
+      if (!focusable.length) return;
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+      else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+    });
+
+    /* ── Smooth scroll + close mobile menu on in-page navigation ──
+       (native `scroll-behavior:smooth` in the CSS already handles the
+       animation; this also accounts for the fixed nav bar and closes
+       the mobile menu after navigating.) */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#' || href.length < 2) return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          closeMob();
+        }
+      });
+    });
+
+    /* ================================================================
+       MODAL VIDÉO (Démo projet)
+       Ces fonctions sont volontairement globales : elles sont appelées
+       depuis les attributs onclick="openVideoModal(...)" du HTML.
+    ================================================================ */
+    const videoModal = document.getElementById('video-modal');
+    const projectVideo = document.getElementById('project-video');
+    const videoModalClose = document.getElementById('video-modal-close');
+
+    function openVideoModal(title, file) {
+      lastFocusedEl = document.activeElement;
+      document.getElementById('video-title').textContent = title;
+      projectVideo.src = file;
+      videoModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      projectVideo.play().catch(() => {
+        /* Autoplay blocked by the browser — the visible native controls
+           let the user press play manually, so this is safe to ignore. */
+      });
+      setTimeout(() => videoModalClose.focus(), 80);
+    }
+
+    function closeVideoModal() {
+      projectVideo.pause();
+      projectVideo.removeAttribute('src');
+      projectVideo.load(); // fully releases the previous source from memory
+      videoModal.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    videoModalClose.addEventListener('click', closeVideoModal);
+
+    videoModal.addEventListener('click', e => {
+      if (e.target === videoModal) closeVideoModal();
+    });
+
+    /* Focus trap for the video modal (mirrors the certificate modal) */
+    videoModal.addEventListener('keydown', e => {
+      if (e.key !== 'Tab' || !videoModal.classList.contains('open')) return;
+      const focusable = [...videoModal.querySelectorAll('button,a,video,[tabindex]:not([tabindex="-1"])')];
+      if (!focusable.length) return;
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+      else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+    });
+
+    /* Single global Escape handler closes whichever modal is open */
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      if (certModal.classList.contains('open')) closeCertModal();
+      if (videoModal.classList.contains('open')) closeVideoModal();
+    });
+
+    /* ================================================================
+       FORMULAIRE DE CONTACT — validation + envoi EmailJS
+    ================================================================ */
+    let formSending = false;
+
+    function fieldValidate(id, errId, condition) {
+      const el = document.getElementById(id);
+      const err = document.getElementById(errId);
+      if (condition) {
+        el.classList.add('fc-err');
+        if (err) err.classList.add('show');
+        return false;
+      } else {
+        el.classList.remove('fc-err');
+        if (err) err.classList.remove('show');
+        return true;
+      }
+    }
+
+    /* Live validation on blur */
+    ['c-name', 'c-email', 'c-sub', 'c-msg'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('blur', () => {
+        if (id === 'c-name') fieldValidate('c-name', 'err-name', el.value.trim().length < 2);
+        if (id === 'c-email') fieldValidate('c-email', 'err-email', !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim()));
+        if (id === 'c-sub') fieldValidate('c-sub', 'err-sub', el.value.trim().length < 3);
+        if (id === 'c-msg') fieldValidate('c-msg', 'err-msg', el.value.trim().length < 10);
+      });
+    });
+
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // no page reload — handled entirely in JS
+
+      if (formSending) return; // guards against double-clicks / double submits
+
+      const name = document.getElementById('c-name').value.trim();
+      const email = document.getElementById('c-email').value.trim();
+      const sub = document.getElementById('c-sub').value.trim();
+      const msg = document.getElementById('c-msg').value.trim();
+      const out = document.getElementById('form-msg');
+      const btn = document.getElementById('form-submit-btn');
+      const btnTx = document.getElementById('form-btn-text');
+
+      // Validate every field
+      let valid = true;
+      valid = fieldValidate('c-name', 'err-name', name.length < 2) && valid;
+      valid = fieldValidate('c-email', 'err-email', !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) && valid;
+      valid = fieldValidate('c-sub', 'err-sub', sub.length < 3) && valid;
+      valid = fieldValidate('c-msg', 'err-msg', msg.length < 10) && valid;
+
+      if (!valid) {
+        out.textContent = 'Veuillez corriger les erreurs ci-dessus.';
+        out.className = 'form-msg msg-err show';
+        return;
+      }
+
+      // Loading state — disable the button, show the spinner, block double clicks
+      formSending = true;
+      btn.disabled = true;
+      btn.classList.add('btn-loading');
+      btnTx.textContent = 'Envoi en cours…';
+      out.className = 'form-msg';
+      out.textContent = '';
+
+      emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          subject: sub,
+          message: msg
+        }
+      )
+        .then(function () {
+          out.textContent = '✓ Message envoyé avec succès.';
+          out.className = 'form-msg msg-ok show';
+          contactForm.reset();
+        })
+        .catch(function (error) {
+          out.textContent = "Erreur lors de l'envoi. Merci de réessayer ou de m'écrire directement par email.";
+          out.className = 'form-msg msg-err show';
+          console.error('EmailJS error:', error);
+        })
+        .finally(() => {
+          btn.disabled = false;
+          btn.classList.remove('btn-loading');
+          btnTx.textContent = 'Envoyer le message';
+          formSending = false;
+        });
+    });
+
+  </script>
+</body>
+
+</html>

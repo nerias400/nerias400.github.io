@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="METOMBOU Nérias — Maintenance en cours. Le site revient bientôt.">
+  <title>Maintenance — METOMBOU Nérias</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ── RESET & BASE ── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0A0F1E;
+      --surface: #111827;
+      --surface2: #1a2236;
+      --border: rgba(59, 130, 246, 0.18);
+      --blue: #1E40AF;
+      --blue-v: #3B82F6;
+      --blue-l: #60A5FA;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --success: #10B981;
+      --radius: 14px;
+      --shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
+      --accent: #1f6feb;
+      --accent-h: #388bfd;
+      --accent-bg: rgba(31, 111, 235, .10);
+      --accent-bd: rgba(31, 111, 235, .30);
+      --green: #2ea043;
+      --green-bg: rgba(46, 160, 67, .12);
+      --amber: #d29922;
+      --t1: #e6edf3;
+      --t2: #8b949e;
+      --t3: #484f58;
+      --sans: 'Inter', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+      --sh: 0 4px 30px rgba(0, 0, 0, .5);
+      --tr: .3s ease;
+    }
+
+
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --bg2: #f6f8fa;
+      --bg3: #eaeef2;
+      --border: #d0d7de;
+      --border2: #b1bac4;
+      --t1: #1f2328;
+      --t2: #57606a;
+      --t3: #b1bac4;
+      --sh: 0 4px 30px rgba(0, 0, 0, .10);
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+
+    /* ── BACKGROUND MESH ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(30, 64, 175, 0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 80%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ================================================================
+           MAINTENANCE CARD
+           ================================================================ */
+    .maintenance-wrap {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      animation: fadeUp .8s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .maintenance-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: pulse-icon 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse-icon {
+
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      50% {
+        transform: scale(1.08) rotate(-4deg);
+      }
+    }
+
+    .maintenance-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: .6rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: var(--amber);
+      color: #0d1117;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .maintenance-title {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 600;
+      color: var(--t1);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .maintenance-title span {
+      color: var(--accent-h);
+    }
+
+    .maintenance-desc {
+      font-size: .9rem;
+      color: var(--t2);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    /* Status bar */
+    .status-bar {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .status-dot {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: .7rem;
+      color: var(--t2);
+    }
+
+    .status-dot .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--amber);
+      animation: blink 1.6s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+
+    .status-dot .dot.green {
+      background: var(--green);
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: .25;
+      }
+    }
+
+    .status-eta {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+    }
+
+    .status-eta strong {
+      color: var(--t1);
+      font-weight: 500;
+    }
+
+    /* Progress bar */
+    .progress-wrap {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .progress-track {
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h));
+      animation: progressAnim 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes progressAnim {
+      0% {
+        width: 12%;
+      }
+
+      40% {
+        width: 45%;
+      }
+
+      70% {
+        width: 72%;
+      }
+
+      100% {
+        width: 88%;
+      }
+    }
+
+    /* Contact & social */
+    .maintenance-contact {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .75rem;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      color: var(--t2);
+      transition: all var(--tr);
+      background: var(--bg2);
+      color: var(--accent-h);
+      border-color: var(--accent-bd);
+      background: var(--accent-bg);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+
+    .contact-btn .icon {
+      font-size: .85rem;
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+    }
+
+    .theme-toggle:hover {
+      color: var(--t1);
+      border-color: var(--border2);
+    }
+
+    /* Notify form */
+    .notify-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .notify-form .form-ctrl {
+      font-family: var(--sans);
+      font-size: .8rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t1);
+      padding: 9px 14px;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color var(--tr), box-shadow var(--tr);
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .notify-form .form-ctrl:focus {
+      border-color: var(--accent-bd);
+      box-shadow: 0 0 0 3px var(--accent-bg);
+    }
+
+    .notify-form .form-ctrl::placeholder {
+      color: var(--t3);
+    }
+
+    .notify-form .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .8rem;
+      font-weight: 500;
+      padding: 9px 20px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all var(--tr);
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .notify-form .btn:hover {
+      background: var(--accent-h);
+      border-color: var(--accent-h);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(31, 111, 235, .35);
+    }
+
+    .notify-form .btn.loading {
+      pointer-events: none;
+      opacity: .7;
+    }
+
+    .notify-msg {
+      font-family: var(--mono);
+      font-size: .62rem;
+      text-align: center;
+      padding: 6px;
+      border-radius: 4px;
+      min-height: 24px;
+      margin-top: 8px;
+      width: 100%;
+    }
+
+    .notify-msg.ok {
+      color: var(--green);
+      background: var(--green-bg);
+    }
+
+    .notify-msg.err {
+      color: #f85149;
+      background: rgba(248, 81, 73, .08);
+    }
+
+    /* Footer */
+    .maintenance-footer {
+      margin-top: 32px;
+      font-size: .7rem;
+      color: var(--t3);
+      font-family: var(--mono);
+      letter-spacing: .5px;
+    }
+
+    .maintenance-footer span {
+      color: var(--accent-h);
+    }
+
+    /* ================================================================
+           RESPONSIVE
+           ================================================================ */
+    @media (max-width: 560px) {
+      .maintenance-title {
+        font-size: 1.4rem;
+      }
+
+      .maintenance-icon {
+        font-size: 3rem;
+      }
+
+      .status-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      .notify-form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .notify-form .form-ctrl {
+        min-width: auto;
+      }
+
+      .notify-form .btn {
+        justify-content: center;
+      }
+
+      .maintenance-contact {
+        gap: 8px;
+      }
+
+      .contact-btn {
+        font-size: .7rem;
+        padding: 6px 12px;
+      }
+
+      .theme-toggle {
+        top: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+        font-size: .85rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" id="theme-toggle" title="Changer de thème" aria-label="Basculer thème sombre/clair">
+    🌙
+  </button>
+
+  <!-- ================================================================
+         MAINTENANCE CONTENT
+         ================================================================ -->
+  <div class="maintenance-wrap">
+
+    <!-- Icon -->
+    <div class="maintenance-icon">🔧</div>
+
+    <!-- Badge -->
+    <div class="maintenance-badge">Maintenance en cours</div>
+
+    <!-- Title -->
+    <h1 class="maintenance-title">
+      <span>Nérias</span> Metombou
+    </h1>
+
+    <!-- Description -->
+    <p class="maintenance-desc">
+      Ce portfolio est actuellement en cours de maintenance.
+      De nouvelles fonctionnalités et une expérience encore plus fluide sont en cours de préparations.
+      Revenez dans quelques instants !
+    </p>
+
+    <!-- Status bar -->
+    <div class="status-bar">
+      <span class="status-dot">
+        <span class="dot"></span>
+        Maintenance en cours
+      </span>
+      <span class="status-eta">
+        Retour estimé : <strong>très bientôt</strong>
+      </span>
+    </div>
+
+    <!-- Progress bar -->
+
+    <!-- Contact & social -->
+    <div class="maintenance-contact">
+      <a class="contact-btn" href="mailto:neriasmetombou@gmail.com">
+        <span class="icon">✉</span> Email
+      </a>
+      <a class="contact-btn" href="tel:+2290152240507">
+        <span class="icon">📞</span> Téléphone
+      </a>
+      <a class="contact-btn" href="https://linkedin.com/in/METOMBOUNérias" target="_blank" rel="noopener">
+        <span class="icon">in</span> LinkedIn
+      </a>
+      <a class="contact-btn" href="https://github.com/neriasmetombou" target="_blank" rel="noopener">
+        <span class="icon">⌥</span> GitHub
+      </a>
+    </div>
+
+    <!-- Notify form -->
+
+    <!-- Footer -->
+    <div class="maintenance-footer">
+      <span>METOMBOU Nérias</span> · Cotonou, Bénin · 2025
+    </div>
+
+  </div>
+
+  <!-- ================================================================
+         JAVASCRIPT
+         ================================================================ -->
+  <script>
+    /* ── Theme toggle ── */
+    const html = document.documentElement;
+    const themeBtn = document.getElementById('theme-toggle');
+
+    function setTheme(t) {
+      html.setAttribute('data-theme', t);
+      themeBtn.textContent = t === 'dark' ? '🌙' : '☀️';
+      try { localStorage.setItem('theme', t); } catch (e) { }
+    }
+
+    themeBtn.addEventListener('click', () => {
+      setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved) setTheme(saved);
+    } catch (e) { }
+
+    /* ── Progress bar simulation ── */
+    const progressFill = document.getElementById('progress-fill');
+    const progressText = document.getElementById('progress-text');
+    const percentages = [12, 28, 45, 58, 72, 81, 88];
+    let step = 0;
+
+    function updateProgress() {
+      const p = percentages[step % percentages.length];
+      progressFill.style.width = p + '%';
+      progressText.textContent = '~' + p + '%';
+      step++;
+    }
+
+    // Initial
+    updateProgress();
+
+    // Update every 3.5 seconds (sync with CSS animation)
+    setInterval(updateProgress, 3500);
+
+    /* ── Notify form ── */
+    const notifyForm = document.getElementById('notify-form');
+    const notifyEmail = document.getElementById('notify-email');
+    const notifyMsg = document.getElementById('notify-msg');
+    const notifyBtn = document.getElementById('notify-btn');
+    let isSending = false;
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    notifyForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (isSending) return;
+
+      // Reset
+      notifyMsg.textContent = '';
+      notifyMsg.className = 'notify-msg';
+      notifyEmail.style.borderColor = '';
+
+      const email = notifyEmail.value.trim();
+
+      if (!email) {
+        notifyMsg.textContent = 'Veuillez saisir votre email.';
+        notifyMsg.className = 'notify-msg err';
+        notifyEmail.style.borderColor = '#f85149';
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        notifyMsg.textContent = 'Adresse email invalide.';
+        notifyMsg.className = 'notify-msg err';
+        notifyEmail.style.borderColor = '#f85149';
+        return;
+      }
+
+      // Simuler l'envoi
+      isSending = true;
+      notifyBtn.classList.add('loading');
+
+      setTimeout(() => {
+        isSending = false;
+        notifyBtn.classList.remove('loading');
+
+        notifyMsg.textContent = '✓ Vous serez averti dès la fin de la maintenance !';
+        notifyMsg.className = 'notify-msg ok';
+        notifyEmail.value = '';
+
+        // Nettoyer après 6s
+        setTimeout(() => {
+          if (notifyMsg.classList.contains('ok')) {
+            notifyMsg.textContent = '';
+            notifyMsg.className = 'notify-msg';
+          }
+        }, 6000);
+
+      }, 1200);
+    });
+
+    /* ── Keyboard shortcut: Escape pour rien (juste pour le fun) ── */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        // Rien de spécial, mais on peut ajouter un petit effet visuel si on veut
+      }
+    });
+
+    console.log('🔧 Page de maintenance — Nérias Metombou');
+    console.log('📧 neriasmetombou@gmail.com');
+  </script>
+</body>
+
+</html>
