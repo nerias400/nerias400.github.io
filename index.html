@@ -8,16 +8,24 @@
     content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications, Fibre Optique, Support Informatique N1. Diplômé Licence Génie Télécom &amp; TIC, Cotonou, Bénin.">
   <meta name="keywords"
     content="Nérias Metombou, technicien réseaux, fibre optique, Cisco, Laravel, Bénin, Cotonou, support informatique">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="METOMBOU Nérias Sènakpon Ivan Prosper">
   <meta property="og:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
   <meta property="og:description"
     content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neriasmetombou.github.io/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/nerias400">
-  <link rel="canonical" href="https://neriasmetombou.github.io/portfolio/">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="canonical" href="https://neriasmetombou.github.io/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
+  <meta name="twitter:description"
+    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
   <meta name="twitter:image" content="https://avatars.githubusercontent.com/nerias400">
   <meta name="theme-color" content="#0A0F1E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0F1E'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%231f6feb' font-family='Arial, sans-serif' font-weight='600'%3EN%3C/text%3E%3C/svg%3E">
   <!-- FONTS & ICONS -->
   <link rel="stylesheet" href="Fonts/webfronts/fontawesome-free-6.5.1-web/css/all.min.css">
   <script type="application/ld+json">
@@ -26,6 +34,7 @@
   "@type": "Person",
   "name": "METOMBOU Nérias Sènakpon Ivan Prosper",
   "jobTitle": "Technicien Réseaux & Télécommunications",
+  "url": "https://neriasmetombou.github.io/",
   "email": "neriasmetombou@gmail.com",
   "telephone": "+2290152240507",
   "address": {"@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "BJ"},
@@ -35,11 +44,43 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
     /* ==================================================================
-       EMAILJS CONFIGURATION
-       EmailJS (https://dashboard.emailjs.com/) :
-         - EMAILJS_PUBLIC_KEY  → Account > General > Public Key
-         - EMAILJS_SERVICE_ID  → Email Services > votre service
-         - EMAILJS_TEMPLATE_ID → Email Templates > votre template
+       EMAILJS CONFIGURATION — checklist si les emails n'arrivent pas
+       ==================================================================
+       Le code ci-dessous est correct : il appelle emailjs.send() avec le
+       bon Service ID, Template ID et Public Key, et transmet les 4 champs
+       du formulaire. Si le formulaire affiche "Message envoyé" mais que
+       rien n'arrive dans ta boîte Gmail, le problème n'est presque
+       toujours PAS dans ce fichier : il est dans la configuration de ton
+       compte sur https://dashboard.emailjs.com/. Vérifie dans l'ordre :
+
+       1) Email Services > ton service (service_cnkjq9j) :
+          - Le statut doit être "Connected" / actif. Si Gmail affiche
+            "Disconnected" ou demande une reconnexion OAuth, reconnecte-le.
+
+       2) Email Templates > ton template (template_1bf789a) > onglet
+          "Settings" (pas "Content") :
+          - Le champ "To Email" DOIT contenir ton adresse Gmail en dur
+            (ex: neriasmetombou@gmail.com) ou la variable {{to_email}} —
+            s'il est vide, EmailJS accepte l'envoi (aucune erreur JS) mais
+            ne livre le message nulle part. C'est la cause n°1 de ce bug.
+          - Le champ "Reply To" peut être mis à {{reply_to}} pour pouvoir
+            répondre directement au visiteur depuis Gmail.
+
+       3) Email Templates > onglet "Content" :
+          - Les variables utilisées dans le corps du template doivent
+            correspondre exactement aux clés envoyées par ce fichier :
+            {{from_name}}, {{from_email}}, {{subject}}, {{message}},
+            {{reply_to}}. Un nom de variable différent (ex: {{name}} au
+            lieu de {{from_name}}) donne un email vide, pas une erreur.
+
+       4) Account > Security :
+          - Si des "Allowed origins / domains" sont configurés, ton
+            domaine GitHub Pages (https://neriasmetombou.github.io) doit
+            être dans la liste, sinon l'envoi est bloqué silencieusement.
+
+       - EMAILJS_PUBLIC_KEY  → Account > General > Public Key
+       - EMAILJS_SERVICE_ID  → Email Services > votre service
+       - EMAILJS_TEMPLATE_ID → Email Templates > votre template
        ================================================================== */
     const EMAILJS_PUBLIC_KEY = "9FyY8RROB-N2PWySt";
     const EMAILJS_SERVICE_ID = "service_cnkjq9j";
@@ -54,8 +95,9 @@
   <title>METOMBOU Nérias — Technicien Réseaux &amp; Télécoms</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
     rel="stylesheet">
 
   <style>
@@ -1707,6 +1749,10 @@
         justify-content: center
       }
 
+      .hero-btns {
+        justify-content: center
+      }
+
       .stats-inner {
         grid-template-columns: repeat(2, 1fr);
         gap: 0
@@ -1782,7 +1828,7 @@
 
       .hero-btns {
         flex-direction: column;
-        align-items: flex-start
+        align-items: center
       }
 
       .stats-inner {
@@ -2099,7 +2145,9 @@
       <div class="modal-header">
         <div class="modal-title" id="cert-modal-title">Certificat</div>
         <div class="modal-actions">
-          <button class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal">✕</button>
+          <a class="modal-dl" id="cert-modal-dl" href="#" download aria-label="Télécharger le certificat">↓
+            Télécharger</a>
+          <button type="button" class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal">✕</button>
         </div>
       </div>
       <div class="modal-body">
@@ -2108,38 +2156,40 @@
     </div>
   </div>
   <!-- NAV -->
-  <nav class="nav" id="main-nav">
-    <div class="nav-brand">
-      <div class="nav-brand-dot"></div>
-      ✦ Nérias Metombou
-    </div>
-    <ul class="nav-links">
-      <li><a href="#hero" data-sec="hero">Accueil</a></li>
-      <li><a href="#about" data-sec="about">À propos</a></li>
-      <li><a href="#skills" data-sec="skills">Compétences</a></li>
-      <li><a href="#exp" data-sec="exp">Expérience</a></li>
-      <li><a href="#projects" data-sec="projects">Projets</a></li>
-      <li><a href="#certs" data-sec="certs">Certifications</a></li>
-      <li><a href="#edu" data-sec="edu">Formation</a></li>
-      <li><a href="#contact" data-sec="contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="theme-btn" id="theme-btn" title="Changer de thème"
-        aria-label="Basculer thème sombre/clair">🌙</button>
-      <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
-  <nav class="mob-menu" id="mob-menu">
-    <a href="#hero" onclick="closeMob()">Accueil</a>
-    <a href="#about" onclick="closeMob()">À propos</a>
-    <a href="#skills" onclick="closeMob()">Compétences</a>
-    <a href="#exp" onclick="closeMob()">Expérience</a>
-    <a href="#projects" onclick="closeMob()">Projets</a>
-    <a href="#certs" onclick="closeMob()">Certifications</a>
-    <a href="#edu" onclick="closeMob()">Formation</a>
-    <a href="#contact" onclick="closeMob()">Contact</a>
-  </nav>
-  <div class="page-wrap">
+  <header>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <div class="nav-brand">
+        <div class="nav-brand-dot"></div>
+        ✦ Nérias Metombou
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" data-sec="hero">Accueil</a></li>
+        <li><a href="#about" data-sec="about">À propos</a></li>
+        <li><a href="#skills" data-sec="skills">Compétences</a></li>
+        <li><a href="#exp" data-sec="exp">Expérience</a></li>
+        <li><a href="#projects" data-sec="projects">Projets</a></li>
+        <li><a href="#certs" data-sec="certs">Certifications</a></li>
+        <li><a href="#edu" data-sec="edu">Formation</a></li>
+        <li><a href="#contact" data-sec="contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button type="button" class="theme-btn" id="theme-btn" title="Changer de thème"
+          aria-label="Basculer thème sombre/clair">🌙</button>
+        <button type="button" class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <nav class="mob-menu" id="mob-menu" aria-label="Menu mobile">
+      <a href="#hero" onclick="closeMob()">Accueil</a>
+      <a href="#about" onclick="closeMob()">À propos</a>
+      <a href="#skills" onclick="closeMob()">Compétences</a>
+      <a href="#exp" onclick="closeMob()">Expérience</a>
+      <a href="#projects" onclick="closeMob()">Projets</a>
+      <a href="#certs" onclick="closeMob()">Certifications</a>
+      <a href="#edu" onclick="closeMob()">Formation</a>
+      <a href="#contact" onclick="closeMob()">Contact</a>
+    </nav>
+  </header>
+  <main class="page-wrap" id="main-content">
 
     <!-- ================================================================
      HERO
@@ -2193,7 +2243,7 @@
         </div>
         <div class="hero-avatar-wrap">
           <div class="hero-image">
-            <img src="Images/Profile.jpg" alt="Nérias Metombou - Portrait professionnel">
+            <img src="Images/Profile.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
             <style>
               .hero-image {
                 position: relative;
@@ -2242,6 +2292,7 @@
 
           </div>
         </div>
+      </div>
     </section>
     <!-- STATS -->
     <div class="stats-band">
@@ -2268,7 +2319,7 @@
      À PROPOS
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="about">
+    <section class="section" id="about">
       <div class="sec-eyebrow">À propos</div>
       <h2 class="sec-title">Qui suis-je ?</h2>
 
@@ -2341,12 +2392,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      COMPÉTENCES
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="skills">
+    <section class="section" id="skills">
       <div class="sec-eyebrow">Compétences</div>
       <h2 class="sec-title">Savoir-faire technique</h2>
       <p class="sec-sub">Niveaux évalués honnêtement à la fin de ma licence — ils refléteront mon expérience
@@ -2529,12 +2580,12 @@
         </div>
 
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      EXPÉRIENCE
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="exp">
+    <section class="section" id="exp">
       <div class="sec-eyebrow">Expérience</div>
       <h2 class="sec-title">Parcours professionnel</h2>
 
@@ -2626,21 +2677,21 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      PROJETS
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="projects">
+    <section class="section" id="projects">
       <div class="sec-eyebrow">Projets</div>
       <h2 class="sec-title">Réalisations</h2>
 
       <div class="proj-filters reveal">
-        <button class="pf-btn active" data-f="all">Tous</button>
-        <button class="pf-btn" data-f="reseau">Réseaux</button>
-        <button class="pf-btn" data-f="web">Web</button>
-        <button class="pf-btn" data-f="sec">Sécurité</button>
-        <button class="pf-btn" data-f="telco">Télécoms</button>
+        <button type="button" class="pf-btn active" data-f="all">Tous</button>
+        <button type="button" class="pf-btn" data-f="reseau">Réseaux</button>
+        <button type="button" class="pf-btn" data-f="web">Web</button>
+        <button type="button" class="pf-btn" data-f="sec">Sécurité</button>
+        <button type="button" class="pf-btn" data-f="telco">Télécoms</button>
       </div>
 
       <div class="proj-grid">
@@ -2706,12 +2757,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      CERTIFICATIONS
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="certs">
+    <section class="section" id="certs">
       <div class="sec-eyebrow">Certifications</div>
       <h2 class="sec-title">Certifications &amp; Badges</h2>
 
@@ -2729,7 +2780,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ⚠️ Renommez vos fichiers PDF réels dans /Documents pour qu'ils correspondent
        exactement à ces noms (sans espaces ni accents) :
@@ -2761,7 +2812,7 @@
      FORMATION
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="edu">
+    <section class="section" id="edu">
       <div class="sec-eyebrow">Formation</div>
       <h2 class="sec-title">Parcours académique</h2>
 
@@ -2794,12 +2845,12 @@
         </div>
 
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      SERVICES
 ================================================================ -->
     <hr class="divider">
-    <div class="section section-sm" id="services">
+    <section class="section section-sm" id="services">
       <div class="sec-eyebrow">Services</div>
       <h2 class="sec-title">Ce que je peux apporter</h2>
 
@@ -2841,12 +2892,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ================================================================
      CONTACT
 ================================================================ -->
     <hr class="divider">
-    <div class="section" id="contact">
+    <section class="section" id="contact">
       <div class="sec-eyebrow">Contact</div>
       <h2 class="sec-title">Me contacter</h2>
 
@@ -2888,26 +2939,26 @@
               <div class="form-field">
                 <label class="form-lbl" for="c-name">Votre nom</label>
                 <input class="form-ctrl" id="c-name" name="from_name" type="text" placeholder="Jean Dupont"
-                  autocomplete="name" aria-describedby="err-name">
+                  autocomplete="name" aria-describedby="err-name" required>
                 <span class="field-err-msg" id="err-name">Merci d'indiquer votre nom (2 caractères minimum).</span>
               </div>
               <div class="form-field">
                 <label class="form-lbl" for="c-email">Email</label>
                 <input class="form-ctrl" id="c-email" name="from_email" type="email" placeholder="jean@email.com"
-                  autocomplete="email" aria-describedby="err-email">
+                  autocomplete="email" aria-describedby="err-email" required>
                 <span class="field-err-msg" id="err-email">Merci d'indiquer une adresse email valide.</span>
               </div>
             </div>
             <div class="form-field">
               <label class="form-lbl" for="c-sub">Sujet</label>
               <input class="form-ctrl" id="c-sub" name="subject" type="text"
-                placeholder="Stage · Emploi · Collaboration · Question" aria-describedby="err-sub">
+                placeholder="Stage · Emploi · Collaboration · Question" aria-describedby="err-sub" required>
               <span class="field-err-msg" id="err-sub">Merci d'indiquer un sujet (3 caractères minimum).</span>
             </div>
             <div class="form-field">
               <label class="form-lbl" for="c-msg">Message</label>
               <textarea class="form-ctrl" id="c-msg" name="message" rows="5" placeholder="Votre message..."
-                aria-describedby="err-msg"></textarea>
+                aria-describedby="err-msg" required></textarea>
               <span class="field-err-msg" id="err-msg">Votre message doit contenir au moins 10 caractères.</span>
             </div>
             <button class="btn btn-primary" type="submit" id="form-submit-btn" style="align-self:flex-start">
@@ -2919,9 +2970,9 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
 
-  </div><!-- end page-wrap -->
+  </main><!-- end page-wrap -->
 
   <!-- FOOTER -->
   <footer>
@@ -2945,7 +2996,7 @@
   </footer>
 
   <!-- Back to top -->
-  <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  <button type="button" class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
     aria-label="Retour en haut">↑</button>
 
   <!-- ================================================================
@@ -3330,6 +3381,8 @@
         {
           from_name: name,
           from_email: email,
+          reply_to: email,
+          to_name: 'Nérias',
           subject: sub,
           message: msg
         }
@@ -3342,7 +3395,7 @@
         .catch(function (error) {
           out.textContent = "Erreur lors de l'envoi. Merci de réessayer ou de m'écrire directement par email.";
           out.className = 'form-msg msg-err show';
-          console.error('EmailJS error:', error);
+          console.error('EmailJS error — vérifie le Template (To Email) et le Service sur dashboard.emailjs.com :', error);
         })
         .finally(() => {
           btn.disabled = false;
