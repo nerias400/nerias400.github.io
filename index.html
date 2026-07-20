@@ -27,7 +27,7 @@
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0F1E'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%231f6feb' font-family='Arial, sans-serif' font-weight='600'%3EN%3C/text%3E%3C/svg%3E">
   <!-- FONTS & ICONS -->
-  <link rel="stylesheet" href="Fonts/webfronts/fontawesome-free-6.5.1-web/css/all.min.css">
+  <link rel="stylesheet" href="fonts/webfronts/fontawesome-free-6.5.1-web/css/all.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -728,59 +728,6 @@
     .hero-avatar-wrap {
       position: relative;
       flex-shrink: 0
-    }
-
-    .hero-avatar {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent) 0%, #5e8ce4 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3.5rem;
-      font-weight: 600;
-      color: #fff;
-      letter-spacing: -1px;
-      font-family: var(--sans);
-      border: 3px solid var(--border2);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 0 0 6px var(--accent-bg), var(--sh);
-      animation: avatar-float 5s ease-in-out infinite;
-      /* Pour ajouter votre photo : remplacez le div.hero-avatar par
-     <img src="photo.jpg" alt="Nérias Metombou" class="hero-avatar" style="object-fit:cover;animation:avatar-float 5s ease-in-out infinite"> */
-
-
-      content: '';
-      position: absolute;
-      inset: -20px;
-      background: linear-gradient(135deg, var(--royal-blue), var(--royal-ultra));
-      border-radius: 50%;
-      filter: blur(40px);
-      opacity: 0.3;
-      animation: pulse 4s ease-in-out infinite;
-
-
-    }
-
-    @keyframes avatar-float {
-
-      0%,
-      100% {
-        transform: translateY(0)
-      }
-
-      50% {
-        transform: translateY(-8px)
-      }
-    }
-
-    .hero-avatar::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .3));
     }
 
     .hero-location {
@@ -1820,12 +1767,6 @@
         font-size: 1.8rem
       }
 
-      .hero-avatar {
-        width: 150px;
-        height: 150px;
-        font-size: 2.6rem
-      }
-
       .hero-btns {
         flex-direction: column;
         align-items: center
@@ -2218,7 +2159,7 @@
           </p>
 
           <div class="hero-btns">
-            <a class="btn btn-primary" href="Documents/CV_METOMBOU_Nerias.pdf">
+            <a class="btn btn-primary" href="documents/CV_METOMBOU_Nerias.pdf">
               <span class="btn-icon">↓</span> Voir mon CV
             </a>
             <a class="btn btn-mail" href="#contact">
@@ -2243,7 +2184,7 @@
         </div>
         <div class="hero-avatar-wrap">
           <div class="hero-image">
-            <img src="Images/Profile.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
+            <img src="images/profile.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
             <style>
               .hero-image {
                 position: relative;
@@ -2698,7 +2639,7 @@
 
         <div class="proj-card reveal" data-cat="reseau sec">
           <div class="proj-thumb">
-            <img src="Images/Projets/Projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
+            <img src="images/projets/Projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
               loading="lazy" width="600" height="240">
             <div class="proj-thumb-overlay"></div>
           </div>
@@ -2720,7 +2661,7 @@
             </div>
             <div class="proj-links">
               <button type="button" class="proj-lk"
-                onclick="openCertModal('Mémoire de Licence Professionnelle — UCAO-UUC','./Documents/mémoire licence professionnelle version finale.pdf')"
+                onclick="openCertModal('Mémoire de Licence Professionnelle — UCAO-UUC','documents/memoire-licence-professionnelle.pdf')"
               aria-label="Voir le rapport PDF du projet">Rapport PDF</button>
             </div>
           </div>
@@ -2728,7 +2669,7 @@
 
         <div class="proj-card reveal" data-cat="web">
           <div class="proj-thumb">
-            <img src="Images/Projets/Projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
+            <img src="images/projets/Projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
               height="240">
             <div class="proj-thumb-overlay"></div>
           </div>
@@ -2751,7 +2692,7 @@
               <a class="proj-lk" href="https://github.com/nerias400" target="_blank"
                 rel="noopener noreferrer">GitHub</a>
               <button type="button" class="proj-lk"
-                onclick="openVideoModal('Portfolio Professionnel','./Videos/Demo_Portfolio_vid.mp4')"
+                onclick="openVideoModal('Portfolio Professionnel','videos/demo_portfolio_vid.mp4')"
                 aria-label="Voir la démo vidéo du portfolio">Démo</button>
             </div>
           </div>
@@ -2775,7 +2716,7 @@
           <div class="cert-footer">
             <span class="cert-status status-done">✓ Obtenu — 2025</span>
             <button type="button" class="cert-view-btn"
-              onclick="openCertModal('Attestation de réussite — Licence GIT/TIC, UCAO-UUC','./Documents/Attestation-de-succes-de-licence.pdf')"
+              onclick="openCertModal('Attestation de réussite — Licence GIT/TIC, UCAO-UUC','documents/attestation-succes-licence.pdf')"
               aria-label="Voir le diplôme UCAO-UUC">Voir diplôme</button>
           </div>
         </div>
@@ -2803,8 +2744,13 @@
         </div>
 
         <div class="modal-body">
-          <video id="project-video" controls autoplay playsinline style="width:100%;border-radius:10px;">
+          <video id="project-video" controls autoplay playsinline preload="metadata" style="width:100%;border-radius:10px;">
           </video>
+          <div class="modal-pdf-fallback" id="video-modal-error" style="display:none">
+            <div class="pdf-icon">🎬</div>
+            <p>Impossible de charger cette vidéo pour le moment.</p>
+            <small id="video-modal-error-file"></small>
+          </div>
         </div>
       </div>
     </div>
@@ -3263,10 +3209,14 @@
     const videoModal = document.getElementById('video-modal');
     const projectVideo = document.getElementById('project-video');
     const videoModalClose = document.getElementById('video-modal-close');
+    const videoModalError = document.getElementById('video-modal-error');
+    const videoModalErrorFile = document.getElementById('video-modal-error-file');
 
     function openVideoModal(title, file) {
       lastFocusedEl = document.activeElement;
       document.getElementById('video-title').textContent = title;
+      videoModalError.style.display = 'none';
+      projectVideo.style.display = '';
       projectVideo.src = file;
       videoModal.classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -3276,6 +3226,13 @@
       });
       setTimeout(() => videoModalClose.focus(), 80);
     }
+
+    projectVideo.addEventListener('error', () => {
+      if (!projectVideo.getAttribute('src')) return; // ignore the reset in closeVideoModal()
+      projectVideo.style.display = 'none';
+      videoModalErrorFile.textContent = `Fichier attendu : ${projectVideo.getAttribute('src')}`;
+      videoModalError.style.display = '';
+    });
 
     function closeVideoModal() {
       projectVideo.pause();
