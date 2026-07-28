@@ -43,51 +43,11 @@
 </script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    /* ==================================================================
-       EMAILJS CONFIGURATION — checklist si les emails n'arrivent pas
-       ==================================================================
-       Le code ci-dessous est correct : il appelle emailjs.send() avec le
-       bon Service ID, Template ID et Public Key, et transmet les 4 champs
-       du formulaire. Si le formulaire affiche "Message envoyé" mais que
-       rien n'arrive dans ta boîte Gmail, le problème n'est presque
-       toujours PAS dans ce fichier : il est dans la configuration de ton
-       compte sur https://dashboard.emailjs.com/. Vérifie dans l'ordre :
-
-       1) Email Services > ton service (service_cnkjq9j) :
-          - Le statut doit être "Connected" / actif. Si Gmail affiche
-            "Disconnected" ou demande une reconnexion OAuth, reconnecte-le.
-
-       2) Email Templates > ton template (template_1bf789a) > onglet
-          "Settings" (pas "Content") :
-          - Le champ "To Email" DOIT contenir ton adresse Gmail en dur
-            (ex: neriasmetombou@gmail.com) ou la variable {{to_email}} —
-            s'il est vide, EmailJS accepte l'envoi (aucune erreur JS) mais
-            ne livre le message nulle part. C'est la cause n°1 de ce bug.
-          - Le champ "Reply To" peut être mis à {{reply_to}} pour pouvoir
-            répondre directement au visiteur depuis Gmail.
-
-       3) Email Templates > onglet "Content" :
-          - Les variables utilisées dans le corps du template doivent
-            correspondre exactement aux clés envoyées par ce fichier :
-            {{from_name}}, {{from_email}}, {{subject}}, {{message}},
-            {{reply_to}}. Un nom de variable différent (ex: {{name}} au
-            lieu de {{from_name}}) donne un email vide, pas une erreur.
-
-       4) Account > Security :
-          - Si des "Allowed origins / domains" sont configurés, ton
-            domaine GitHub Pages (https://neriasmetombou.github.io) doit
-            être dans la liste, sinon l'envoi est bloqué silencieusement.
-
-       - EMAILJS_PUBLIC_KEY  → Account > General > Public Key
-       - EMAILJS_SERVICE_ID  → Email Services > votre service
-       - EMAILJS_TEMPLATE_ID → Email Templates > votre template
-       ================================================================== */
     const EMAILJS_PUBLIC_KEY = "9FyY8RROB-N2PWySt";
     const EMAILJS_SERVICE_ID = "service_cnkjq9j";
     const EMAILJS_TEMPLATE_ID = "template_1bf789a";
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-
     const MAINTENANCE_MODE = false;
+    emailjs.init(EMAILJS_PUBLIC_KEY);
     if (MAINTENANCE_MODE) {
       window.location.replace("maintenance.html");
     }
@@ -2184,7 +2144,7 @@
         </div>
         <div class="hero-avatar-wrap">
           <div class="hero-image">
-            <img src="./Images/profile.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
+            <img src="./img/prof.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
             <style>
               .hero-image {
                 position: relative;
@@ -2639,7 +2599,7 @@
 
         <div class="proj-card reveal" data-cat="reseau sec">
           <div class="proj-thumb">
-            <img src="./Images/projets/projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
+            <img src="./img/projets/projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
               loading="lazy" width="600" height="240">
             <div class="proj-thumb-overlay"></div>
           </div>
@@ -2669,7 +2629,7 @@
 
         <div class="proj-card reveal" data-cat="web">
           <div class="proj-thumb">
-            <img src="./Images/projets/projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
+            <img src="./img/projets/projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
               height="240">
             <div class="proj-thumb-overlay"></div>
           </div>
@@ -2692,7 +2652,7 @@
               <a class="proj-lk" href="https://github.com/nerias400" target="_blank"
                 rel="noopener noreferrer">GitHub</a>
               <button type="button" class="proj-lk"
-                onclick="openVideoModal('Portfolio Professionnel','Videos/demo_portfolio_vid.mp4')"
+                onclick="openVideoModal('Portfolio Professionnel','./demo/demo_projet_2.mp4')"
                 aria-label="Voir la démo vidéo du portfolio">Démo</button>
             </div>
           </div>
@@ -2722,12 +2682,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ⚠️ Renommez vos fichiers PDF réels dans /Documents pour qu'ils correspondent
-       exactement à ces noms (sans espaces ni accents) :
-         - memoire-licence-professionnelle.pdf
-         - attestation-succes-licence-ucao.pdf
-         - attestation-succes-licence-nationale.pdf -->
 
     <!-- ================================================================
      MODAL DES DEMOS
