@@ -85,6 +85,7 @@
       --amber-bg: rgba(210, 153, 34, .12);
       --red: #f85149;
       --t1: #e6edf3;
+      --text-primary: var(--t1);
       --t2: #8b949e;
       --t3: #484f58;
       --sans: 'Inter', system-ui, sans-serif;
@@ -112,6 +113,7 @@
       --border: #d0d7de;
       --border2: #b1bac4;
       --t1: #1f2328;
+      --text-primary: var(--t1);
       --t2: #57606a;
       --t3: #b1bac4;
       --sh: 0 4px 20px rgba(0, 0, 0, .10);
@@ -131,25 +133,27 @@
     }
 
     body {
-      background: var(--bg);
-      color: var(--t1);
-      font-family: var(--sans), 'Inter', system-ui, sans-serif;
-      font-weight: 300;
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(96, 165, 250, 0.18), transparent 24%),
+        radial-gradient(circle at 82% 18%, rgba(139, 92, 246, 0.14), transparent 22%),
+        radial-gradient(circle at 50% 85%, rgba(31, 111, 235, 0.12), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
       overflow-x: hidden;
-      line-height: 1.65;
-      transition: background var(--tr), color var(--tr)
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
-    /* ── BACKGROUND MESH ── */
     body::before {
-      content: '';
+      content: "";
       position: fixed;
       inset: 0;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(ellipse 60% 40% at 20% 20%, rgba(30, 64, 175, 0.18) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 80% 80%, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,0.8), transparent 92%);
       pointer-events: none;
       z-index: 0;
     }
@@ -408,6 +412,7 @@
       color: var(--t1);
       margin-bottom: 8px;
       line-height: 1.2;
+      text-align: center;
     }
 
     .sec-sub {
@@ -654,7 +659,220 @@
     }
 
     .btn-icon {
-      font-size: .85rem
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      font-size: .9rem;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .18);
+      color: var(--accent-h);
+      margin-right: 8px;
+      flex-shrink: 0;
+      border: 1px solid rgba(56, 142, 255, .25);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
+      transition: transform var(--tr), background var(--tr), box-shadow var(--tr);
+    }
+
+    .btn-icon:hover {
+      transform: translateY(-1px);
+      background: rgba(31, 111, 235, .24);
+    }
+
+    .btn-icon--spaced {
+      margin-left: 8px;
+    }
+
+    .btn-start {
+      align-self: flex-start;
+    }
+
+    .skill-icon,
+    .proj-cat-icon,
+    .project-icon,
+    .ci-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      min-height: 32px;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .16);
+      color: var(--accent-h);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border: 1px solid rgba(56, 142, 255, .24);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
+    }
+
+    .skill-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-size: .76rem;
+      color: var(--t2);
+    }
+
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .proj-card {
+      background: linear-gradient(180deg, rgba(12, 18, 30, 0.92), rgba(10, 15, 25, 0.88));
+      border: 1px solid rgba(96, 165, 250, 0.16);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr), background var(--tr);
+      box-shadow: 0 24px 50px rgba(2, 6, 23, 0.38);
+      backdrop-filter: blur(14px);
+      position: relative;
+    }
+
+    .proj-card::before {
+      content: '';
+      position: absolute;
+      inset: auto -30% -40% auto;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(96, 165, 250, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+
+    .proj-card:hover {
+      border-color: rgba(96, 165, 250, 0.38);
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(31, 111, 235, .16)
+    }
+
+    .proj-thumb {
+      height: 220px;
+      background: linear-gradient(180deg, rgba(28, 34, 54, .8), rgba(13, 17, 23, .95));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(96, 165, 250, .12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proj-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s ease;
+    }
+
+    .proj-card:hover .proj-thumb img {
+      transform: scale(1.04);
+    }
+
+    .proj-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(96, 165, 250, .16), transparent 28%),
+                  radial-gradient(circle at bottom right, rgba(31, 111, 235, .12), transparent 22%);
+      pointer-events: none;
+    }
+
+    .proj-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 38%, rgba(10, 13, 21, 0.72));
+      transition: opacity var(--tr);
+      opacity: 1;
+    }
+
+    .proj-card:hover .proj-thumb-overlay {
+      opacity: .75;
+    }
+
+    .proj-body {
+      position: relative;
+      z-index: 1;
+      padding: 18px 18px 20px;
+    }
+
+    .proj-cat {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .proj-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .proj-lk {
+      font-family: var(--mono);
+      font-size: .65rem;
+      border: 1px solid rgba(96, 165, 250, .18);
+      padding: 9px 13px;
+      border-radius: 10px;
+      transition: all var(--tr);
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .proj-lk:hover {
+      background: linear-gradient(135deg, rgba(31, 111, 235, .16), rgba(139, 92, 246, .12));
+      border-color: rgba(96, 165, 250, .35);
+      transform: translateY(-1px);
+    }
+
+    .proj-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .proj-tech {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
+      border: 1px solid rgba(96, 165, 250, .18);
+      padding: 5px 8px;
+      border-radius: 999px;
+    }
+
+    .proj-name {
+      font-size: 1.04rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 10px;
+      line-height: 1.38;
+      transition: color var(--tr);
+    }
+
+    .proj-desc {
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.75;
+      margin-bottom: 16px;
     }
 
     .btn-mail {
@@ -674,14 +892,22 @@
     }
 
     .hero-contact a {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 5px;
-      transition: color var(--tr)
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(31, 111, 235, .16);
+      background: rgba(31, 111, 235, .08);
+      transition: all var(--tr);
+      color: var(--t1);
     }
 
     .hero-contact a:hover {
-      color: var(--accent-h)
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .16);
+      border-color: rgba(31, 111, 235, .26);
+      transform: translateY(-1px);
     }
 
     /* Right — Avatar */
@@ -719,7 +945,7 @@
       margin: 0 auto;
       padding: 32px 40px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 0;
     }
 
@@ -1039,116 +1265,10 @@
       background: var(--accent-bg)
     }
 
-    .proj-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    .proj-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      overflow: hidden;
-      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr);
-    }
-
-    .proj-card:hover {
-      border-color: var(--border2);
-      transform: translateY(-3px);
-      box-shadow: var(--sh)
-    }
-
-    .proj-thumb {
-      height: 160px;
-      background: var(--bg3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      border-bottom: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-    }
-
     .proj-thumb-overlay {
       position: absolute;
       inset: 0;
       background: linear-gradient(180deg, transparent 50%, rgba(13, 17, 23, .8));
-    }
-
-    .proj-body {
-      padding: 20px
-    }
-
-    .proj-cat {
-      font-family: var(--mono);
-      font-size: .58rem;
-      color: var(--accent);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-    }
-
-    .proj-name {
-      font-size: .9rem;
-      font-weight: 600;
-      color: var(--t1);
-      margin-bottom: 7px;
-      line-height: 1.3;
-      transition: color var(--tr);
-    }
-
-    .proj-card:hover .proj-name {
-      color: var(--accent-h)
-    }
-
-    .proj-desc {
-      font-size: .76rem;
-      color: var(--t2);
-      line-height: 1.6;
-      margin-bottom: 14px
-    }
-
-    .proj-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-bottom: 14px
-    }
-
-    .proj-tech {
-      font-family: var(--mono);
-      font-size: .58rem;
-      color: var(--t3);
-      background: var(--bg);
-      border: 1px solid var(--border);
-      padding: 2px 7px;
-      border-radius: 3px;
-    }
-
-    .proj-links {
-      display: flex;
-      gap: 7px
-    }
-
-    .proj-lk {
-      font-family: var(--mono);
-      font-size: .6rem;
-      border: 1px solid var(--accent-bd);
-      padding: 4px 10px;
-      border-radius: 5px;
-      transition: all var(--tr);
-      color: var(--accent-h);
-      background: none;
-      appearance: none;
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .proj-lk:hover {
-      background: var(--accent-bg);
     }
 
     /* ================================================================
@@ -1163,9 +1283,9 @@
     }
 
     .cert-card {
-      background: var(--bg2,rgba(255, 255, 255, 0.02));
-      border: 1px solid var(--border , --glass-border);
-      border-radius: var(--r,--radius-md);
+      background: var(--bg2, rgba(255, 255, 255, 0.02));
+      border: var(--glass-border);
+      border-radius: var(--r, --radius-md);
       padding: 20px;
       transition: border-color var(--tr), transform var(--tr);
       text-align: center;
@@ -1184,7 +1304,7 @@
     .cert-icon {
       font-size: 1.6rem;
       margin-bottom: 10px;
-      color: var(--royal-blue);
+      color: var(--accent-h);
       margin-bottom: .4rem;
     }
 
@@ -1222,13 +1342,15 @@
       font-size: .58rem;
       padding: 2px 8px;
       border-radius: 3px;
-      border: 1px solid;
+      border: 1px solid var(--accent);
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
     }
 
     .status-done {
-      color: var(--green);
-      border-color: rgba(46, 160, 67, .3);
-      background: var(--green-bg)
+      color: var(--accent-h);
+      border-color: rgba(31, 111, 235, .3);
+      background: rgba(31, 111, 235, .1)
     }
 
     .status-progress {
@@ -1383,26 +1505,35 @@
     }
 
     .contact-block {
-      background: var(--bg2);
-      border: 1px solid var(--border);
+      background: rgba(18, 30, 52, .88);
+      border: 1px solid rgba(56, 142, 255, .14);
       border-radius: var(--r);
       padding: 16px;
       display: flex;
       gap: 12px;
       align-items: flex-start;
-      transition: border-color var(--tr);
+      transition: border-color var(--tr), transform var(--tr), background var(--tr);
     }
 
     .contact-block:hover {
-      border-color: var(--border2)
+      border-color: rgba(56, 142, 255, .25);
+      background: rgba(31, 111, 235, .05);
+      transform: translateY(-1px);
     }
 
     .ci-icon {
-      font-size: .9rem;
-      margin-top: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      font-size: 1rem;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .16);
+      color: var(--accent-h);
       flex-shrink: 0;
-      width: 20px;
-      text-align: center
+      text-align: center;
+      border: 1px solid rgba(56, 142, 255, .24);
     }
 
     .ci-lbl {
@@ -2013,6 +2144,14 @@
       padding: 32px;
     }
 
+    .modal-pdf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
     .modal-pdf-fallback .pdf-icon {
       font-size: 2.5rem;
       opacity: .5
@@ -2069,23 +2208,23 @@
         <li><a href="#skills" data-sec="skills">Compétences</a></li>
         <li><a href="#exp" data-sec="exp">Expérience</a></li>
         <li><a href="#projects" data-sec="projects">Projets</a></li>
-        <li><a href="#certs" data-sec="certs">Certifications</a></li>
+        <li><a href="#certs" data-sec="certs">Certificats</a></li>
         <li><a href="#edu" data-sec="edu">Formation</a></li>
         <li><a href="#contact" data-sec="contact">Contact</a></li>
       </ul>
       <div class="nav-right">
         <button type="button" class="theme-btn" id="theme-btn" title="Changer de thème"
           aria-label="Basculer thème sombre/clair">🌙</button>
-        <button type="button" class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+        <button type="button" class="ham" id="ham" aria-label="Menu" aria-controls="mob-menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </nav>
-    <nav class="mob-menu" id="mob-menu" aria-label="Menu mobile">
+    <nav class="mob-menu" id="mob-menu" aria-label="Menu mobile" aria-hidden="true">
       <a href="#hero" onclick="closeMob()">Accueil</a>
       <a href="#about" onclick="closeMob()">À propos</a>
       <a href="#skills" onclick="closeMob()">Compétences</a>
       <a href="#exp" onclick="closeMob()">Expérience</a>
       <a href="#projects" onclick="closeMob()">Projets</a>
-      <a href="#certs" onclick="closeMob()">Certifications</a>
+      <a href="#certs" onclick="closeMob()">Certificats</a>
       <a href="#edu" onclick="closeMob()">Formation</a>
       <a href="#contact" onclick="closeMob()">Contact</a>
     </nav>
@@ -2119,13 +2258,13 @@
           </p>
 
           <div class="hero-btns">
-            <a class="btn btn-primary" href="./Documents/CV_METOMBOU_Nerias.pdf">
+            <a class="btn btn-ghost" href="./Documents/CV_METOMBOU_Nerias.pdf">
               <span class="btn-icon">↓</span> Voir mon CV
             </a>
-            <a class="btn btn-mail" href="#contact">
+            <a class="btn btn-ghost" href="#contact">
               <span class="btn-icon">✉</span> Email
             </a>
-            <a class="btn btn-primary" href="https://linkedin.com/in/metombounerias" target="_blank"
+            <a class="btn btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
               rel="noopener noreferrer">
               <span class="btn-icon">in</span> LinkedIn
             </a>
@@ -2199,16 +2338,20 @@
     <div class="stats-band">
       <div class="stats-inner">
         <div class="stat-item">
+          <div class="stat-val counter" data-t="3">0</div>
+          <div class="stat-lbl">Mois de stage</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="3">0</div>
+          <div class="stat-lbl">Mois d'expérience</div>
+        </div>
+        <div class="stat-item">
           <div class="stat-val counter" data-t="1">0</div>
-          <div class="stat-lbl">An d'expérience</div>
+          <div class="stat-lbl">Diplômes &amp; Certifications</div>
         </div>
         <div class="stat-item">
           <div class="stat-val counter" data-t="2">0</div>
           <div class="stat-lbl">Projets réalisés</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-val counter" data-t="1">0</div>
-          <div class="stat-lbl">Certifications</div>
         </div>
         <div class="stat-item">
           <div class="stat-val counter" data-t="3">0</div>
@@ -2604,7 +2747,7 @@
             <div class="proj-thumb-overlay"></div>
           </div>
           <div class="proj-body">
-            <div class="proj-cat">Réseaux · Sécurité — PFE Licence</div>
+            <div class="proj-cat"><span class="proj-cat-icon">🌐</span>Réseaux · Sécurité — PFE Licence</div>
             <div class="proj-name">Infrastructure Wi-Fi MeSH sécurisée — UCAO-UUC</div>
             <div class="proj-desc">
               Conception et déploiement simulé d'un réseau Wi-Fi MeSH complet pour le siège de l'UCAO-UUC.
@@ -2626,7 +2769,6 @@
             </div>
           </div>
         </div>
-
         <div class="proj-card reveal" data-cat="web">
           <div class="proj-thumb">
             <img src="./img/projets/projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
@@ -2634,7 +2776,7 @@
             <div class="proj-thumb-overlay"></div>
           </div>
           <div class="proj-body">
-            <div class="proj-cat">Développement Web </div>
+            <div class="proj-cat"><span class="proj-cat-icon">💻</span>Développement Web</div>
             <div class="proj-name">Portfolio professionnel (ce projet)</div>
             <div class="proj-desc">
               Portfolio web responsive en HTML5/CSS3/JS , sans dépendance externe.
@@ -2657,6 +2799,34 @@
             </div>
           </div>
         </div>
+        <div class="proj-card reveal" data-cat="reseau sec">
+          <div class="proj-thumb">
+            <img src="./img/projets/projet_3.png" alt="projet déploiement Réseau LAN L2 L3" loading="lazy" width="600"
+              height="240">
+            <div class="proj-thumb-overlay"></div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-cat"><span class="proj-cat-icon">💻</span>Développement Web</div>
+            <div class="proj-name"> Infrastructure LAN L2-L3</div>
+            <div class="proj-desc">
+              Mise en place d'une infrastructure LAN d'entreprise basée sur les couches OSI L3 et L2 .
+              Configuration et verification des équipements Cisco , Tests de connectivité et validation de l'infrastructure
+              LAN L2-L3 fonctionnelle segmentéé et administrable , tout en développant une méthodologie
+              de configuration et de diagnostic proche d'un environement professionnel.
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tech">Cisco</span>
+              <span class="proj-tech">VLAN</span>
+              <span class="proj-tech">VTP</span>
+              <span class="proj-tech">STP</span>
+              <span class="proj-tech">DHCP</span>
+            </div>
+            <div class="proj-links">
+              <a class="proj-lk" href="#" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ================================================================
@@ -2664,8 +2834,8 @@
 ================================================================ -->
     <hr class="divider">
     <section class="section" id="certs">
-      <div class="sec-eyebrow">Certifications</div>
-      <h2 class="sec-title">Certifications &amp; Badges</h2>
+      <div class="sec-eyebrow">Certificats , diplômes & badges</div>
+      <h2 class="sec-title">Certificats , diplômes & badges  </h2>
 
       <div class="certs-grid">
 
@@ -2698,11 +2868,13 @@
         </div>
 
         <div class="modal-body">
-          <video id="project-video" controls autoplay playsinline preload="metadata" style="width:100%;border-radius:10px;">
-          </video>
+          <video id="project-video" class="video-embed" controls autoplay playsinline preload="metadata"></video>
           <div class="modal-pdf-fallback" id="video-modal-error" style="display:none">
             <div class="pdf-icon">🎬</div>
             <p>Impossible de charger cette vidéo pour le moment.</p>
+            <div class="modal-pdf-actions">
+              <a id="video-open-link" class="modal-dl" href="#" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+            </div>
             <small id="video-modal-error-file"></small>
           </div>
         </div>
@@ -2825,6 +2997,20 @@
                   rel="noopener noreferrer">linkedin.com/in/metombounerias</a></div>
             </div>
           </div>
+          <div class="contact-block">
+            <span class="ci-icon">📸</span>
+            <div>
+              <div class="ci-lbl">Instagram</div>
+              <div class="ci-val"><a href="https://instagram.com/nerias400" target="_blank" rel="noopener noreferrer">@nerias400</a></div>
+            </div>
+          </div>
+          <div class="contact-block">
+            <span class="ci-icon">📘</span>
+            <div>
+              <div class="ci-lbl">Facebook</div>
+              <div class="ci-val"><a href="https://facebook.com/nerias400" target="_blank" rel="noopener noreferrer">facebook.com/nerias400</a></div>
+            </div>
+          </div>
           <div class="contact-avail">
             Je suis disponible pour un <strong>stage</strong>, une <strong>alternance</strong>
             ou un <strong>premier emploi</strong> en support réseau, technicien télécom
@@ -2861,10 +3047,10 @@
                 aria-describedby="err-msg" required></textarea>
               <span class="field-err-msg" id="err-msg">Votre message doit contenir au moins 10 caractères.</span>
             </div>
-            <button class="btn btn-primary" type="submit" id="form-submit-btn" style="align-self:flex-start">
+            <button class="btn btn-primary btn-start" type="submit" id="form-submit-btn">
               <span id="form-btn-text">Envoyer le message</span>
               <span class="form-spinner" aria-hidden="true"></span>
-               <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+              <i class="fas fa-paper-plane btn-icon--spaced" aria-hidden="true"></i>
             </button>
             <div class="form-msg" id="form-msg" role="alert" aria-live="polite"></div>
           </form>
@@ -2886,6 +3072,10 @@
         <a class="footer-soc btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
           rel="noopener noreferrer">
           <span class="btn-icon">in</span> LinkedIn</a>
+        <a class="footer-soc btn-ghost" href="https://instagram.com/nerias400" target="_blank" rel="noopener noreferrer">
+          <span class="btn-icon">📸</span> Instagram</a>
+        <a class="footer-soc btn-ghost" href="https://facebook.com/nerias400" target="_blank" rel="noopener noreferrer">
+          <span class="btn-icon">📘</span> Facebook</a>
         <a class="footer-soc btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
           <span class="btn-icon">⌥</span> GitHub</a>
       </div>
@@ -2917,6 +3107,7 @@
     function setTheme(t) {
       html.setAttribute('data-theme', t);
       themeBtn.textContent = t === 'dark' ? '🌙' : '☀️';
+      themeBtn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
       try { localStorage.setItem('theme', t); } catch (e) { }
     }
 
@@ -2934,14 +3125,23 @@
     const ham = document.getElementById('ham');
     const mobMenu = document.getElementById('mob-menu');
 
+    function updateMobileMenuState(isOpen) {
+      ham.classList.toggle('open', isOpen);
+      mobMenu.classList.toggle('open', isOpen);
+      ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      mobMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    }
+
     ham.addEventListener('click', () => {
-      ham.classList.toggle('open');
-      mobMenu.classList.toggle('open');
+      updateMobileMenuState(!ham.classList.contains('open'));
+    });
+
+    document.querySelectorAll('#mob-menu a').forEach(link => {
+      link.addEventListener('click', closeMob);
     });
 
     function closeMob() {
-      ham.classList.remove('open');
-      mobMenu.classList.remove('open');
+      updateMobileMenuState(false);
     }
 
     /* ── Active nav link on scroll ──
@@ -2953,7 +3153,15 @@
     const secObserver = new IntersectionObserver(entries => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          navAs.forEach(a => a.classList.toggle('active', a.dataset.sec === e.target.id));
+          navAs.forEach(a => {
+            const isActive = a.dataset.sec === e.target.id;
+            a.classList.toggle('active', isActive);
+            if (isActive) {
+              a.setAttribute('aria-current', 'page');
+            } else {
+              a.removeAttribute('aria-current');
+            }
+          });
         }
       });
     }, { threshold: 0.3 });
@@ -3055,6 +3263,51 @@
     }
     typeLoop();
 
+    function attachSkillIcons() {
+      const icons = {
+        'Adressage IP / Subnetting': '🌐',
+        'VLANs / STP / HSRP': '🧩',
+        'OSPF / Routage dynamique': '🔁',
+        'DHCP / NAT / VPN (notions)': '🔒',
+        'EIGRP / BGP — notions': '📡',
+        'Simulation fibre (OptiSystem)': '🔧',
+        'Notions FTTH / FTTB': '🌐',
+        'Architecture GSM / 2G / 3G': '📶',
+        '4G LTE — principes': '📱',
+        'ACL Cisco': '🛡️',
+        'OPNsense / pfSense — bases': '🧱',
+        'Wi-Fi sécurisé — WPA2-Enterprise': '📶',
+        'Kali Linux — introduction': '🐧',
+        'Ubuntu Linux / Bash': '🐧',
+        'Windows Server — bases': '🪟',
+        'VirtualBox / VMware': '🖥️',
+        'Packet Tracer / GNS3': '🧪',
+        'HTML5 / CSS3': '🧱',
+        'JavaScript — DOM / interactions': '✨',
+        'PHP / Laravel': '🐘',
+        'Bootstrap 5 / MySQL': '🎯',
+        'Git / GitHub': '🔧',
+        'Python — scripts de base': '🐍',
+        'Adobe Photoshop / Premiere': '🎨',
+        'Documentation technique / Rapport': '📝'
+      };
+
+      document.querySelectorAll('.skill-row').forEach(row => {
+        const label = row.querySelector('span');
+        if (!label) return;
+        const text = label.textContent.trim();
+        const icon = icons[text];
+        if (icon && !row.querySelector('.skill-icon')) {
+          const wrapper = document.createElement('span');
+          wrapper.className = 'skill-icon';
+          wrapper.textContent = icon;
+          row.insertBefore(wrapper, label);
+        }
+      });
+    }
+
+    attachSkillIcons();
+
     /* ── Project filters ── */
     document.querySelectorAll('[data-f]').forEach(btn => {
       btn.addEventListener('click', function () {
@@ -3103,15 +3356,20 @@
       lastFocusedEl = document.activeElement;
       certModalTitle.textContent = name;
       certModalDl.href = file;
-      certModalDl.download = file;
-      certModalPdf.innerHTML =
-        `<object data="${esc(file)}" type="application/pdf" width="100%" height="480" style="border:none;display:block">
-       <div class="modal-pdf-fallback">
-         <div class="pdf-icon">📄</div>
-         <p>Ce navigateur ne peut pas afficher le PDF directement.<br>Utilisez le bouton Télécharger.</p>
-         <small>Fichier attendu : ${esc(file)}</small>
-       </div>
-     </object>`;
+      certModalDl.download = file.split('/').pop();
+      certModalDl.target = '_blank';
+      certModalDl.rel = 'noopener';
+      certModalPdf.innerHTML = `
+        <div class="modal-pdf-fallback">
+          <div class="pdf-icon">📄</div>
+          <p>Le document est prêt à s’ouvrir dans un nouvel onglet pour un affichage fiable sur mobile.</p>
+          <div class="modal-pdf-actions">
+            <a class="modal-dl" href="${esc(file)}" target="_blank" rel="noopener">Ouvrir le PDF</a>
+            <a class="modal-dl" href="${esc(file)}" download="${esc(file.split('/').pop())}">Télécharger</a>
+          </div>
+          <small>Fichier attendu : ${esc(file)}</small>
+        </div>
+      `;
       certModal.classList.add('open');
       document.body.style.overflow = 'hidden';
       setTimeout(() => certModalClose.focus(), 80);
@@ -3165,18 +3423,24 @@
     const videoModalClose = document.getElementById('video-modal-close');
     const videoModalError = document.getElementById('video-modal-error');
     const videoModalErrorFile = document.getElementById('video-modal-error-file');
+    const videoOpenLink = document.getElementById('video-open-link');
 
     function openVideoModal(title, file) {
       lastFocusedEl = document.activeElement;
       document.getElementById('video-title').textContent = title;
       videoModalError.style.display = 'none';
       projectVideo.style.display = '';
+      projectVideo.muted = false;
+      projectVideo.setAttribute('playsinline', 'true');
       projectVideo.src = file;
+      projectVideo.load();
+      videoOpenLink.href = file;
+      videoOpenLink.setAttribute('download', file.split('/').pop());
       videoModal.classList.add('open');
       document.body.style.overflow = 'hidden';
       projectVideo.play().catch(() => {
-        /* Autoplay blocked by the browser — the visible native controls
-           let the user press play manually, so this is safe to ignore. */
+        // Certaines versions mobiles bloquent l'autoplay. On laisse le lecteur
+        // visible et on offre un accès manuel via le lien de secours.
       });
       setTimeout(() => videoModalClose.focus(), 80);
     }
@@ -3191,7 +3455,9 @@
     function closeVideoModal() {
       projectVideo.pause();
       projectVideo.removeAttribute('src');
-      projectVideo.load(); // fully releases the previous source from memory
+      projectVideo.load();
+      videoModalError.style.display = 'none';
+      projectVideo.style.display = '';
       videoModal.classList.remove('open');
       document.body.style.overflow = '';
       if (lastFocusedEl) lastFocusedEl.focus();
@@ -3218,6 +3484,7 @@
       if (e.key !== 'Escape') return;
       if (certModal.classList.contains('open')) closeCertModal();
       if (videoModal.classList.contains('open')) closeVideoModal();
+      if (ham.classList.contains('open')) closeMob();
     });
 
     /* ================================================================
