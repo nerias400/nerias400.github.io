@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications, Fibre Optique, Support Informatique N1. Diplômé Licence Génie Télécom &amp; TIC, Cotonou, Bénin.">
+    content="METOMBOU Nérias, technicien réseaux et télécommunications à Cotonou. Réseaux, systèmes, cybersécurité et développement web junior. Licence Génie Télécom &amp; TIC.">
   <meta name="keywords"
     content="Nérias Metombou, technicien réseaux, fibre optique, Cisco, Laravel, Bénin, Cotonou, support informatique">
   <meta name="robots" content="index, follow">
   <meta name="author" content="METOMBOU Nérias Sènakpon Ivan Prosper">
   <meta property="og:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
   <meta property="og:description"
-    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
+    content="Technicien réseaux et télécommunications, futur ingénieur réseaux et cybersécurité, développeur web junior. Cotonou, Bénin.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neriasmetombou.github.io/">
+  <meta property="og:url" content="https://nerias400.github.io/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/nerias400">
+  <meta property="og:image:alt" content="Portrait de METOMBOU Nérias">
   <meta property="og:locale" content="fr_FR">
-  <link rel="canonical" href="https://neriasmetombou.github.io/">
-  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://nerias400.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
   <meta name="twitter:description"
-    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
+    content="Technicien réseaux et télécommunications, futur ingénieur réseaux et cybersécurité, développeur web junior. Cotonou, Bénin.">
   <meta name="twitter:image" content="https://avatars.githubusercontent.com/nerias400">
-  <meta name="theme-color" content="#0A0F1E">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; connect-src 'self' https://api.emailjs.com; frame-ancestors 'none'; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0F1E'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%231f6feb' font-family='Arial, sans-serif' font-weight='600'%3EN%3C/text%3E%3C/svg%3E">
   <!-- FONTS & ICONS -->
-  <link rel="stylesheet" href="./Assets/webfronts/fontawesome-free-6.5.1-web/css/all.min.css">
+  <link rel="stylesheet" href="Assets/webfronts/fontawesome/css/all.min.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "METOMBOU Nérias Sènakpon Ivan Prosper",
   "jobTitle": "Technicien Réseaux & Télécommunications",
-  "url": "https://neriasmetombou.github.io/",
+  "url": "https://nerias400.github.io",
   "email": "neriasmetombou@gmail.com",
   "telephone": "+2290152240507",
   "address": {"@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "BJ"},
   "sameAs": ["https://linkedin.com/in/metombounerias","https://github.com/nerias400","https://wa.me/2290152240507"]
 }
 </script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
   <script>
     const EMAILJS_PUBLIC_KEY = "9FyY8RROB-N2PWySt";
     const EMAILJS_SERVICE_ID = "service_cnkjq9j";
     const EMAILJS_TEMPLATE_ID = "template_1bf789a";
     const MAINTENANCE_MODE = false;
-    emailjs.init(EMAILJS_PUBLIC_KEY);
     if (MAINTENANCE_MODE) {
       window.location.replace("maintenance.html");
     }
@@ -57,46 +60,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
     rel="stylesheet">
 
   <style>
-    /* ================================================================
-   TOKENS — Dark / Light
-   Signature : terminal typing line dans le hero
-   Palette bleu professionnel (#1f6feb) sur fond très sombre
-================================================================ */
+    /* Variables css */
     :root {
-      --bg: #0A0F1E;
-      --surface: #111827;
-      --surface2: #1a2236;
-      --border: rgba(59, 130, 246, 0.18);
-      --bg2: #161b22;
-      --bg3: #1c2128;
-      --bordered: #21262d;
-      --border2: #30363d;
-      --accent: #1f6feb;
-      --accent-h: #388bfd;
-      --accent-bg: rgba(31, 111, 235, .10);
-      --accent-bd: rgba(31, 111, 235, .30);
-      --green: #2ea043;
-      --green-bg: rgba(46, 160, 67, .12);
-      --amber: #d29922;
-      --amber-bg: rgba(210, 153, 34, .12);
-      --red: #f85149;
-      --t1: #e6edf3;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface2: #edf2f8;
+      --border: #dce5ef;
+      --bg2: #f7faff;
+      --bg3: #eaf0f7;
+      --bordered: #dce5ef;
+      --border2: #c5d2e2;
+      --accent: #176bce;
+      --accent-h: #0e56a8;
+      --accent-bg: rgba(23, 107, 206, .09);
+      --accent-bd: rgba(23, 107, 206, .26);
+      --green: #2481df;
+      --green-bg: rgba(36, 129, 223, .10);
+      --amber: #a85c2a;
+      --amber-bg: rgba(196, 112, 54, .10);
+      --red: #b63e35;
+      --t1: #19232e;
       --text-primary: var(--t1);
-      --t2: #8b949e;
-      --t3: #484f58;
-      --sans: 'Inter', system-ui, sans-serif;
-      --mono: 'JetBrains Mono', 'Courier New', monospace;
+      --text: var(--t1);
+      --t2: #526273;
+      --t3: #718092;
+      --sans: 'Manrope', system-ui, sans-serif;
+      --mono: 'IBM Plex Mono', 'Courier New', monospace;
       --r: 8px;
       --sh: 0 4px 20px rgba(0, 0, 0, .4);
       --tr: .18s ease;
-      --royal-blue: #2463eb;
-      --royal-glow: #3b82f6;
-      --royal-light: #60a5fa;
-      --royal-ultra: #8b5cf6;
+      --royal-blue: #176bce;
+      --royal-glow: #278aef;
+      --royal-light: #6daef2;
+      --royal-ultra: #d4774c;
       --glass-border: 1px solid rgba(255, 255, 255, 0.08);
       --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
       --card-blur: blur(16px);
@@ -107,16 +107,53 @@
     }
 
     [data-theme="light"] {
-      --bg: #ffffff;
-      --bg2: #f6f8fa;
-      --bg3: #eaeef2;
-      --border: #d0d7de;
-      --border2: #b1bac4;
-      --t1: #1f2328;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface2: #edf2f8;
+      --bg2: #f7faff;
+      --bg3: #eaf0f7;
+      --border: #dce5ef;
+      --border2: #c5d2e2;
+      --accent: #176bce;
+      --accent-h: #0e56a8;
+      --accent-bg: rgba(23, 107, 206, .09);
+      --accent-bd: rgba(23, 107, 206, .26);
+      --green: #2481df;
+      --green-bg: rgba(36, 129, 223, .10);
+      --amber: #a85c2a;
+      --amber-bg: rgba(196, 112, 54, .10);
+      --t1: #19232e;
       --text-primary: var(--t1);
-      --t2: #57606a;
-      --t3: #b1bac4;
+      --text: var(--t1);
+      --t2: #526273;
+      --t3: #718092;
       --sh: 0 4px 20px rgba(0, 0, 0, .10);
+    }
+
+    [data-theme="dark"] {
+      --bg: #151b25;
+      --surface: #1d2634;
+      --surface2: #253145;
+      --border: rgba(131, 158, 194, .20);
+      --bg2: #1a2331;
+      --bg3: #263247;
+      --bordered: #334159;
+      --border2: #405371;
+      --accent: #75aef4;
+      --accent-h: #9ac5ff;
+      --accent-bg: rgba(117, 174, 244, .12);
+      --accent-bd: rgba(117, 174, 244, .32);
+      --green: #75aef4;
+      --green-bg: rgba(117, 174, 244, .12);
+      --amber: #e6a16e;
+      --amber-bg: rgba(230, 161, 110, .12);
+      --red: #ff8c81;
+      --t1: #edf3fc;
+      --text-primary: var(--t1);
+      --text: var(--t1);
+      --t2: #b2c1d6;
+      --t3: #8192ad;
+      --sh: 0 4px 20px rgba(0, 0, 0, .28);
     }
 
     *,
@@ -161,6 +198,30 @@
     a {
       color: inherit;
       text-decoration: none
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100001;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--accent-h);
+      border-radius: 4px;
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
     }
 
     button {
@@ -412,7 +473,7 @@
       color: var(--t1);
       margin-bottom: 8px;
       line-height: 1.2;
-      text-align: center;
+      text-align: left;
     }
 
     .sec-sub {
@@ -487,7 +548,7 @@
       color: var(--green);
       letter-spacing: 1px;
       background: var(--green-bg);
-      border: 1px solid rgba(46, 160, 67, .25);
+      border: 1px solid var(--accent-bd);
       padding: 4px 12px;
       border-radius: 20px;
       margin-bottom: 22px;
@@ -558,6 +619,7 @@
         opacity: 0
       }
     }
+
 
     .hero-bio {
       font-size: .88rem;
@@ -773,6 +835,15 @@
       transform: scale(1.04);
     }
 
+    .proj-thumb-clickable {
+      cursor: pointer;
+    }
+
+    .proj-thumb-clickable:focus-visible {
+      outline: 2px solid var(--accent-h);
+      outline-offset: -2px;
+    }
+
     .proj-thumb::after {
       content: '';
       position: absolute;
@@ -840,6 +911,77 @@
       background: linear-gradient(135deg, rgba(31, 111, 235, .16), rgba(139, 92, 246, .12));
       border-color: rgba(96, 165, 250, .35);
       transform: translateY(-1px);
+    }
+
+    /* ── Pied de card : liens rapides externes + CTA principal ──
+       Volontairement minimal et identique sur toutes les cards, quel
+       que soit le type de projet : c'est le détail (modal) qui varie,
+       pas l'entrée. */
+    .proj-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .proj-quicklinks {
+      display: flex;
+      gap: 8px;
+    }
+
+    .proj-quick-lk {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(96, 165, 250, .18);
+      background: rgba(31, 111, 235, .08);
+      color: var(--accent-h);
+      font-size: .8rem;
+      transition: all var(--tr);
+      flex-shrink: 0;
+    }
+
+    .proj-quick-lk:hover {
+      background: rgba(31, 111, 235, .18);
+      border-color: rgba(96, 165, 250, .4);
+      transform: translateY(-1px);
+    }
+
+    .proj-cta {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .3px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--accent-bd);
+      background: linear-gradient(135deg, rgba(31, 111, 235, .22), rgba(139, 92, 246, .16));
+      color: var(--t1);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all var(--tr);
+      margin-left: auto;
+      appearance: none;
+    }
+
+    .proj-cta:hover {
+      border-color: var(--accent-h);
+      background: linear-gradient(135deg, rgba(31, 111, 235, .32), rgba(139, 92, 246, .24));
+      transform: translateY(-1px);
+    }
+
+    .proj-cta i {
+      transition: transform var(--tr);
+    }
+
+    .proj-cta:hover i {
+      transform: translateX(2px);
     }
 
     .proj-stack {
@@ -1265,6 +1407,14 @@
       background: var(--accent-bg)
     }
 
+    .proj-empty {
+      text-align: center;
+      font-family: var(--mono);
+      font-size: .8rem;
+      color: var(--t3);
+      padding: 32px 0;
+    }
+
     .proj-thumb-overlay {
       position: absolute;
       inset: 0;
@@ -1562,7 +1712,7 @@
       margin-top: 8px;
       padding: 14px 16px;
       background: var(--green-bg);
-      border: 1px solid rgba(46, 160, 67, .25);
+      border: 1px solid var(--accent-bd);
       border-radius: var(--r);
       font-size: .8rem;
       color: var(--t2);
@@ -1646,7 +1796,11 @@
       text-align: center;
       padding: 6px;
       border-radius: 4px;
-      min-height: 24px
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px
     }
 
     .msg-ok {
@@ -1657,6 +1811,156 @@
     .msg-err {
       color: var(--red);
       background: rgba(248, 81, 73, .08)
+    }
+
+    /* ================================================================
+   TOAST — confirmation flottante d'envoi d'email
+================================================================ */
+    #toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+      max-width: min(360px, calc(100vw - 40px));
+    }
+
+    .toast {
+      pointer-events: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(13, 19, 33, .92);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: 12px;
+      padding: 14px 16px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+      transform: translateX(120%);
+      opacity: 0;
+      transition: transform .38s cubic-bezier(.34, 1.4, .64, 1), opacity .3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .toast.toast-show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .toast.toast-err {
+      border-left-color: var(--red);
+    }
+
+    .toast-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-bg);
+      color: var(--green);
+      font-size: .9rem;
+    }
+
+    .toast-err .toast-icon {
+      background: rgba(248, 81, 73, .12);
+      color: var(--red);
+    }
+
+    .toast-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .toast-title {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px;
+    }
+
+    .toast-text {
+      font-size: .74rem;
+      color: var(--t2);
+      line-height: 1.5;
+    }
+
+    .toast-close {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      color: var(--t3);
+      font-size: .95rem;
+      line-height: 1;
+      padding: 2px;
+      cursor: pointer;
+      transition: color var(--tr);
+    }
+
+    .toast-close:hover {
+      color: var(--t1);
+    }
+
+    .toast-timer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: var(--green);
+      width: 100%;
+      transform-origin: left;
+      animation: toast-shrink linear forwards;
+    }
+
+    .toast-err .toast-timer {
+      background: var(--red);
+    }
+
+    @keyframes toast-shrink {
+      from {
+        transform: scaleX(1)
+      }
+
+      to {
+        transform: scaleX(0)
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .toast {
+        transition: opacity .2s ease;
+        transform: none;
+      }
+
+      .toast-timer {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #toast-container {
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+        max-width: none;
+      }
+
+      .toast {
+        transform: translateY(140%);
+      }
+
+      .toast.toast-show {
+        transform: translateY(0);
+      }
     }
 
     /* ================================================================
@@ -1955,54 +2259,112 @@
     /* ================================================================
    PRELOADER
 ================================================================ */
-    #preloader {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: var(--bg);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      transition: opacity .55s ease, visibility .55s ease;
-    }
 
-    #preloader.done {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none
-    }
 
-    .pre-logo {
-      font-family: var(--mono);
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: var(--accent-h);
-      letter-spacing: 3px;
-    }
+  /* ── NERIACORE PRO LOADER V3 - 100% ISOLÉ ── */
+  #nc-page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: radial-gradient(ellipse at center, rgba(3, 8, 20, 0.97) 0%, rgba(0, 0, 0, 1) 100%);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+  }
+  #nc-page-loader.nc-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
-    .pre-bar {
-      width: 120px;
-      height: 2px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
+  /* Overlay pour bloquer le scroll sans toucher au body */
+  #nc-page-loader::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
 
-    .pre-fill {
-      height: 100%;
-      width: 0;
-      background: linear-gradient(90deg, var(--accent), var(--accent-h));
-      border-radius: 2px;
-      animation: preload .95s ease forwards;
-    }
+  .nc-loader-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
 
-    @keyframes preload {
-      to {
-        width: 100%
-      }
-    }
+  /* SPINNER FIN */
+  .nc-loader-spinner {
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  .nc-loader-ring {
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: nc-spin 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  .nc-loader-ring:nth-child(1) {
+    border-top: 2px solid var(--accent, #1f6feb);
+    border-right: 2px solid var(--accent, #1f6feb);
+    animation-duration: 1.8s;
+  }
+  .nc-loader-ring:nth-child(2) {
+    inset: 10px;
+    border-bottom: 2px solid #8b5cf6;
+    border-left: 2px solid #8b5cf6;
+    animation-duration: 2.2s;
+    animation-direction: reverse;
+  }
+  .nc-loader-ring:nth-child(3) {
+    inset: 20px;
+    border-top: 2px solid var(--accent-h, #388bfd);
+    animation-duration: 1.5s;
+  }
+  @keyframes nc-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* TEXTE */
+  .nc-loader-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--t1, #E6F4FF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(31, 111, 235, 0.4);
+    font-family: var(--sans, 'Inter', system-ui, sans-serif);
+    transition: opacity .3s ease;
+  }
+  .nc-loader-sub {
+    font-family: var(--mono, monospace);
+    font-size: 0.72rem;
+    color: rgba(230, 244, 255, 0.5);
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: -15px;
+    transition: opacity .3s ease;
+  }
+
+  /* POINTS */
+  .nc-dots::after {
+    content: '';
+    animation: nc-dots 1.5s steps(3, jump-none) infinite;
+  }
+  @keyframes nc-dots {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+  }
+      
 
     /* ================================================================
    MODAL CERTIFICAT
@@ -2128,7 +2490,8 @@
     .modal-pdf-wrap iframe,
     .modal-pdf-wrap embed {
       width: 100%;
-      height: 480px;
+      height: min(68vh, 760px);
+      min-height: 400px;
       border: none;
       display: block
     }
@@ -2168,26 +2531,436 @@
       font-size: .6rem;
       color: var(--t3)
     }
+
+    /* ================================================================
+   MODAL DÉTAILS PROJET
+================================================================ */
+    .modal-box--lg {
+      max-width: 920px;
+    }
+
+    .proj-thumb-count {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: #fff;
+      background: rgba(10, 15, 25, .68);
+      border: 1px solid rgba(255, 255, 255, .14);
+      padding: 3px 9px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* ── Carousel dans le modal détails ── */
+    .pm-carousel {
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+    }
+
+    .pm-carousel-track {
+      display: flex;
+      transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .pm-carousel-track img {
+      width: 100%;
+      flex: 0 0 100%;
+      max-height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pm-carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(10, 15, 25, .6);
+      border: 1px solid rgba(255, 255, 255, .16);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--tr);
+      backdrop-filter: blur(4px);
+    }
+
+    .pm-carousel-nav:hover {
+      background: rgba(31, 111, 235, .55);
+    }
+
+    .pm-carousel-prev {
+      left: 10px
+    }
+
+    .pm-carousel-next {
+      right: 10px
+    }
+
+    .pm-carousel-play {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(10, 15, 25, .6);
+      border: 1px solid rgba(255, 255, 255, .16);
+      color: #fff;
+      font-size: .68rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--tr);
+      backdrop-filter: blur(4px);
+    }
+
+    .pm-carousel-play:hover {
+      background: rgba(31, 111, 235, .55);
+    }
+
+    .pm-carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+
+    .pm-carousel-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .35);
+      border: none;
+      padding: 0;
+      transition: background var(--tr), transform var(--tr);
+    }
+
+    .pm-carousel-dot.active {
+      background: #fff;
+      transform: scale(1.25);
+    }
+
+    .pm-thumb {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .pm-cat {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pm-desc {
+      font-size: .86rem;
+      color: var(--t2);
+      line-height: 1.8;
+    }
+
+    .pm-section-lbl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pm-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pm-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ================================================================
+   LOADER — barre de progression
+================================================================ */
+    .nc-loader-bar-track {
+      width: 200px;
+      height: 3px;
+      border-radius: 2px;
+      background: rgba(230, 244, 255, .12);
+      overflow: hidden;
+    }
+
+    .nc-loader-bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h), #8b5cf6);
+      background-size: 200% 100%;
+      animation: nc-bar-shimmer 2.4s linear infinite;
+      transition: width .3s ease;
+    }
+
+    @keyframes nc-bar-shimmer {
+      0% { background-position: 0% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    .nc-loader-pct {
+      font-family: var(--mono);
+      font-size: .68rem;
+      color: rgba(230, 244, 255, .55);
+      letter-spacing: 1px;
+    }
+
+    /* ================================================================
+   RESPONSIVE — compléments ultra-pro
+================================================================ */
+    @media (max-width: 900px) {
+      .form {
+        padding: 1.6rem;
+      }
+
+      .proj-thumb {
+        height: 190px;
+      }
+
+      .modal-box--lg {
+        max-height: 94vh;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 14px
+      }
+
+      .section,
+      .section-sm {
+        padding: 48px 16px
+      }
+
+      #hero {
+        padding: 32px 16px
+      }
+
+      .hero-btns {
+        width: 100%
+      }
+
+      .hero-btns .btn {
+        flex: 1 1 auto;
+        justify-content: center
+      }
+
+      .form {
+        padding: 1.1rem
+      }
+
+      .modal-header {
+        padding: 12px 14px
+      }
+
+      .modal-body {
+        padding: 14px
+      }
+
+      .proj-body {
+        padding: 16px 14px 18px
+      }
+
+      .pf-btn {
+        padding: 5px 10px;
+        font-size: .58rem
+      }
+
+      .stats-inner {
+        padding: 20px
+      }
+
+      .nc-loader-text {
+        font-size: .92rem;
+        letter-spacing: 2px
+      }
+
+      .nc-loader-bar-track {
+        width: 150px
+      }
+    }
+
+    @media (max-width: 340px) {
+      .stats-inner {
+        grid-template-columns: 1fr
+      }
+
+      .stat-item {
+        border-right: none !important;
+        border-bottom: 1px solid var(--border);
+        padding: 12px
+      }
+
+      .stat-item:last-child {
+        border-bottom: none
+      }
+    }
+
+    @media (min-width: 901px) and (max-width: 1180px) {
+      .nav-links {
+        display: none;
+      }
+
+      .ham {
+        display: flex;
+      }
+    }
+
+    .nav-links a {
+      background: transparent;
+    }
+
+    .proj-card,
+    .about-card,
+    .skill-group,
+    .svc-card,
+    .edu-card,
+    .form,
+    .contact-block {
+      border-radius: 10px;
+    }
+
+    .proj-card {
+      background: var(--surface);
+      border-color: var(--border);
+      box-shadow: 0 14px 32px rgba(25, 35, 46, .08);
+      backdrop-filter: none;
+    }
+
+    .proj-card::before {
+      display: none;
+    }
+
+    .proj-thumb {
+      background: var(--surface2);
+      border-bottom-color: var(--border);
+    }
+
+    .btn-icon,
+    .skill-icon,
+    .proj-cat-icon,
+    .project-icon,
+    .ci-icon {
+      background: var(--accent-bg);
+      color: var(--accent-h);
+      border-color: var(--accent-bd);
+      box-shadow: none;
+    }
+
+    .hero-image::before {
+      background: linear-gradient(135deg, var(--accent), var(--amber));
+      opacity: .14;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      box-shadow: 0 30px 60px -15px rgba(0, 0, 0, .6);
+      transition: var(--transition-smooth);
+      animation: hero-morph 9s ease-in-out infinite;
+      position: relative;
+      z-index: 2;
+    }
+
+    @keyframes hero-morph {
+      0%, 100% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+      }
+      33% {
+        border-radius: 47% 53% 58% 42% / 48% 42% 58% 52%;
+      }
+      66% {
+        border-radius: 54% 46% 43% 57% / 44% 56% 44% 56%;
+      }
+    }
+
+    [data-theme="dark"] body::before {
+      background-image:
+        linear-gradient(rgba(180, 200, 230, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(180, 200, 230, .035) 1px, transparent 1px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .hero-image img,
+      .hero-available::before,
+      .nav-brand-dot {
+        animation: none !important;
+      }
+    }
   </style>
 </head>
 
 <body>
+
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+  <!-- TOAST -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
   <!-- PRELOADER -->
-  <div id="preloader" role="status" aria-label="Chargement du portfolio">
-    <div class="pre-logo">_NM_</div>
-    <div class="pre-bar">
-      <div class="pre-fill"></div>
+
+<!-- NERIACORE PRO LOADER -->
+<div id="nc-page-loader">
+  <div class="nc-loader-wrap">
+    <div class="nc-loader-spinner">
+      <div class="nc-loader-ring"></div>
+      <div class="nc-loader-ring"></div>
+      <div class="nc-loader-ring"></div>
     </div>
+    <div class="nc-loader-text" id="nc-loader-text">INITIALISATION<span class="nc-dots"></span></div>
+    <div class="nc-loader-sub" id="nc-loader-sub">TECHNICIEN RÉSEAUX &amp; TÉLÉCOMS</div>
+    <div class="nc-loader-bar-track"><div class="nc-loader-bar-fill" id="nc-loader-bar-fill"></div></div>
+    <div class="nc-loader-pct" id="nc-loader-pct">0%</div>
   </div>
+</div>
+
+  
   <!-- MODAL CERTIFICAT -->
   <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
     <div class="modal-box">
       <div class="modal-header">
         <div class="modal-title" id="cert-modal-title">Certificat</div>
         <div class="modal-actions">
-          <a class="modal-dl" id="cert-modal-dl" href="#" download aria-label="Télécharger le certificat">↓
-            Télécharger</a>
-          <button type="button" class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal">✕</button>
+          <a class="modal-dl" id="cert-modal-dl" href="#" download aria-label="Télécharger le document"><i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger</a>
+          <button type="button" class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
         </div>
       </div>
       <div class="modal-body">
@@ -2195,37 +2968,52 @@
       </div>
     </div>
   </div>
+
+  <!-- MODAL DÉTAILS PROJET -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-box modal-box--lg">
+      <div class="modal-header">
+        <div class="modal-title" id="project-modal-title">Détails du projet</div>
+        <div class="modal-actions">
+          <button type="button" class="modal-close-btn" id="project-modal-close" aria-label="Fermer le modal"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="modal-body" id="project-modal-body"><!-- injecté par openProjectModal() --></div>
+    </div>
+  </div>
+
   <!-- NAV -->
   <header>
     <nav class="nav" id="main-nav" aria-label="Navigation principale">
       <div class="nav-brand">
-        <div class="nav-brand-dot"></div>
-        ✦ Nérias Metombou
+        <!--<div class="nav-brand-dot"></div>-->
+        <i class="fa-solid fa-network-wired icon-premium"></i> Nérias Metombou
       </div>
       <ul class="nav-links">
         <li><a href="#hero" data-sec="hero">Accueil</a></li>
-        <li><a href="#about" data-sec="about">À propos</a></li>
+        <li><a href="#about" data-sec="about">Profil</a></li>
         <li><a href="#skills" data-sec="skills">Compétences</a></li>
-        <li><a href="#exp" data-sec="exp">Expérience</a></li>
+        <li><a href="#exp" data-sec="exp">Expériences</a></li>
+        <li><a href="#edu" data-sec="edu">Formations</a></li>
         <li><a href="#projects" data-sec="projects">Projets</a></li>
-        <li><a href="#certs" data-sec="certs">Certificats</a></li>
-        <li><a href="#edu" data-sec="edu">Formation</a></li>
+        <li><a href="#certs" data-sec="certs">Certifications</a></li>
         <li><a href="#contact" data-sec="contact">Contact</a></li>
       </ul>
       <div class="nav-right">
-        <button type="button" class="theme-btn" id="theme-btn" title="Changer de thème"
-          aria-label="Basculer thème sombre/clair">🌙</button>
-        <button type="button" class="ham" id="ham" aria-label="Menu" aria-controls="mob-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <button type="button" class="theme-btn" id="theme-btn" title="Changer de thème" aria-label="Basculer thème sombre/clair">
+  <i class="fa-solid fa-moon icon-premium"></i>
+</button>
+<button type="button" class="ham" id="ham" aria-label="Menu" aria-controls="mob-menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </nav>
     <nav class="mob-menu" id="mob-menu" aria-label="Menu mobile" aria-hidden="true">
       <a href="#hero" onclick="closeMob()">Accueil</a>
-      <a href="#about" onclick="closeMob()">À propos</a>
+      <a href="#about" onclick="closeMob()">Profil</a>
       <a href="#skills" onclick="closeMob()">Compétences</a>
-      <a href="#exp" onclick="closeMob()">Expérience</a>
+      <a href="#exp" onclick="closeMob()">Expériences</a>
+      <a href="#edu" onclick="closeMob()">Formations</a>
       <a href="#projects" onclick="closeMob()">Projets</a>
-      <a href="#certs" onclick="closeMob()">Certificats</a>
-      <a href="#edu" onclick="closeMob()">Formation</a>
+      <a href="#certs" onclick="closeMob()">Certifications</a>
       <a href="#contact" onclick="closeMob()">Contact</a>
     </nav>
   </header>
@@ -2237,13 +3025,13 @@
     <section id="hero">
       <div class="hero-inner">
         <div class="hero-left">
-          <div class="hero-available">Disponible — Stage / Emploi</div>
+          <div class="hero-available">À l'écoute d'opportunités</div>
 
           <h1 class="hero-name">
             METOMBOU<br><span>Nérias Sènakpon</span>
           </h1>
 
-          <p class="hero-role">Technicien Réseaux &amp; Télécommunications · Fibre Optique · Support Informatique N1</p>
+          <p class="hero-role">Technicien réseaux &amp; télécommunications · Futur ingénieur réseaux et cybersécurité · Développeur web junior</p>
 
           <div class="hero-terminal">
             <span id="typed-text"></span><span class="cursor"></span>
@@ -2251,39 +3039,52 @@
 
           <p class="hero-bio">
             Jeune technicien diplômé en <strong>Génie Télécom &amp; TIC</strong> à l'UCAO-UUC de Cotonou.
-            Expérience pratique en maintenance réseau et support informatique au
-            <strong>Ministère de l'Économie et des Finances du Bénin</strong>.
-            À l'aise sur Cisco, Linux, la virtualisation et le développement web PHP/Laravel.
-            Je cherche à contribuer à des projets techniques concrets.
+            Expérience en environnement public, notamment à la Direction Informatique de la DGB.
+            Je développe mes compétences en réseaux, télécommunications, administration systèmes,
+            cybersécurité et développement web PHP/Laravel.
+            Mon objectif : évoluer vers l'ingénierie réseaux et cybersécurité.
           </p>
 
           <div class="hero-btns">
-            <a class="btn btn-ghost" href="./Documents/CV_METOMBOU_Nerias.pdf">
-              <span class="btn-icon">↓</span> Voir mon CV
-            </a>
+            <button class="btn btn-ghost" type="button" onclick="openCertModal('Curriculum vitæ — METOMBOU Nérias', './Documents/CV_METOMBOU_Nerias.pdf')">
+              <span class="btn-icon"><i class="fa-regular fa-eye icon-premium"></i></span> Voir mon CV
+            </button>
             <a class="btn btn-ghost" href="#contact">
-              <span class="btn-icon">✉</span> Email
+              <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span> Email
             </a>
             <a class="btn btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
               rel="noopener noreferrer">
-              <span class="btn-icon">in</span> LinkedIn
+              <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span> LinkedIn
             </a>
             <a class="btn btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
-              <span class="btn-icon">⌥</span> GitHub
+              <span class="btn-icon"><i class="fa-brands fa-github icon-premium"></i></span> GitHub
             </a>
           </div>
+<div class="hero-contact">
+  <a href="tel:+2290152240507">
+    <span class="btn-icon"><i class="fa-solid fa-phone icon-premium"></i></span>
+    +229 01 52 24 05 07
+  </a>
 
-          <div class="hero-contact">
-            <a href="tel:+2290152240507">📞 +229 01 52 24 05 07</a>
-            <a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
-            <a href="mailto:neriasmetombou@gmail.com">✉ neriasmetombou@gmail.com</a>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Cotonou%2C+B%C3%A9nin" target="_blank"
-              rel="noopener noreferrer">📍 Cotonou, Bénin</a>
-          </div>
+  <a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">
+    <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span>
+    WhatsApp
+  </a>
+
+  <a href="mailto:neriasmetombou@gmail.com">
+    <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span>
+    neriasmetombou@gmail.com
+  </a>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Cotonou%2C+B%C3%A9nin" target="_blank" rel="noopener noreferrer">
+    <span class="btn-icon"><i class="fa-solid fa-location-dot icon-premium"></i></span>
+    Cotonou, Bénin
+  </a>
+</div>
         </div>
         <div class="hero-avatar-wrap">
           <div class="hero-image">
-            <img src="./img/prof.jpg" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
+            <img src="./img/profile.png" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
             <style>
               .hero-image {
                 position: relative;
@@ -2293,40 +3094,12 @@
                 content: '';
                 position: absolute;
                 inset: -20px;
-                background: linear-gradient(135deg, var(--royal-blue), var(--royal-ultra));
+                background: linear-gradient(135deg, var(--accent), var(--royal-glow));
                 border-radius: 50%;
                 filter: blur(40px);
-                opacity: 0.3;
-                animation: pulse 4s ease-in-out infinite;
+                opacity: 0.14;
               }
 
-              .hero-image img {
-                width: 100%;
-                max-width: 400px;
-                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-                border: 3px solid rgba(255, 255, 255, 0.1);
-                box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
-                transition: var(--transition-smooth);
-                animation: morph 10s ease-in-out infinite;
-                position: relative;
-                z-index: 2;
-              }
-
-              @keyframes morph {
-
-                0%,
-                100% {
-                  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-                }
-
-                33% {
-                  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-                }
-
-                66% {
-                  border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%;
-                }
-              }
             </style>
 
 
@@ -2337,17 +3110,14 @@
     <!-- STATS -->
     <div class="stats-band">
       <div class="stats-inner">
+
         <div class="stat-item">
-          <div class="stat-val counter" data-t="3">0</div>
-          <div class="stat-lbl">Mois de stage</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-val counter" data-t="3">0</div>
-          <div class="stat-lbl">Mois d'expérience</div>
+          <div class="stat-val counter" data-t="1">0</div>
+          <div class="stat-lbl">Expériences professionnelles</div>
         </div>
         <div class="stat-item">
           <div class="stat-val counter" data-t="1">0</div>
-          <div class="stat-lbl">Diplômes &amp; Certifications</div>
+          <div class="stat-lbl">Diplôme universitaire</div>
         </div>
         <div class="stat-item">
           <div class="stat-val counter" data-t="2">0</div>
@@ -2391,240 +3161,92 @@
           </p>
         </div>
 
-        <div class="about-card reveal-l">
-          <div class="about-card-row">
-            <span class="about-card-ico">🎓</span>
-            <div>
-              <div class="about-card-lbl">Diplôme</div>
-              <div class="about-card-val">Licence Génie Télécom &amp; TIC</div>
-            </div>
-          </div>
-          <div class="about-card-row">
-            <span class="about-card-ico">🏛</span>
-            <div>
-              <div class="about-card-lbl">Établissement</div>
-              <div class="about-card-val">UCAO-UUC — Cotonou, Bénin</div>
-            </div>
-          </div>
-          <div class="about-card-row">
-            <span class="about-card-ico">💼</span>
-            <div>
-              <div class="about-card-lbl">Expérience</div>
-              <div class="about-card-val">Stage — Ministère Économie &amp; Finances BJ</div>
-            </div>
-          </div>
-          <div class="about-card-row">
-            <span class="about-card-ico">📍</span>
-            <div>
-              <div class="about-card-lbl">Localisation</div>
-              <div class="about-card-val">Cotonou, Bénin · Remote possible</div>
-            </div>
-          </div>
-          <div class="about-card-row">
-            <span class="about-card-ico">🌐</span>
-            <div>
-              <div class="about-card-lbl">Langues</div>
-              <div class="about-card-val">Français · Anglais technique · Fon</div>
-            </div>
-          </div>
-          <div class="about-card-row">
-            <span class="about-card-ico">🚀</span>
-            <div>
-              <div class="about-card-lbl">Disponibilité</div>
-              <div class="about-card-val">Stage / Emploi — dès maintenant</div>
-            </div>
-          </div>
-        </div>
+ <div class="about-card reveal-l">
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-graduation-cap icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Diplôme</div>
+      <div class="about-card-val">Licence Génie Télécom &amp; TIC</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-building-columns icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Établissement</div>
+      <div class="about-card-val">UCAO-UUC — Cotonou, Bénin</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-briefcase icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Expérience</div>
+      <div class="about-card-val">Stage au Ministère · Mars–juin 2025</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-location-dot icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Localisation</div>
+      <div class="about-card-val">Cotonou, Bénin · Remote possible</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-globe icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Langues</div>
+      <div class="about-card-val">Français · Anglais technique · Fon</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-rocket icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Disponibilité</div>
+      <div class="about-card-val">Stage / Emploi — dès maintenant</div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
+    
     <!-- ================================================================
-     COMPÉTENCES
+     FORMATION
 ================================================================ -->
     <hr class="divider">
-    <section class="section" id="skills">
-      <div class="sec-eyebrow">Compétences</div>
-      <h2 class="sec-title">Savoir-faire technique</h2>
-      <p class="sec-sub">Niveaux évalués honnêtement à la fin de ma licence — ils refléteront mon expérience
-        professionnelle à venir.</p>
+    <section class="section" id="edu">
+      <div class="sec-eyebrow">Formation</div>
+      <h2 class="sec-title">Parcours académique</h2>
 
-      <div class="skills-layout">
+      <div class="edu-grid">
 
-        <div class="skill-group reveal">
-          <div class="skill-group-title">🌐 Réseaux Cisco &amp; IP</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Adressage IP / Subnetting</span><span>80%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".80"></div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2022<br>↓<br>2025</div>
+          <div>
+            <div class="edu-degree">Licence en Génie Télécom &amp; TIC</div>
+            <div class="edu-school">UCAO-UUC — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Spécialité : Réseaux et Télécommunications.<br>
+              Enseignements : protocoles réseau Cisco, fibre optique (OptiSystem), réseaux mobiles (GSM/4G),
+              sécurité réseau, systèmes Linux, virtualisation, développement web PHP/Laravel, bases de données MySQL.
             </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>VLANs / STP / HSRP</span><span>74%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".74"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>OSPF / Routage dynamique</span><span>70%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".70"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>DHCP / NAT / VPN (notions)</span><span>68%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".68"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>EIGRP / BGP — notions</span><span>42%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".42"></div>
-            </div>
+            <span class="edu-badge">PFE : Infrastructure Wi-Fi MeSH sécurisée — GNS3 &amp; VMware</span>
           </div>
         </div>
 
-        <div class="skill-group reveal">
-          <div class="skill-group-title">📡 Fibre optique &amp; Télécoms</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Simulation fibre (OptiSystem)</span><span>60%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".60"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Notions FTTH / FTTB</span><span>58%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".58"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Architecture GSM / 2G / 3G</span><span>40%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".40"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>4G LTE — principes</span><span>30%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".30"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group reveal">
-          <div class="skill-group-title">🔐 Sécurité réseau &amp; Firewall</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>ACL Cisco</span><span>68%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".68"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>OPNsense / pfSense — bases</span><span>42%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".42"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Wi-Fi sécurisé — WPA2-Enterprise</span><span>32%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".32"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Kali Linux — introduction</span><span>28%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".28"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group reveal">
-          <div class="skill-group-title">🐧 Systèmes &amp; Virtualisation</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Ubuntu Linux / Bash</span><span>20%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".20"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Windows Server — bases</span><span>30%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".30"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>VirtualBox / VMware</span><span>74%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".74"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Packet Tracer / GNS3</span><span>60%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".60"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group reveal">
-          <div class="skill-group-title">💻 Développement web</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>HTML5 / CSS3</span><span>73%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".73"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>JavaScript — DOM / interactions</span><span>33%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".33"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>PHP / Laravel</span><span>48%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".48"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Bootstrap 5 / MySQL</span><span>62%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".62"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group reveal">
-          <div class="skill-group-title">🛠 Outils &amp; Autres</div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Git / GitHub</span><span>43%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".43"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Python — scripts de base</span><span>48%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".48"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Adobe Photoshop / Premiere</span><span>40%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".40"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-row"><span>Documentation technique / Rapport</span><span>60%</span></div>
-            <div class="skill-track">
-              <div class="skill-fill" data-w=".60"></div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2021<br>↓<br>2022</div>
+          <div>
+            <div class="edu-degree">Baccalauréat Série D — Biologie &amp; Géologie</div>
+            <div class="edu-school">CEG DANTOKPA — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Sciences naturelles, mathématiques, physique-chimie.
+              Obtenu en juin 2022.
             </div>
           </div>
         </div>
 
       </div>
     </section>
+    
     <!-- ================================================================
      EXPÉRIENCE
 ================================================================ -->
@@ -2664,172 +3286,10 @@
           </div>
         </div>
 
-        <div class="exp-item reveal">
-          <div class="exp-left">
-            <div class="exp-dot"></div>
-            <div class="exp-period">2022<br>2025</div>
-          </div>
-          <div class="exp-right">
-            <div class="exp-role">Projets académiques — Technicien en formation</div>
-            <div class="exp-org">UCAO-UUC · Cotonou, Bénin</div>
-            <div class="exp-tasks">
-              <div class="exp-task">Conception et déploiement simulé d'une infrastructure réseau Wi-Fi MeSH sécurisée
-                (WPA2-Enterprise, VLAN, contrôleur centralisé, portail captif) sur GNS3 et VMware — Projet de fin
-                d'études.</div>
-              <div class="exp-task">Déployement d'une architecture réseau hiérarchisée en trois
-                couches (Core, Distribution, Access), intégrant les services réseau essentiels tels que le
-                DHCP, le DNS et la journalisation (Syslog) sur GNS3.</div>
-              <div class="exp-task">Intégration d'un contrôleur sans fil (WLC) permettant la gestion centralisée des
-                points d’accès Mesh ; </div>
-              <div class="exp-task">Assurer la sécurité du réseau à l’aide d’un pare-feu OPNsense, incluant un
-                portail captif pour l’authentification des utilisateurs, et une segmentation
-                logique en zones réseau (DMZ, LAN, WAN).</div>
-            </div>
-            <div class="exp-tags">
-              <span class="exp-tag">GNS3</span>
-              <span class="exp-tag">VMware</span>
-              <span class="exp-tag">Wi-Fi MeSH</span>
-              <span class="exp-tag">WPA2-Enterprise</span>
-              <span class="exp-tag">Cisco</span>
-              <span class="exp-tag">Laravel</span>
-              <span class="exp-tag">OptiSystem</span>
-            </div>
-          </div>
-        </div>
-
-           <div class="exp-item reveal">
-          <div class="exp-left">
-            <div class="exp-dot"></div>
-            <div class="exp-period"> 2024<br>Juin 2025</div>
-          </div>
-          <div class="exp-right">
-            <div class="exp-role">Ancien membre &amp; UCAO Tech</div>
-            <div class="exp-org">Université Catholique de l'Afrique de l'Ouest — 2024 - 2025</div>
-            <div class="exp-tasks">
-              <div class="exp-task">Participation aux activités du Digital club</div>
-              <div class="exp-task">Colaboration sur des mini-projets de développement web</div>
-              <div class="exp-task">Initiation à des outils pro tels que Git / Github.</div>
-            </div>
-            <div class="exp-tags">
-              <span class="exp-tag">HTML / CSS</span>
-              <span class="exp-tag">Wordpres</span>
-              <span class="exp-tag">Laravel</span>
-              <span class="exp-tag">PHP</span>
-              <span class="exp-tag">Js</span>
-              <span class="exp-tag">Bootstrap</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-    <!-- ================================================================
-     PROJETS
-================================================================ -->
-    <hr class="divider">
-    <section class="section" id="projects">
-      <div class="sec-eyebrow">Projets</div>
-      <h2 class="sec-title">Réalisations</h2>
-
-      <div class="proj-filters reveal">
-        <button type="button" class="pf-btn active" data-f="all">Tous</button>
-        <button type="button" class="pf-btn" data-f="reseau">Réseaux</button>
-        <button type="button" class="pf-btn" data-f="web">Web</button>
-        <button type="button" class="pf-btn" data-f="sec">Sécurité</button>
-        <button type="button" class="pf-btn" data-f="telco">Télécoms</button>
-      </div>
-
-      <div class="proj-grid">
-
-        <div class="proj-card reveal" data-cat="reseau sec">
-          <div class="proj-thumb">
-            <img src="./img/projets/projet_1.png" alt="Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC"
-              loading="lazy" width="600" height="240">
-            <div class="proj-thumb-overlay"></div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-cat"><span class="proj-cat-icon">🌐</span>Réseaux · Sécurité — PFE Licence</div>
-            <div class="proj-name">Infrastructure Wi-Fi MeSH sécurisée — UCAO-UUC</div>
-            <div class="proj-desc">
-              Conception et déploiement simulé d'un réseau Wi-Fi MeSH complet pour le siège de l'UCAO-UUC.
-              Authentification WPA2-Enterprise , segmentation VLAN, contrôleur centralisé et portail captif.
-              Entièrement simulé sur GNS3 + VMware Workstation.
-            </div>
-            <div class="proj-stack">
-              <span class="proj-tech">GNS3</span>
-              <span class="proj-tech">VMware</span>
-              <span class="proj-tech">WPA2-Enterprise</span>
-              <span class="proj-tech">VLAN</span>
-              <span class="proj-tech">Syslog</span>
-              <span class="proj-tech">Portail captif</span>
-            </div>
-            <div class="proj-links">
-              <button type="button" class="proj-lk"
-                onclick="openCertModal('Memoire de Licence Professionnelle — UCAO-UUC','./Documents/memoire-licence-professionnelle.pdf')"
-              aria-label="Voir le rapport PDF du projet">Rapport PDF</button>
-            </div>
-          </div>
-        </div>
-        <div class="proj-card reveal" data-cat="web">
-          <div class="proj-thumb">
-            <img src="./img/projets/projet_2.png" alt="Aperçu du portfolio professionnel en ligne" loading="lazy" width="600"
-              height="240">
-            <div class="proj-thumb-overlay"></div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-cat"><span class="proj-cat-icon">💻</span>Développement Web</div>
-            <div class="proj-name">Portfolio professionnel (ce projet)</div>
-            <div class="proj-desc">
-              Portfolio web responsive en HTML5/CSS3/JS , sans dépendance externe.
-              Dark/light mode, animations au scroll, formulaire de contact sécurisé.
-              Directement publiable sur GitHub Pages.
-            </div>
-            <div class="proj-stack">
-              <span class="proj-tech">HTML5</span>
-              <span class="proj-tech">CSS3</span>
-              <span class="proj-tech">JavaScript</span>
-              <span class="proj-tech">Responsive</span>
-              <span class="proj-tech">GitHub Pages</span>
-            </div>
-            <div class="proj-links">
-              <a class="proj-lk" href="https://github.com/nerias400" target="_blank"
-                rel="noopener noreferrer">GitHub</a>
-              <button type="button" class="proj-lk"
-                onclick="openVideoModal('Portfolio Professionnel','./demo/demo_projet_2.mp4')"
-                aria-label="Voir la démo vidéo du portfolio">Démo</button>
-            </div>
-          </div>
-        </div>
-        <div class="proj-card reveal" data-cat="reseau sec">
-          <div class="proj-thumb">
-            <img src="./img/projets/projet_3.png" alt="projet déploiement Réseau LAN L2 L3" loading="lazy" width="600"
-              height="240">
-            <div class="proj-thumb-overlay"></div>
-          </div>
-          <div class="proj-body">
-            <div class="proj-cat"><span class="proj-cat-icon">💻</span>Développement Web</div>
-            <div class="proj-name"> Infrastructure LAN L2-L3</div>
-            <div class="proj-desc">
-              Mise en place d'une infrastructure LAN d'entreprise basée sur les couches OSI L3 et L2 .
-              Configuration et verification des équipements Cisco , Tests de connectivité et validation de l'infrastructure
-              LAN L2-L3 fonctionnelle segmentéé et administrable , tout en développant une méthodologie
-              de configuration et de diagnostic proche d'un environement professionnel.
-            </div>
-            <div class="proj-stack">
-              <span class="proj-tech">Cisco</span>
-              <span class="proj-tech">VLAN</span>
-              <span class="proj-tech">VTP</span>
-              <span class="proj-tech">STP</span>
-              <span class="proj-tech">DHCP</span>
-            </div>
-            <div class="proj-links">
-              <a class="proj-lk" href="#" target="_blank"
-                rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================================================================
+    
+        <!-- ================================================================
      CERTIFICATIONS
 ================================================================ -->
     <hr class="divider">
@@ -2837,21 +3297,282 @@
       <div class="sec-eyebrow">Certificats , diplômes & badges</div>
       <h2 class="sec-title">Certificats , diplômes & badges  </h2>
 
-      <div class="certs-grid">
+      <div class="certs-grid" id="certs-grid" aria-live="polite"><!-- injecté par renderCerts() --></div>
+    </section>
+    
+    
+    
+        <!-- ================================================================
+     SERVICES
+================================================================ -->
+    <hr class="divider">
+    <section class="section section-sm" id="services">
+  <div class="sec-eyebrow">Services</div>
+  <h2 class="sec-title">Ce que je peux apporter</h2>
+  <div class="services-grid">
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-network-wired icon-premium"></i></span></div>
+      <div class="svc-title">Support réseau N1</div>
+      <div class="svc-desc">Diagnostic de pannes, configuration d'équipements réseau Cisco, surveillance Wi-Fi, DHCP/DNS.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-desktop icon-premium"></i></span></div>
+      <div class="svc-title">Maintenance informatique</div>
+      <div class="svc-desc">Installation / restauration d'OS (Windows, Linux), déploiement logiciels, inventaire parc matériel.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-code icon-premium"></i></span></div>
+      <div class="svc-title">Développement web</div>
+      <div class="svc-desc">Sites web responsive HTML/CSS/JS, applications PHP/Laravel, formulaires, gestion de base de données MySQL.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-diagram-project icon-premium"></i></span></div>
+      <div class="svc-title">Simulation réseau</div>
+      <div class="svc-desc">Conception et documentation d'architectures réseau sur Packet Tracer et GNS3.</div>
+    </div>
+    
 
-        <div class="cert-card reveal">
-          <div class="cert-icon">🎓</div>
-          <div class="cert-issuer">UCAO-UUC</div>
-          <div class="cert-name">Licence — Génie Télécom &amp; TIC (Réseaux &amp; Télécommunications)</div>
-          <div class="cert-footer">
-            <span class="cert-status status-done">✓ Obtenu — 2025</span>
-            <button type="button" class="cert-view-btn"
-              onclick="openCertModal('Attestation de réussite — Licence GIT/TIC, UCAO-UUC','./Documents/attestation-succes-licence.pdf')"
-              aria-label="Voir le diplôme UCAO-UUC">Voir diplôme</button>
-          </div>
+  </div>
+</section>
+
+   <!-- ================================================================
+     COMPÉTENCES
+================================================================ -->
+<hr class="divider">
+<section class="section" id="skills">
+  <div class="sec-eyebrow">Compétences</div>
+  <h2 class="sec-title">Savoir-faire technique</h2>
+  <p class="sec-sub">
+    Compétences développées au cours de ma formation, de mes projets pratiques
+    et de mon expérience en environnement informatique et réseau.
+  </p>
+
+  <div class="skills-layout">
+
+    <!-- ============================= -->
+    <!-- 01 — RÉSEAUX & TÉLÉCOMS -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-network-wired icon-premium"></i>
+        </span>
+        Réseaux &amp; Télécommunications
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux des réseaux</span>
+          <span>Intermédiaire</span>
         </div>
       </div>
-    </section>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Adressage IP / Subnetting</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>VLAN / Trunk / STP / SVI</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Routage statique / OSPF</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>DHCP / DNS / NAT / ACL</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Réseaux Wi-Fi / WLAN / WLC</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux des réseaux mobiles</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux fibre optique / FTTH</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- 02 — SYSTÈMES & CYBERSÉCURITÉ -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-shield-halved icon-premium"></i>
+        </span>
+        Systèmes &amp; Cybersécurité
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Windows / Linux</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Support &amp; maintenance informatique</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>OPNsense / Firewall / NAT</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>MikroTik RouterOS</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Virtualisation / VMware</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Wi-Fi sécurisé / WPA2-Enterprise</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Kali Linux / outils réseau</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>PowerShell / Terminal Linux</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- 03 — DÉVELOPPEMENT & AUTOMATISATION -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-code icon-premium"></i>
+        </span>
+        Développement &amp; Automatisation
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>HTML5</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>CSS3 / Responsive Design</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>JavaScript / DOM / Interactions</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>PHP / MySQL</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Laravel</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Python / Scripts &amp; automatisation</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Git / GitHub</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    <!-- ================================================================
+     PROJETS
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="projects">
+  <div class="sec-eyebrow">Projets</div>
+  <h2 class="sec-title">Réalisations</h2>
+  <div class="proj-filters reveal">
+    <button type="button" class="pf-btn active" data-f="all">Tous</button>
+    <button type="button" class="pf-btn" data-f="reseau">Réseaux</button>
+    <button type="button" class="pf-btn" data-f="web">Web</button>
+    <button type="button" class="pf-btn" data-f="sec">Sécurité</button>
+  </div>
+  <div class="proj-grid" id="proj-grid" aria-live="polite"><!-- injecté par renderProjects() --></div>
+  <p class="proj-empty" id="proj-empty" hidden>Aucun projet dans cette catégorie pour le moment.</p>
+</section>
 
     <!-- ================================================================
      MODAL DES DEMOS
@@ -2863,14 +3584,14 @@
 
           <button type="button" class="modal-close-btn" id="video-modal-close" onclick="closeVideoModal()"
             aria-label="Fermer la vidéo">
-            ✕
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
           </button>
         </div>
 
         <div class="modal-body">
           <video id="project-video" class="video-embed" controls autoplay playsinline preload="metadata"></video>
           <div class="modal-pdf-fallback" id="video-modal-error" style="display:none">
-            <div class="pdf-icon">🎬</div>
+            <div class="pdf-icon"><i class="fa-solid fa-film" aria-hidden="true"></i></div>
             <p>Impossible de charger cette vidéo pour le moment.</p>
             <div class="modal-pdf-actions">
               <a id="video-open-link" class="modal-dl" href="#" target="_blank" rel="noopener">Ouvrir la vidéo</a>
@@ -2880,91 +3601,7 @@
         </div>
       </div>
     </div>
-    <!-- ================================================================
-     FORMATION
-================================================================ -->
-    <hr class="divider">
-    <section class="section" id="edu">
-      <div class="sec-eyebrow">Formation</div>
-      <h2 class="sec-title">Parcours académique</h2>
 
-      <div class="edu-grid">
-
-        <div class="edu-card reveal">
-          <div class="edu-year">2022<br>↓<br>2025</div>
-          <div>
-            <div class="edu-degree">Licence en Génie Télécom &amp; TIC</div>
-            <div class="edu-school">UCAO-UUC — Cotonou, Bénin</div>
-            <div class="edu-desc">
-              Spécialité : Réseaux et Télécommunications.<br>
-              Enseignements : protocoles réseau Cisco, fibre optique (OptiSystem), réseaux mobiles (GSM/4G),
-              sécurité réseau, systèmes Linux, virtualisation, développement web PHP/Laravel, bases de données MySQL.
-            </div>
-            <span class="edu-badge">PFE : Infrastructure Wi-Fi MeSH sécurisée — GNS3 &amp; VMware</span>
-          </div>
-        </div>
-
-        <div class="edu-card reveal">
-          <div class="edu-year">2021<br>↓<br>2022</div>
-          <div>
-            <div class="edu-degree">Baccalauréat Série D — Biologie &amp; Géologie</div>
-            <div class="edu-school">CEG DANTOKPA — Cotonou, Bénin</div>
-            <div class="edu-desc">
-              Sciences naturelles, mathématiques, physique-chimie.
-              Obtenu en juin 2022.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- ================================================================
-     SERVICES
-================================================================ -->
-    <hr class="divider">
-    <section class="section section-sm" id="services">
-      <div class="sec-eyebrow">Services</div>
-      <h2 class="sec-title">Ce que je peux apporter</h2>
-
-      <div class="services-grid">
-        <div class="svc-card reveal">
-          <div class="svc-icon">🌐</div>
-          <div class="svc-title">Support réseau N1</div>
-          <div class="svc-desc">Diagnostic de pannes, configuration d'équipements réseau Cisco, surveillance Wi-Fi,
-            DHCP/DNS.</div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon">🖥</div>
-          <div class="svc-title">Maintenance informatique</div>
-          <div class="svc-desc">Installation / restauration d'OS (Windows, Linux), déploiement logiciels, inventaire
-            parc
-            matériel.</div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon">🔐</div>
-          <div class="svc-title">Sécurité réseau (base)</div>
-          <div class="svc-desc">Configuration ACL, firewall OPNsense/pfSense, mise en place Wi-Fi WPA2-Enterprise, VLAN.
-          </div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon">💻</div>
-          <div class="svc-title">Développement web</div>
-          <div class="svc-desc">Sites web responsive HTML/CSS/JS, applications PHP/Laravel, formulaires, gestion de base
-            de données MySQL.</div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon">⚙</div>
-          <div class="svc-title">Simulation réseau</div>
-          <div class="svc-desc">Conception et documentation d'architectures réseau sur Packet Tracer et GNS3.</div>
-        </div>
-        <div class="svc-card reveal">
-          <div class="svc-icon">📝</div>
-          <div class="svc-title">Documentation technique</div>
-          <div class="svc-desc">Rédaction de rapports techniques, inventaires, procédures d'exploitation, présentations.
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- ================================================================
      CONTACT
 ================================================================ -->
@@ -2973,51 +3610,45 @@
       <div class="sec-eyebrow">Contact</div>
       <h2 class="sec-title">Me contacter</h2>
 
-      <div class="contact-wrap">
-        <div class="contact-info reveal-l">
-          <div class="contact-block">
-            <span class="ci-icon">📞</span>
-            <div>
-              <div class="ci-lbl">Téléphone</div>
-              <div class="ci-val"><a href="tel:+2290152240507">+229 01 52 24 05 07</a></div>
-            </div>
-          </div>
-          <div class="contact-block">
-            <span class="ci-icon">✉</span>
-            <div>
-              <div class="ci-lbl">Email</div>
-              <div class="ci-val"><a href="mailto:neriasmetombou@gmail.com">neriasmetombou@gmail.com</a></div>
-            </div>
-          </div>
-          <div class="contact-block">
-            <span class="ci-icon">💼</span>
-            <div>
-              <div class="ci-lbl">LinkedIn</div>
-              <div class="ci-val"><a href="https://linkedin.com/in/metombounerias" target="_blank"
-                  rel="noopener noreferrer">linkedin.com/in/metombounerias</a></div>
-            </div>
-          </div>
-          <div class="contact-block">
-            <span class="ci-icon">📸</span>
-            <div>
-              <div class="ci-lbl">Instagram</div>
-              <div class="ci-val"><a href="https://instagram.com/nerias400" target="_blank" rel="noopener noreferrer">@nerias400</a></div>
-            </div>
-          </div>
-          <div class="contact-block">
-            <span class="ci-icon">📘</span>
-            <div>
-              <div class="ci-lbl">Facebook</div>
-              <div class="ci-val"><a href="https://facebook.com/nerias400" target="_blank" rel="noopener noreferrer">facebook.com/nerias400</a></div>
-            </div>
-          </div>
-          <div class="contact-avail">
-            Je suis disponible pour un <strong>stage</strong>, une <strong>alternance</strong>
-            ou un <strong>premier emploi</strong> en support réseau, technicien télécom
-            ou développeur web junior.<br>
-            Réponse habituelle sous 24h.
-          </div>
-        </div>
+<div class="contact-wrap">
+  <div class="contact-info reveal-l">
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-solid fa-phone icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">Téléphone</div>
+        <div class="ci-val"><a href="tel:+2290152240507">+229 01 52 24 05 07</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">WhatsApp</div>
+        <div class="ci-val"><a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">+229 01 52 24 05 07</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">Email</div>
+        <div class="ci-val"><a href="mailto:neriasmetombou@gmail.com">neriasmetombou@gmail.com</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">LinkedIn</div>
+        <div class="ci-val"><a href="https://linkedin.com/in/metombounerias" target="_blank" rel="noopener noreferrer">linkedin.com/in/metombounerias</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-avail">
+      Je suis disponible pour un <strong>stage</strong>, une <strong>alternance</strong> ou un <strong>premier emploi</strong> en support réseau, technicien télécom ou développeur web junior.<br>
+      Réponse habituelle sous 24h.
+    </div>
+  </div>
 
         <div class="contact-right reveal">
           <form class="form" id="contact-form" novalidate>
@@ -3061,34 +3692,37 @@
   </main><!-- end page-wrap -->
 
   <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <span>METOMBOU Nérias</span> · Cotonou, Bénin · 2026
-      </div>
-      <div class="footer-social">
-        <a class="footer-soc btn-ghost" href="mailto:neriasmetombou@gmail.com"> <span class="btn-icon">✉</span>
-          Email</a>
-        <a class="footer-soc btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
-          rel="noopener noreferrer">
-          <span class="btn-icon">in</span> LinkedIn</a>
-        <a class="footer-soc btn-ghost" href="https://instagram.com/nerias400" target="_blank" rel="noopener noreferrer">
-          <span class="btn-icon">📸</span> Instagram</a>
-        <a class="footer-soc btn-ghost" href="https://facebook.com/nerias400" target="_blank" rel="noopener noreferrer">
-          <span class="btn-icon">📘</span> Facebook</a>
-        <a class="footer-soc btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
-          <span class="btn-icon">⌥</span> GitHub</a>
-      </div>
-      <div class="footer-copy">
-        Technicien Réseaux &amp; Télécommunications · Licence GIT/TIC
-      </div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span>METOMBOU Nérias</span> · Cotonou, Bénin · 2026
     </div>
-  </footer>
+    
+    <div class="footer-social">
+      <a class="footer-soc btn-ghost" href="mailto:neriasmetombou@gmail.com">
+        <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span> Email
+      </a>
+      <a class="footer-soc btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span> LinkedIn
+      </a>
+      <a class="footer-soc btn-ghost" href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span> WhatsApp
+      </a>
+      <a class="footer-soc btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-github icon-premium"></i></span> GitHub
+      </a>
+    </div>
+    
+    <div class="footer-copy">
+      Technicien Réseaux &amp; Télécommunications · Licence GIT/TIC
+    </div>
+  </div>
+</footer>
 
-  <!-- Back to top -->
-  <button type="button" class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
-    aria-label="Retour en haut">↑</button>
-
+<!-- Back to top -->
+<button type="button" class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+  <i class="fa-solid fa-arrow-up icon-premium"></i>
+</button>
   <!-- ================================================================
      JAVASCRIPT
 ================================================================ -->
@@ -3100,26 +3734,204 @@
       return d.innerHTML;
     }
 
-    /* ── Theme toggle ── */
-    const html = document.documentElement;
-    const themeBtn = document.getElementById('theme-btn');
+    /* ================================================================
+       DONNÉES — PROJETS & CERTIFICATS
+       Source unique de vérité : ajouter/modifier un projet ou un
+       certificat ne demande plus de toucher au HTML, juste ce tableau.
+       `images` : la 1ère entrée sert de couverture sur la card ; le
+       modal détails affiche toutes les entrées en carousel (nav +
+       dots + swipe tactile + flèches clavier). Un seul élément dans
+       le tableau = carousel désactivé automatiquement (juste l'image).
+    ================================================================ */
+    const projects = [
+      {
+        id: 'wifi-mesh-ucao',
+        cat: 'reseau sec',
+        catLabel: 'Réseaux · Sécurité — PFE Licence',
+        icon: 'fa-network-wired',
+        images: [
+          './img/projets/projet_1/projet_1.png'
+        ],
+        alt: "Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC",
+        title: 'Infrastructure Wi-Fi MeSH sécurisée — UCAO-UUC',
+        desc: "Conception et déploiement simulé d'un réseau Wi-Fi MeSH complet pour le siège de l'UCAO-UUC. Authentification WPA2-Enterprise, segmentation VLAN, contrôleur centralisé et portail captif. Entièrement simulé sur GNS3 + VMware Workstation.",
+        details: "Ce Projet de Fin d'Études a consisté à concevoir puis simuler, de bout en bout, une infrastructure Wi-Fi MeSH sécurisée pour le siège de l'UCAO-UUC : plan d'adressage, segmentation VLAN par usage, authentification WPA2-Enterprise avec serveur RADIUS, portail captif pour les invités, et centralisation des journaux (Syslog) pour le suivi des accès. L'ensemble a été validé par simulation sur GNS3 couplé à des machines virtuelles VMware Workstation, avec tests de connectivité, de bascule et de charge avant rédaction du rapport de mémoire.",
+        stack: ['GNS3', 'VMware', 'WPA2-Enterprise', 'VLAN', 'Syslog', 'Portail captif'],
+        links: [
+          { type: 'pdf', label: 'Rapport PDF', title: 'Memoire de Licence Professionnelle — UCAO-UUC', file: './Documents/memoire-licence-professionnelle.pdf' }
+        ]
+      },
+      {
+        id: 'portfolio-web',
+        cat: 'web',
+        catLabel: 'Développement Web',
+        icon: 'fa-code',
+        images: [
+          './img/projets/projet_2/projet_2.jpg'
+        ],
+        alt: 'Aperçu du portfolio professionnel en ligne',
+        title: 'Portfolio professionnel (ce projet)',
+        desc: "Portfolio web responsive en HTML5/CSS3/JS, sans dépendance externe. Dark/light mode, animations au scroll, formulaire de contact sécurisé. Directement publiable sur GitHub Pages.",
+        details: "Ce portfolio est un fichier HTML unique, pensé pour être publié tel quel sur GitHub Pages sans build ni dépendance externe lourde. Il embarque un mode sombre/clair persistant, des animations au scroll (Intersection Observer), un système de modals réutilisable (certificats, démos vidéo, détails projet avec carousel), une validation de formulaire en direct et un envoi d'email via EmailJS. L'accent a été mis sur l'accessibilité (focus trap, aria-*, navigation clavier) et la performance (lazy-loading des images, scripts non-bloquants, CSS sans framework).",
+        stack: ['HTML5', 'CSS3', 'JavaScript', 'Responsive', 'GitHub Pages'],
+        links: [
+          { type: 'live', label: 'Voir le site', file: 'https://nerias400.github.io/' },
+          { type: 'github', label: 'GitHub', file: 'https://github.com/nerias400' },
+          { type: 'demo', label: 'Démo', title: 'Portfolio Professionnel', file: './demo/projet_2.mp4' }
+        ]
+      }
+    ];
 
-    function setTheme(t) {
-      html.setAttribute('data-theme', t);
-      themeBtn.textContent = t === 'dark' ? '🌙' : '☀️';
-      themeBtn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
-      try { localStorage.setItem('theme', t); } catch (e) { }
+    const certs = [
+      {
+        issuer: 'UCAO-UUC',
+        name: 'Licence — Génie Télécom &amp; TIC (Réseaux &amp; Télécommunications)',
+        icon: 'fa-building-columns',
+        status: 'done',
+        statusLabel: '✓ Obtenu — 2025',
+        modalTitle: 'Attestation de réussite — Licence GIT/TIC, UCAO-UUC',
+        file: './Documents/attestation-succes-licence.pdf'
+      }
+    ];
+
+    /* ── Rendu d'une card projet ──
+       Chaque type de lien a une icône et une action dédiées, pour que
+       le visiteur reconnaisse immédiatement la nature du contenu avant
+       même de cliquer :
+       - pdf     → visualiseur document (rapport, mémoire...)
+       - config  → visualiseur document (fichier de config équipement réseau)
+       - demo    → lecteur vidéo (démo du projet)
+       - github  → dépôt de code source (nouvel onglet)
+       - live    → site / app web en ligne (nouvel onglet)
+       Le bouton "Voir le projet" ouvre toujours le modal détail complet
+       (carousel d'images inclus) — voir renderProjectCard(). */
+    const LINK_META = {
+      pdf: { icon: 'fa-file-pdf', label: 'Rapport PDF' },
+      config: { icon: 'fa-gears', label: 'Fichier de config' },
+      demo: { icon: 'fa-circle-play', label: 'Démo' },
+      github: { icon: 'fa-brands fa-github', label: 'GitHub' },
+      live: { icon: 'fa-arrow-up-right-from-square', label: 'Voir le site' }
+    };
+
+    function linkIconHtml(type) {
+      const meta = LINK_META[type];
+      if (!meta) return '';
+      const cls = meta.icon.startsWith('fa-brands') ? meta.icon : `fa-solid ${meta.icon}`;
+      return `<i class="${cls}"></i>`;
     }
 
-    themeBtn.addEventListener('click', () => {
-      setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-    });
+    function projectLinkHtml(p, link) {
+      const label = esc(link.label || (LINK_META[link.type] || {}).label || 'Lien');
+      const icon = linkIconHtml(link.type);
+      if (link.type === 'pdf') {
+        return `<button type="button" class="proj-lk" onclick="openCertModal('${esc(link.title)}','${esc(link.file)}','pdf')" aria-label="Voir le document — ${label}">${icon}${label}</button>`;
+      }
+      if (link.type === 'config') {
+        return `<button type="button" class="proj-lk" onclick="openCertModal('${esc(link.title)}','${esc(link.file)}','config')" aria-label="Voir le fichier de configuration — ${label}">${icon}${label}</button>`;
+      }
+      if (link.type === 'demo') {
+        return `<button type="button" class="proj-lk" onclick="openVideoModal('${esc(link.title)}','${esc(link.file)}')" aria-label="Voir la démo vidéo du projet">${icon}${label}</button>`;
+      }
+      // github / live / lien externe générique
+      return `<a class="proj-lk" href="${esc(link.file)}" target="_blank" rel="noopener noreferrer">${icon}${label}</a>`;
+    }
 
-    // Apply saved theme
-    try {
-      const saved = localStorage.getItem('theme');
-      if (saved) setTheme(saved);
-    } catch (e) { }
+    /* Types de liens affichés comme icônes rapides directement sur la
+       card (destinations externes qui font quitter le site) — tout
+       le reste (pdf/config/demo) est réservé au modal détail, sous
+       "Ressources", pour ne pas surcharger la card. */
+    const QUICK_LINK_TYPES = ['github', 'live'];
+
+    function projectQuickLinkHtml(link) {
+      const meta = LINK_META[link.type];
+      if (!meta) return '';
+      return `<a class="proj-quick-lk" href="${esc(link.file)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(meta.label)}" title="${esc(meta.label)}">${linkIconHtml(link.type)}</a>`;
+    }
+
+    function renderProjectCard(p) {
+      const hasGallery = p.images.length > 1;
+      const quickLinks = p.links.filter(l => QUICK_LINK_TYPES.includes(l.type));
+      return `
+    <div class="proj-card reveal" data-cat="${esc(p.cat)}" data-id="${esc(p.id)}">
+      <div class="proj-thumb proj-thumb-clickable" onclick="openProjectModal('${esc(p.id)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProjectModal('${esc(p.id)}');}" role="button" tabindex="0" aria-label="Voir le détail du projet — ${esc(p.title)}">
+        <img src="${esc(p.images[0])}" alt="${esc(p.alt)}" loading="lazy" width="600" height="240">
+        <div class="proj-thumb-overlay"></div>
+        ${hasGallery ? `<span class="proj-thumb-count"><i class="fa-solid fa-images"></i> ${p.images.length}</span>` : ''}
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat"><span class="btn-icon"><i class="fa-solid ${esc(p.icon)} icon-premium"></i></span>${esc(p.catLabel)}</div>
+        <div class="proj-name">${esc(p.title)}</div>
+        <div class="proj-desc">${esc(p.desc)}</div>
+        <div class="proj-stack">
+          ${p.stack.map(t => `<span class="proj-tech">${esc(t)}</span>`).join('')}
+        </div>
+        <div class="proj-footer">
+          ${quickLinks.length ? `<div class="proj-quicklinks">${quickLinks.map(projectQuickLinkHtml).join('')}</div>` : '<span></span>'}
+          <button type="button" class="proj-cta" onclick="openProjectModal('${esc(p.id)}')" aria-label="Voir le projet en détail">Voir le projet<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>`;
+    }
+
+    function renderCertCard(c) {
+      return `
+        <div class="cert-card reveal">
+          <div class="cert-icon"><span class="btn-icon"><i class="fa-solid ${esc(c.icon)} icon-premium"></i></span></div>
+          <div class="cert-issuer">${esc(c.issuer)}</div>
+          <div class="cert-name">${c.name}</div>
+          <div class="cert-footer">
+            <span class="cert-status status-${esc(c.status)}">${esc(c.statusLabel)}</span>
+            <button type="button" class="cert-view-btn"
+              onclick="openCertModal('${esc(c.modalTitle)}','${esc(c.file)}')"
+              aria-label="Voir le document — ${esc(c.issuer)}">Voir diplôme</button>
+          </div>
+        </div>`;
+    }
+
+    function renderProjects() {
+      const grid = document.getElementById('proj-grid');
+      grid.innerHTML = projects.map(renderProjectCard).join('');
+    }
+
+    function renderCerts() {
+      const grid = document.getElementById('certs-grid');
+      grid.innerHTML = certs.map(renderCertCard).join('');
+    }
+
+    /* Rendu immédiat — avant l'observer de reveal-on-scroll plus bas,
+       pour que les cards générées soient bien observées dès le premier
+       passage de querySelectorAll('.reveal'). */
+    renderProjects();
+    renderCerts();
+
+    /* ── Theme toggle ── */
+const html = document.documentElement;
+const themeBtn = document.getElementById('theme-btn');
+
+function setTheme(t) {
+  html.setAttribute('data-theme', t);
+  
+  // CORRECTION ICI : innerHTML au lieu de textContent
+  themeBtn.innerHTML = t === 'dark' 
+    ? '<i class="fa-solid fa-sun icon-premium"></i>' 
+    : '<i class="fa-solid fa-moon icon-premium"></i>';
+    
+  themeBtn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+  
+  try { 
+    localStorage.setItem('theme', t); 
+  } catch (e) { }
+}
+
+themeBtn.addEventListener('click', () => {
+  setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+});
+
+// Apply saved theme
+try { 
+  const saved = localStorage.getItem('theme'); 
+  if (saved) setTheme(saved); 
+} catch (e) { }
 
     /* ── Mobile menu ── */
     const ham = document.getElementById('ham');
@@ -3186,23 +3998,6 @@
 
     document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => revealObs.observe(el));
 
-    /* ── Skill bars ── */
-    const skillObs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.querySelectorAll('.skill-fill').forEach((bar, i) => {
-            const w = parseFloat(bar.dataset.w);
-            bar.style.transitionDelay = `${i * 90}ms`;
-            bar.style.transform = `scaleX(${w})`;
-            bar.classList.add('go');
-          });
-          skillObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('.skill-group').forEach(g => skillObs.observe(g));
-
     /* ── Counters ── */
     const ctrObs = new IntersectionObserver(entries => {
       entries.forEach(e => {
@@ -3263,88 +4058,174 @@
     }
     typeLoop();
 
-    function attachSkillIcons() {
-      const icons = {
-        'Adressage IP / Subnetting': '🌐',
-        'VLANs / STP / HSRP': '🧩',
-        'OSPF / Routage dynamique': '🔁',
-        'DHCP / NAT / VPN (notions)': '🔒',
-        'EIGRP / BGP — notions': '📡',
-        'Simulation fibre (OptiSystem)': '🔧',
-        'Notions FTTH / FTTB': '🌐',
-        'Architecture GSM / 2G / 3G': '📶',
-        '4G LTE — principes': '📱',
-        'ACL Cisco': '🛡️',
-        'OPNsense / pfSense — bases': '🧱',
-        'Wi-Fi sécurisé — WPA2-Enterprise': '📶',
-        'Kali Linux — introduction': '🐧',
-        'Ubuntu Linux / Bash': '🐧',
-        'Windows Server — bases': '🪟',
-        'VirtualBox / VMware': '🖥️',
-        'Packet Tracer / GNS3': '🧪',
-        'HTML5 / CSS3': '🧱',
-        'JavaScript — DOM / interactions': '✨',
-        'PHP / Laravel': '🐘',
-        'Bootstrap 5 / MySQL': '🎯',
-        'Git / GitHub': '🔧',
-        'Python — scripts de base': '🐍',
-        'Adobe Photoshop / Premiere': '🎨',
-        'Documentation technique / Rapport': '📝'
-      };
-
-      document.querySelectorAll('.skill-row').forEach(row => {
-        const label = row.querySelector('span');
-        if (!label) return;
-        const text = label.textContent.trim();
-        const icon = icons[text];
-        if (icon && !row.querySelector('.skill-icon')) {
-          const wrapper = document.createElement('span');
-          wrapper.className = 'skill-icon';
-          wrapper.textContent = icon;
-          row.insertBefore(wrapper, label);
-        }
-      });
-    }
-
-    attachSkillIcons();
-
     /* ── Project filters ── */
+    const projEmptyEl = document.getElementById('proj-empty');
     document.querySelectorAll('[data-f]').forEach(btn => {
       btn.addEventListener('click', function () {
         document.querySelectorAll('[data-f]').forEach(b => b.classList.remove('active'));
         this.classList.add('active');
         const f = this.dataset.f;
+        let visibleCount = 0;
         document.querySelectorAll('.proj-card').forEach(card => {
           const cats = card.dataset.cat || '';
-          card.style.display = (f === 'all' || cats.split(' ').includes(f)) ? '' : 'none';
+          const show = f === 'all' || cats.split(' ').includes(f);
+          card.style.display = show ? '' : 'none';
+          if (show) visibleCount++;
         });
+        if (projEmptyEl) projEmptyEl.hidden = visibleCount > 0;
       });
     });
 
     /* ── Preloader ── */
-    window.addEventListener('load', () => {
+
+/* ── NERIACORE LOADER — écran d'intro premium avec durée minimale garantie ──
+   La barre progresse de façon lissée sur toute la durée MIN_DISPLAY_MS
+   (au lieu de foncer à 90% puis rester figée), et se cale sur le
+   chargement réel de la page si celui-ci dépasse ce minimum. */
+(function() {
+  const loader = document.getElementById('nc-page-loader');
+  if (!loader) return;
+  const barFill = document.getElementById('nc-loader-bar-fill');
+  const pctEl = document.getElementById('nc-loader-pct');
+  const textEl = document.getElementById('nc-loader-text');
+  const subEl = document.getElementById('nc-loader-sub');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Séquence de statuts façon "boot" — cohérente avec le profil
+  // technicien réseaux/télécoms, affichée au fil de la progression.
+  const STAGES = [
+    { at: 0, main: 'INITIALISATION', sub: 'TECHNICIEN RÉSEAUX & TÉLÉCOMS' },
+    { at: 20, main: 'CHARGEMENT DES MODULES', sub: 'Assets · Scripts · Styles' },
+    { at: 45, main: 'CONNEXION SÉCURISÉE', sub: 'Handshake établi' },
+    { at: 72, main: 'COMPILATION DE L\u2019INTERFACE', sub: 'Rendu des composants' },
+    { at: 93, main: 'FINALISATION', sub: 'Derniers réglages' },
+    { at: 100, main: 'PRÊT', sub: 'Bienvenue' }
+  ];
+  let currentStage = -1;
+  function updateStage(progress) {
+    let idx = 0;
+    for (let i = 0; i < STAGES.length; i++) if (progress >= STAGES[i].at) idx = i;
+    if (idx === currentStage) return;
+    currentStage = idx;
+    const s = STAGES[idx];
+    if (textEl) textEl.style.opacity = 0;
+    if (subEl) subEl.style.opacity = 0;
+    setTimeout(() => {
+      if (textEl) { textEl.innerHTML = s.main + '<span class="nc-dots"></span>'; textEl.style.opacity = 1; }
+      if (subEl) { subEl.textContent = s.sub; subEl.style.opacity = 1; }
+    }, reduceMotion ? 0 : 220);
+  }
+
+  // Durée minimale d'affichage de l'écran d'intro, même si la page est
+  // déjà chargée avant. Respecte prefers-reduced-motion (accessibilité).
+  const MIN_DISPLAY_MS = reduceMotion ? 0 : 1300;
+  const SAFETY_TIMEOUT_MS = 5000; // filet si le réseau est vraiment lent
+
+  const started = performance.now();
+  let progress = 0;
+  let pageLoaded = false;
+  let rafHandle = null;
+
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+
+  function setProgress(p) {
+    progress = Math.min(p, 100);
+    if (barFill) barFill.style.width = progress + '%';
+    if (pctEl) pctEl.textContent = Math.round(progress) + '%';
+    updateStage(progress);
+  }
+
+  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function tick() {
+    const elapsed = performance.now() - started;
+    // Tant que la page n'est pas chargée, la barre suit une courbe
+    // lissée cadencée sur MIN_DISPLAY_MS, plafonnée à 92% pour ne
+    // jamais annoncer 100% avant que ce soit vraiment vrai.
+    const t = MIN_DISPLAY_MS > 0 ? Math.min(elapsed / MIN_DISPLAY_MS, 1) : 1;
+    const target = Math.min(easeOutCubic(t) * 92, 92);
+    if (!pageLoaded && target > progress) setProgress(target);
+    if (!pageLoaded || elapsed < MIN_DISPLAY_MS) {
+      rafHandle = requestAnimationFrame(tick);
+    }
+  }
+  rafHandle = requestAnimationFrame(tick);
+
+  function finish() {
+    pageLoaded = true;
+    const elapsed = performance.now() - started;
+    const wait = Math.max(MIN_DISPLAY_MS - elapsed, 0);
+    setTimeout(() => {
+      if (rafHandle) cancelAnimationFrame(rafHandle);
+      setProgress(100);
       setTimeout(() => {
-        const pl = document.getElementById('preloader');
-        if (pl) {
-          pl.classList.add('done');
-          let removed = false;
-          const removePl = () => {
-            if (removed) return;
-            removed = true;
-            pl.remove();
-          };
-          pl.addEventListener('transitionend', removePl, { once: true });
-          // Safety net: if the transition never fires (e.g. tab in background,
-          // reduced-motion, or a style conflict), remove it anyway.
-          setTimeout(removePl, 1000);
-        }
-      }, 1600);
-    });
+        loader.classList.add('nc-hide');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+        window.scrollTo(0, scrollTop);
+        setTimeout(() => loader.remove(), reduceMotion ? 0 : 900);
+      }, 260); // court palier à 100% — confirme visuellement la fin du chargement
+    }, wait);
+  }
+
+  if (document.readyState === 'complete') {
+    finish();
+  } else {
+    window.addEventListener('load', finish);
+    // Filet de sécurité : si 'load' tarde anormalement (réseau lent),
+    // on ne bloque jamais l'utilisateur au-delà de 14s.
+    setTimeout(() => { if (!pageLoaded) finish(); }, SAFETY_TIMEOUT_MS);
+  }
+})();
+
+    
 
     /* ── Reveal-r observer ── */
     document.querySelectorAll('.reveal-r').forEach(el => revealObs.observe(el));
 
     /* ── Modal Certificat ── */
+    /* ================================================================
+       Focus trap générique — utilisé par tous les modals (certificat,
+       projet, vidéo) pour garder le Tab à l'intérieur du
+       modal ouvert. `arrowNav`, si fourni, gère aussi les flèches
+       gauche/droite pour naviguer un carousel pendant que le modal a
+       le focus clavier.
+    ================================================================ */
+    function attachFocusTrap(modalEl, arrowNav) {
+      modalEl.addEventListener('keydown', e => {
+        if (!modalEl.classList.contains('open')) return;
+        if (arrowNav) {
+          if (e.key === 'ArrowRight' && pmImages.length > 1) { pmMove(1); return; }
+          if (e.key === 'ArrowLeft' && pmImages.length > 1) { pmMove(-1); return; }
+        }
+        if (e.key !== 'Tab') return;
+        const focusable = [...modalEl.querySelectorAll('button,a,video,[tabindex]:not([tabindex="-1"])')];
+        if (!focusable.length) return;
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+        else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+      });
+    }
+
+    /* Swipe tactile générique pour un conteneur de carousel (mobile) */
+    function attachCarouselSwipe(containerEl) {
+      let touchStartX = null;
+      containerEl.addEventListener('touchstart', e => {
+        if (!e.target.closest('.pm-carousel')) return;
+        touchStartX = e.touches[0].clientX;
+        pmStopAuto();
+      }, { passive: true });
+      containerEl.addEventListener('touchend', e => {
+        if (touchStartX === null || pmImages.length <= 1) return;
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40) pmMove(dx < 0 ? 1 : -1);
+        touchStartX = null;
+        pmRestartAuto();
+      }, { passive: true });
+    }
+
     const certModal = document.getElementById('cert-modal');
     const certModalTitle = document.getElementById('cert-modal-title');
     const certModalPdf = document.getElementById('cert-modal-pdf');
@@ -3352,22 +4233,24 @@
     const certModalClose = document.getElementById('cert-modal-close');
     let lastFocusedEl = null; // shared by both modals to restore focus on close
 
-    function openCertModal(name, file) {
+    function openCertModal(name, file, kind) {
+      kind = kind || 'pdf';
+      const fallbackText = kind === 'config'
+        ? 'Ce fichier de configuration peut être ouvert ou téléchargé si l’affichage intégré est indisponible.'
+        : 'Le document peut être ouvert ou téléchargé si l’affichage intégré est indisponible.';
       lastFocusedEl = document.activeElement;
       certModalTitle.textContent = name;
       certModalDl.href = file;
       certModalDl.download = file.split('/').pop();
-      certModalDl.target = '_blank';
-      certModalDl.rel = 'noopener';
+      certModalDl.removeAttribute('target');
+      certModalDl.removeAttribute('rel');
       certModalPdf.innerHTML = `
-        <div class="modal-pdf-fallback">
-          <div class="pdf-icon">📄</div>
-          <p>Le document est prêt à s’ouvrir dans un nouvel onglet pour un affichage fiable sur mobile.</p>
-          <div class="modal-pdf-actions">
-            <a class="modal-dl" href="${esc(file)}" target="_blank" rel="noopener">Ouvrir le PDF</a>
-            <a class="modal-dl" href="${esc(file)}" download="${esc(file.split('/').pop())}">Télécharger</a>
-          </div>
-          <small>Fichier attendu : ${esc(file)}</small>
+        <iframe src="${esc(file)}" title="${esc(name)}" loading="eager">
+          <p>${fallbackText} <a href="${esc(file)}">Ouvrir le document</a>.</p>
+        </iframe>
+        <div class="modal-pdf-actions">
+          <a class="modal-dl" href="${esc(file)}" target="_blank" rel="noopener">Ouvrir</a>
+          <a class="modal-dl" href="${esc(file)}" download="${esc(file.split('/').pop())}">Télécharger</a>
         </div>
       `;
       certModal.classList.add('open');
@@ -3384,17 +4267,134 @@
 
     certModalClose.addEventListener('click', closeCertModal);
     certModal.addEventListener('click', e => { if (e.target === certModal) closeCertModal(); });
+
+    /* ── Modal Détails Projet ── */
+    const projectModal = document.getElementById('project-modal');
+    const projectModalTitle = document.getElementById('project-modal-title');
+    const projectModalBody = document.getElementById('project-modal-body');
+    const projectModalClose = document.getElementById('project-modal-close');
+
+    /* ── Carousel du modal détails (état du projet actuellement ouvert) ── */
+    let pmImages = [];
+    let pmIndex = 0;
+    let pmAutoTimer = null;
+    let pmAutoPlaying = true;
+    const PM_AUTO_DELAY = 4000;
+
+    function pmRenderCarousel(p) {
+      pmImages = p.images;
+      pmIndex = 0;
+      pmAutoPlaying = true;
+      if (pmImages.length <= 1) {
+        // Une seule image : pas de carousel, juste l'image (pas de nav/dots inutiles)
+        return `<img class="pm-thumb" src="${esc(pmImages[0])}" alt="${esc(p.alt)}" loading="lazy">`;
+      }
+      return `
+        <div class="pm-carousel" id="pm-carousel">
+          <div class="pm-carousel-track" id="pm-carousel-track">
+            ${pmImages.map((src, i) => `<img src="${esc(src)}" alt="${esc(p.alt)} — image ${i + 1}/${pmImages.length}" loading="${i === 0 ? 'eager' : 'lazy'}">`).join('')}
+          </div>
+          <button type="button" class="pm-carousel-nav pm-carousel-prev" onclick="pmMove(-1)" aria-label="Image précédente">‹</button>
+          <button type="button" class="pm-carousel-nav pm-carousel-next" onclick="pmMove(1)" aria-label="Image suivante">›</button>
+          <button type="button" class="pm-carousel-play" id="pm-carousel-play" onclick="pmToggleAuto()" aria-label="Mettre en pause le défilement automatique">⏸</button>
+          <div class="pm-carousel-dots">
+            ${pmImages.map((_, i) => `<button type="button" class="pm-carousel-dot${i === 0 ? ' active' : ''}" onclick="pmGoTo(${i}, true)" aria-label="Aller à l'image ${i + 1}"></button>`).join('')}
+          </div>
+        </div>`;
+    }
+
+    function pmUpdateCarousel() {
+      const track = document.getElementById('pm-carousel-track');
+      if (!track) return;
+      track.style.transform = `translateX(-${pmIndex * 100}%)`;
+      document.querySelectorAll('.pm-carousel-dot').forEach((d, i) => d.classList.toggle('active', i === pmIndex));
+    }
+
+    function pmGoTo(i, userInitiated) {
+      pmIndex = (i + pmImages.length) % pmImages.length;
+      pmUpdateCarousel();
+      if (userInitiated) pmRestartAuto(); // une interaction manuelle relance le cycle plutôt que de couper juste après
+    }
+
+    function pmMove(delta) {
+      pmGoTo(pmIndex + delta, true);
+    }
+
+    function pmStopAuto() {
+      if (pmAutoTimer) { clearInterval(pmAutoTimer); pmAutoTimer = null; }
+    }
+
+    function pmStartAuto() {
+      pmStopAuto();
+      if (pmImages.length <= 1 || !pmAutoPlaying) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      pmAutoTimer = setInterval(() => pmGoTo(pmIndex + 1, false), PM_AUTO_DELAY);
+    }
+
+    function pmRestartAuto() {
+      if (pmAutoPlaying) pmStartAuto();
+    }
+
+    function pmToggleAuto() {
+      pmAutoPlaying = !pmAutoPlaying;
+      const btn = document.getElementById('pm-carousel-play');
+      if (btn) {
+        btn.textContent = pmAutoPlaying ? '⏸' : '▶';
+        btn.setAttribute('aria-label', pmAutoPlaying ? 'Mettre en pause le défilement automatique' : 'Reprendre le défilement automatique');
+      }
+      if (pmAutoPlaying) pmStartAuto(); else pmStopAuto();
+    }
+
+    function openProjectModal(id) {
+      const p = projects.find(x => x.id === id);
+      if (!p) return;
+      lastFocusedEl = document.activeElement;
+      projectModalTitle.textContent = p.title;
+      projectModalBody.innerHTML = `
+        ${pmRenderCarousel(p)}
+        <div class="pm-cat"><span class="btn-icon"><i class="fa-solid ${esc(p.icon)} icon-premium"></i></span>${esc(p.catLabel)}</div>
+        <p class="pm-desc">${esc(p.details || p.desc)}</p>
+        <div>
+          <div class="pm-section-lbl">Stack technique</div>
+          <div class="pm-stack">${p.stack.map(t => `<span class="proj-tech">${esc(t)}</span>`).join('')}</div>
+        </div>
+        ${p.links.length ? `<div>
+          <div class="pm-section-lbl">Ressources</div>
+          <div class="pm-links">${p.links.map(l => projectLinkHtml(p, l)).join('')}</div>
+        </div>` : ''}
+      `;
+      projectModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => projectModalClose.focus(), 80);
+      pmStartAuto();
+      const carEl = document.getElementById('pm-carousel');
+      if (carEl) {
+        carEl.addEventListener('mouseenter', pmStopAuto);
+        carEl.addEventListener('mouseleave', pmRestartAuto);
+      }
+    }
+
+    function closeProjectModal() {
+      projectModal.classList.remove('open');
+      document.body.style.overflow = '';
+      projectModalBody.innerHTML = '';
+      pmStopAuto();
+      pmImages = [];
+      pmIndex = 0;
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    projectModalClose.addEventListener('click', closeProjectModal);
+    projectModal.addEventListener('click', e => { if (e.target === projectModal) closeProjectModal(); });
+
+    /* Swipe tactile sur le carousel (mobile) — coupe l'auto pendant l'interaction */
+    attachCarouselSwipe(projectModalBody);
+
+    /* Focus trap + navigation clavier du carousel */
+    attachFocusTrap(projectModal, true);
     /* Note: Escape-key handling for this modal is registered once, together
        with the video modal, in the unified keydown listener further down. */
-    /* Focus trap */
-    certModal.addEventListener('keydown', e => {
-      if (e.key !== 'Tab' || !certModal.classList.contains('open')) return;
-      const focusable = [...certModal.querySelectorAll('button,a,[tabindex]:not([tabindex="-1"])')];
-      if (!focusable.length) return;
-      const first = focusable[0], last = focusable[focusable.length - 1];
-      if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
-      else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
-    });
+    attachFocusTrap(certModal);
 
     /* ── Smooth scroll + close mobile menu on in-page navigation ──
        (native `scroll-behavior:smooth` in the CSS already handles the
@@ -3470,22 +4470,51 @@
     });
 
     /* Focus trap for the video modal (mirrors the certificate modal) */
-    videoModal.addEventListener('keydown', e => {
-      if (e.key !== 'Tab' || !videoModal.classList.contains('open')) return;
-      const focusable = [...videoModal.querySelectorAll('button,a,video,[tabindex]:not([tabindex="-1"])')];
-      if (!focusable.length) return;
-      const first = focusable[0], last = focusable[focusable.length - 1];
-      if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
-      else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
-    });
+    attachFocusTrap(videoModal);
 
     /* Single global Escape handler closes whichever modal is open */
     document.addEventListener('keydown', e => {
       if (e.key !== 'Escape') return;
       if (certModal.classList.contains('open')) closeCertModal();
       if (videoModal.classList.contains('open')) closeVideoModal();
+      if (projectModal.classList.contains('open')) closeProjectModal();
       if (ham.classList.contains('open')) closeMob();
     });
+
+    /* ================================================================
+       TOAST — confirmation flottante (envoi d'email, etc.)
+    ================================================================ */
+    const toastContainer = document.getElementById('toast-container');
+
+    function showToast({ type = 'ok', title, text, duration = 5500 }) {
+      const el = document.createElement('div');
+      el.className = 'toast' + (type === 'err' ? ' toast-err' : '');
+      el.setAttribute('role', type === 'err' ? 'alert' : 'status');
+      el.innerHTML = `
+        <div class="toast-icon">${type === 'err' ? '<i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>' : '<i class="fa-solid fa-circle-check" aria-hidden="true"></i>'}</div>
+        <div class="toast-body">
+          <div class="toast-title">${esc(title)}</div>
+          <div class="toast-text">${esc(text)}</div>
+        </div>
+        <button type="button" class="toast-close" aria-label="Fermer la notification"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <div class="toast-timer" style="animation-duration:${duration}ms"></div>
+      `;
+      toastContainer.appendChild(el);
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('toast-show')));
+
+      let dismissed = false;
+      let timeoutId;
+      function dismiss() {
+        if (dismissed) return;
+        dismissed = true;
+        clearTimeout(timeoutId);
+        el.classList.remove('toast-show');
+        setTimeout(() => el.remove(), 380);
+      }
+      timeoutId = setTimeout(dismiss, duration);
+      el.querySelector('.toast-close').addEventListener('click', dismiss);
+      return dismiss;
+    }
 
     /* ================================================================
        FORMULAIRE DE CONTACT — validation + envoi EmailJS
@@ -3540,8 +4569,19 @@
       valid = fieldValidate('c-msg', 'err-msg', msg.length < 10) && valid;
 
       if (!valid) {
-        out.textContent = 'Veuillez corriger les erreurs ci-dessus.';
+        out.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Veuillez corriger les erreurs ci-dessus.';
         out.className = 'form-msg msg-err show';
+        return;
+      }
+
+      if (!window.emailjs) {
+        out.textContent = 'Le service d’envoi est indisponible. Merci de me contacter directement par email.';
+        out.className = 'form-msg msg-err show';
+        showToast({
+          type: 'err',
+          title: 'Service indisponible',
+          text: 'Écrivez-moi directement à neriasmetombou@gmail.com.'
+        });
         return;
       }
 
@@ -3553,7 +4593,14 @@
       out.className = 'form-msg';
       out.textContent = '';
 
-      emailjs.send(
+      // EmailJS est chargé en `defer` (perf) : on s'assure qu'il est bien
+      // initialisé avant le premier envoi, une seule fois.
+      if (!window.__emailjsInited) {
+        window.emailjs.init(EMAILJS_PUBLIC_KEY);
+        window.__emailjsInited = true;
+      }
+
+      window.emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
@@ -3566,13 +4613,24 @@
         }
       )
         .then(function () {
-          out.textContent = '✓ Message envoyé avec succès.';
+          out.innerHTML = '<i class="fa-solid fa-circle-check" aria-hidden="true"></i> Message envoyé avec succès.';
           out.className = 'form-msg msg-ok show';
+          showToast({
+            type: 'ok',
+            title: 'Message envoyé',
+            text: `Merci ${name.split(' ')[0]}, votre message est bien parti. Je réponds généralement sous 24-48h.`
+          });
           contactForm.reset();
         })
         .catch(function (error) {
-          out.textContent = "Erreur lors de l'envoi. Merci de réessayer ou de m'écrire directement par email.";
+          out.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Erreur lors de l\'envoi. Merci de réessayer ou de m\'écrire directement par email.';
           out.className = 'form-msg msg-err show';
+          showToast({
+            type: 'err',
+            title: "Échec de l'envoi",
+            text: "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.",
+            duration: 7000
+          });
           console.error('EmailJS error — vérifie le Template (To Email) et le Service sur dashboard.emailjs.com :', error);
         })
         .finally(() => {
@@ -3584,6 +4642,7 @@
     });
 
   </script>
+  <script src="Assets/webfronts/fontawesome/js/all.min.js" defer></script>
 </body>
 
 </html>

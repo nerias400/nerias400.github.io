@@ -1,0 +1,4589 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications, Fibre Optique, Support Informatique N1. Diplômé Licence Génie Télécom &amp; TIC, Cotonou, Bénin.">
+  <meta name="keywords"
+    content="Nérias Metombou, technicien réseaux, fibre optique, Cisco, Laravel, Bénin, Cotonou, support informatique">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="METOMBOU Nérias Sènakpon Ivan Prosper">
+  <meta property="og:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
+  <meta property="og:description"
+    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nerias400.github.io/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/nerias400">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="canonical" href="https://nerias400.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="METOMBOU Nérias — Technicien Réseaux &amp; Télécommunications">
+  <meta name="twitter:description"
+    content="Portfolio professionnel — Réseaux, Télécommunications, Fibre Optique, Support Informatique, Dev Web. Cotonou, Bénin.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/nerias400">
+  <meta name="theme-color" content="#0A0F1E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0F1E'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='%231f6feb' font-family='Arial, sans-serif' font-weight='600'%3EN%3C/text%3E%3C/svg%3E">
+  <!-- FONTS & ICONS -->
+  <link rel="stylesheet" href="./Assets/webfronts/fontawesome/css/all.min.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "METOMBOU Nérias Sènakpon Ivan Prosper",
+  "jobTitle": "Technicien Réseaux & Télécommunications",
+  "url": "https://nerias400.github.io/",
+  "email": "neriasmetombou@gmail.com",
+  "telephone": "+2290152240507",
+  "address": {"@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "BJ"},
+  "sameAs": ["https://linkedin.com/in/metombounerias","https://github.com/nerias400","https://wa.me/2290152240507"]
+}
+</script>
+  <!-- EmailJS chargé en differé — n'est nécessaire qu'à la soumission du
+       formulaire de contact, donc ne doit jamais bloquer le rendu initial. -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script>
+    const EMAILJS_PUBLIC_KEY = "9FyY8RROB-N2PWySt";
+    const EMAILJS_SERVICE_ID = "service_cnkjq9j";
+    const EMAILJS_TEMPLATE_ID = "template_1bf789a";
+    const MAINTENANCE_MODE = false;
+    if (MAINTENANCE_MODE) {
+      window.location.replace("maintenance.html");
+    }
+  </script>
+  <title>METOMBOU Nérias — Technicien Réseaux &amp; Télécoms</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ================================================================
+   TOKENS — Dark / Light
+   Signature : terminal typing line dans le hero
+   Palette bleu professionnel (#1f6feb) sur fond très sombre
+================================================================ */
+    :root {
+      --bg: #0A0F1E;
+      --surface: #111827;
+      --surface2: #1a2236;
+      --border: rgba(59, 130, 246, 0.18);
+      --bg2: #161b22;
+      --bg3: #1c2128;
+      --bordered: #21262d;
+      --border2: #30363d;
+      --accent: #1f6feb;
+      --accent-h: #388bfd;
+      --accent-bg: rgba(31, 111, 235, .10);
+      --accent-bd: rgba(31, 111, 235, .30);
+      --green: #2ea043;
+      --green-bg: rgba(46, 160, 67, .12);
+      --amber: #d29922;
+      --amber-bg: rgba(210, 153, 34, .12);
+      --red: #f85149;
+      --t1: #e6edf3;
+      --text-primary: var(--t1);
+      --t2: #8b949e;
+      --t3: #484f58;
+      --sans: 'Inter', system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'Courier New', monospace;
+      --r: 8px;
+      --sh: 0 4px 20px rgba(0, 0, 0, .4);
+      --tr: .18s ease;
+      --royal-blue: #2463eb;
+      --royal-glow: #3b82f6;
+      --royal-light: #60a5fa;
+      --royal-ultra: #8b5cf6;
+      --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+      --glass-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      --card-blur: blur(16px);
+      --radius-xl: 24px;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --bg2: #f6f8fa;
+      --bg3: #eaeef2;
+      --border: #d0d7de;
+      --border2: #b1bac4;
+      --t1: #1f2328;
+      --text-primary: var(--t1);
+      --t2: #57606a;
+      --t3: #b1bac4;
+      --sh: 0 4px 20px rgba(0, 0, 0, .10);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 15px
+    }
+
+    body {
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(96, 165, 250, 0.18), transparent 24%),
+        radial-gradient(circle at 82% 18%, rgba(139, 92, 246, 0.14), transparent 22%),
+        radial-gradient(circle at 50% 85%, rgba(31, 111, 235, 0.12), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,0.8), transparent 92%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      cursor: pointer;
+      font-family: var(--sans)
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg)
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border2);
+      border-radius: 2px
+    }
+
+    ::selection {
+      background: var(--accent-bg);
+      color: var(--accent-h)
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+      }
+    }
+
+    /* ================================================================
+   NAV
+================================================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      height: 56px;
+      background: rgba(13, 17, 23, .92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      transition: border-color var(--tr), background var(--tr);
+    }
+
+    [data-theme="light"] .nav {
+      background: rgba(255, 255, 255, .92)
+    }
+
+    .nav-brand {
+      font-family: var(--mono);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--t1);
+      letter-spacing: .5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.5px;
+      background-clip: text;
+      background: linear-gradient(135deg, #fff, var(--royal-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-brand-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 6px var(--green);
+      animation: blink 2.5s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      align-items: center
+    }
+
+    .nav-links a {
+      font-size: .78rem;
+      color: var(--t2);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: color var(--tr), color var(--t1);
+      background: var(--bg3);
+    }
+
+    .nav-links a.active {
+      color: var(--accent-h)
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    /* Dark/light toggle */
+    .theme-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--r);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+    }
+
+    .theme-btn:hover {
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    /* Hamburger */
+    .ham {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      padding: 6px;
+    }
+
+    .ham span {
+      display: block;
+      width: 20px;
+      height: 1.5px;
+      background: var(--t2);
+      transition: all .25s
+    }
+
+    .ham.open span:nth-child(1) {
+      transform: translateY(5.5px) rotate(45deg)
+    }
+
+    .ham.open span:nth-child(2) {
+      opacity: 0
+    }
+
+    .ham.open span:nth-child(3) {
+      transform: translateY(-5.5px) rotate(-45deg)
+    }
+
+    .mob-menu {
+      display: none;
+      position: fixed;
+      top: 56px;
+      left: 0;
+      right: 0;
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      z-index: 199;
+      padding: 10px 0 14px;
+      flex-direction: column;
+    }
+
+    .mob-menu.open {
+      display: flex
+    }
+
+    .mob-menu a {
+      padding: 11px 24px;
+      font-size: .88rem;
+      color: var(--t2);
+      transition: color var(--tr), background var(--tr)
+    }
+
+    .mob-menu a:hover {
+      color: var(--t1);
+      background: var(--bg3)
+    }
+
+    /* ================================================================
+   LAYOUT HELPERS
+================================================================ */
+    .page-wrap {
+      padding-top: 56px
+    }
+
+    .section {
+      padding: 80px 40px;
+      max-width: 1080px;
+      margin: 0 auto;
+      scroll-margin-top: 72px
+    }
+
+    .section-sm {
+      padding: 70px 40px;
+      max-width: 1080px;
+      margin: 0 auto;
+      scroll-margin-top: 72px
+    }
+
+    #hero {
+      scroll-margin-top: 72px
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: var(--border);
+      margin: 0
+    }
+
+    .sec-eyebrow {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--accent);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .sec-title {
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 8px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .sec-sub {
+      font-size: .88rem;
+      color: var(--t2);
+      max-width: 600px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal.on {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-l {
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal-l.on {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-r {
+      opacity: 0;
+      transform: translateX(20px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .reveal-r.on {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ================================================================
+   HERO
+================================================================ */
+    #hero {
+      min-height: calc(100vh - 56px);
+      display: flex;
+      align-items: center;
+      padding: 60px 40px;
+    }
+
+    .hero-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+    }
+
+
+    .hero-available {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--green);
+      letter-spacing: 1px;
+      background: var(--green-bg);
+      border: 1px solid rgba(46, 160, 67, .25);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 22px;
+    }
+
+    .hero-available::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      flex-shrink: 0;
+      animation: blink 1.8s ease-in-out infinite;
+    }
+
+    .hero-name {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 600;
+      color: var(--t1);
+      line-height: 1.05;
+      margin-bottom: 10px;
+      letter-spacing: -.5px;
+    }
+
+    .hero-name span {
+      color: var(--accent-h)
+    }
+
+    .hero-role {
+      font-size: clamp(.9rem, 1.4vw, 1.1rem);
+      color: var(--t2);
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+
+    /* Terminal typing line — signature element */
+    .hero-terminal {
+      font-family: var(--mono);
+      font-size: .8rem;
+      color: var(--accent);
+      margin-bottom: 26px;
+      min-height: 1.4em;
+    }
+
+    .hero-terminal::before {
+      content: '$ ';
+      color: var(--t3)
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1em;
+      background: var(--accent);
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: cursor-blink .9s step-end infinite;
+    }
+
+    @keyframes cursor-blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: 0
+      }
+    }
+
+
+    .hero-bio {
+      font-size: .88rem;
+      color: var(--t2);
+      line-height: 1.8;
+      max-width: 540px;
+      margin-bottom: 30px;
+    }
+
+    .hero-bio strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 36px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .2px;
+      padding: 9px 20px;
+      border-radius: var(--r);
+      transition: all var(--tr);
+      border: 1px solid transparent;
+    }
+
+    .btn-loading {
+      pointer-events: none;
+      opacity: .8;
+    }
+
+    .form-spinner {
+      display: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, .35);
+      border-top-color: #fff;
+      animation: form-spin .7s linear infinite;
+    }
+
+    .btn-loading .form-spinner {
+      display: inline-block;
+    }
+
+    @keyframes form-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .field-err-msg {
+      font-size: .68rem;
+      color: var(--red);
+      min-height: 14px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    .field-err-msg.show {
+      display: block;
+    }
+
+    .form-ctrl.fc-err {
+      border-color: var(--red) !important;
+      box-shadow: 0 0 0 3px rgba(248, 81, 73, .14);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent)
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-h);
+      border-color: var(--accent-h);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(31, 111, 235, .35)
+    }
+
+    .btn-ghost {
+      background: var(--bg3);
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    .btn-ghost:hover {
+      transform: translateY(-1px);
+      border-color: var(--border2)
+    }
+
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      font-size: .9rem;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .18);
+      color: var(--accent-h);
+      margin-right: 8px;
+      flex-shrink: 0;
+      border: 1px solid rgba(56, 142, 255, .25);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
+      transition: transform var(--tr), background var(--tr), box-shadow var(--tr);
+    }
+
+    .btn-icon:hover {
+      transform: translateY(-1px);
+      background: rgba(31, 111, 235, .24);
+    }
+
+    .btn-icon--spaced {
+      margin-left: 8px;
+    }
+
+    .btn-start {
+      align-self: flex-start;
+    }
+
+    .skill-icon,
+    .proj-cat-icon,
+    .project-icon,
+    .ci-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      min-height: 32px;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .16);
+      color: var(--accent-h);
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border: 1px solid rgba(56, 142, 255, .24);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
+    }
+
+    .skill-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-size: .76rem;
+      color: var(--t2);
+    }
+
+    .proj-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .proj-card {
+      background: linear-gradient(180deg, rgba(12, 18, 30, 0.92), rgba(10, 15, 25, 0.88));
+      border: 1px solid rgba(96, 165, 250, 0.16);
+      border-radius: 22px;
+      overflow: hidden;
+      transition: border-color var(--tr), transform var(--tr), box-shadow var(--tr), background var(--tr);
+      box-shadow: 0 24px 50px rgba(2, 6, 23, 0.38);
+      backdrop-filter: blur(14px);
+      position: relative;
+    }
+
+    .proj-card::before {
+      content: '';
+      position: absolute;
+      inset: auto -30% -40% auto;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(96, 165, 250, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+
+    .proj-card:hover {
+      border-color: rgba(96, 165, 250, 0.38);
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(31, 111, 235, .16)
+    }
+
+    .proj-thumb {
+      height: 220px;
+      background: linear-gradient(180deg, rgba(28, 34, 54, .8), rgba(13, 17, 23, .95));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid rgba(96, 165, 250, .12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proj-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .5s ease;
+    }
+
+    .proj-card:hover .proj-thumb img {
+      transform: scale(1.04);
+    }
+
+    .proj-thumb-clickable {
+      cursor: pointer;
+    }
+
+    .proj-thumb-clickable:focus-visible {
+      outline: 2px solid var(--accent-h);
+      outline-offset: -2px;
+    }
+
+    .proj-thumb::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(96, 165, 250, .16), transparent 28%),
+                  radial-gradient(circle at bottom right, rgba(31, 111, 235, .12), transparent 22%);
+      pointer-events: none;
+    }
+
+    .proj-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 38%, rgba(10, 13, 21, 0.72));
+      transition: opacity var(--tr);
+      opacity: 1;
+    }
+
+    .proj-card:hover .proj-thumb-overlay {
+      opacity: .75;
+    }
+
+    .proj-body {
+      position: relative;
+      z-index: 1;
+      padding: 18px 18px 20px;
+    }
+
+    .proj-cat {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .proj-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .proj-lk {
+      font-family: var(--mono);
+      font-size: .65rem;
+      border: 1px solid rgba(96, 165, 250, .18);
+      padding: 9px 13px;
+      border-radius: 10px;
+      transition: all var(--tr);
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
+      appearance: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .proj-lk:hover {
+      background: linear-gradient(135deg, rgba(31, 111, 235, .16), rgba(139, 92, 246, .12));
+      border-color: rgba(96, 165, 250, .35);
+      transform: translateY(-1px);
+    }
+
+    /* ── Pied de card : liens rapides externes + CTA principal ──
+       Volontairement minimal et identique sur toutes les cards, quel
+       que soit le type de projet : c'est le détail (modal) qui varie,
+       pas l'entrée. */
+    .proj-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .proj-quicklinks {
+      display: flex;
+      gap: 8px;
+    }
+
+    .proj-quick-lk {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(96, 165, 250, .18);
+      background: rgba(31, 111, 235, .08);
+      color: var(--accent-h);
+      font-size: .8rem;
+      transition: all var(--tr);
+      flex-shrink: 0;
+    }
+
+    .proj-quick-lk:hover {
+      background: rgba(31, 111, 235, .18);
+      border-color: rgba(96, 165, 250, .4);
+      transform: translateY(-1px);
+    }
+
+    .proj-cta {
+      font-family: var(--mono);
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .3px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--accent-bd);
+      background: linear-gradient(135deg, rgba(31, 111, 235, .22), rgba(139, 92, 246, .16));
+      color: var(--t1);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all var(--tr);
+      margin-left: auto;
+      appearance: none;
+    }
+
+    .proj-cta:hover {
+      border-color: var(--accent-h);
+      background: linear-gradient(135deg, rgba(31, 111, 235, .32), rgba(139, 92, 246, .24));
+      transform: translateY(-1px);
+    }
+
+    .proj-cta i {
+      transition: transform var(--tr);
+    }
+
+    .proj-cta:hover i {
+      transform: translateX(2px);
+    }
+
+    .proj-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .proj-tech {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
+      border: 1px solid rgba(96, 165, 250, .18);
+      padding: 5px 8px;
+      border-radius: 999px;
+    }
+
+    .proj-name {
+      font-size: 1.04rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 10px;
+      line-height: 1.38;
+      transition: color var(--tr);
+    }
+
+    .proj-desc {
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    .btn-mail {
+      background: var(--green);
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    /* Hero contact strip */
+    .hero-contact {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--t3);
+    }
+
+    .hero-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(31, 111, 235, .16);
+      background: rgba(31, 111, 235, .08);
+      transition: all var(--tr);
+      color: var(--t1);
+    }
+
+    .hero-contact a:hover {
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .16);
+      border-color: rgba(31, 111, 235, .26);
+      transform: translateY(-1px);
+    }
+
+    /* Right — Avatar */
+    .hero-avatar-wrap {
+      position: relative;
+      flex-shrink: 0
+    }
+
+    .hero-location {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-family: var(--mono);
+      font-size: .6rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* ================================================================
+   STATS
+================================================================ */
+    .stats-band {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 32px 40px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 20px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+      border-right: none
+    }
+
+    .stat-val {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--accent-h);
+      font-family: var(--mono);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-lbl {
+      font-size: .72rem;
+      color: var(--t2)
+    }
+
+    /* ================================================================
+   ABOUT
+================================================================ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: .88rem;
+      color: var(--t2);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .about-text p strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0
+    }
+
+    .about-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+
+    .about-card-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 13px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background var(--tr);
+    }
+
+    .about-card-row:last-child {
+      border-bottom: none
+    }
+
+    .about-card-row:hover {
+      background: var(--bg3)
+    }
+
+    .about-card-ico {
+      font-size: .9rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+      width: 18px;
+      text-align: center
+    }
+
+    .about-card-lbl {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .about-card-val {
+      font-size: .82rem;
+      color: var(--t1)
+    }
+
+    /* ================================================================
+   SKILLS
+================================================================ */
+    .skills-layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .skill-group {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 22px;
+      transition: border-color var(--tr);
+    }
+
+    .skill-group:hover {
+      border-color: var(--border2)
+    }
+
+    .skill-group-title {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--t1);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-item {
+      margin-bottom: 12px
+    }
+
+    .skill-item:last-child {
+      margin-bottom: 0
+    }
+
+    .skill-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      font-size: .76rem;
+      color: var(--t2);
+    }
+
+    .skill-row span:last-child {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--accent-h)
+    }
+
+    .skill-track {
+      height: 3px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden
+    }
+
+    .skill-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .9s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .skill-fill.go {
+      transform: scaleX(1)
+    }
+
+    /* ================================================================
+   EXPERIENCE
+================================================================ */
+    .exp-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0;
+      position: relative;
+    }
+
+    .exp-left {
+      padding: 0 24px 0 0;
+      text-align: right;
+      position: relative;
+    }
+
+    /* Vertical line */
+    .exp-item::after {
+      content: '';
+      position: absolute;
+      left: 130px;
+      top: 10px;
+      bottom: -1px;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .exp-item:last-child::after {
+      display: none
+    }
+
+    .exp-dot {
+      position: absolute;
+      right: -6px;
+      top: 5px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--accent);
+      z-index: 1;
+    }
+
+    .exp-period {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--t3);
+      line-height: 1.5;
+    }
+
+    .exp-right {
+      padding: 0 0 40px 28px
+    }
+
+    .exp-role {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px;
+    }
+
+    .exp-org {
+      font-size: .78rem;
+      color: var(--accent-h);
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .exp-tasks {
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .exp-task {
+      font-size: .78rem;
+      color: var(--t2);
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .exp-task::before {
+      content: '·';
+      color: var(--accent);
+      flex-shrink: 0;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 12px
+    }
+
+    .exp-tag {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    /* ================================================================
+   PROJECTS
+================================================================ */
+    .proj-filters {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 28px
+    }
+
+    .pf-btn {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: none;
+      color: var(--t3);
+      transition: all var(--tr);
+    }
+
+    .pf-btn:hover {
+      color: var(--t1);
+      border-color: var(--border2)
+    }
+
+    .pf-btn.active {
+      color: var(--accent-h);
+      border-color: var(--accent-bd);
+      background: var(--accent-bg)
+    }
+
+    .proj-empty {
+      text-align: center;
+      font-family: var(--mono);
+      font-size: .8rem;
+      color: var(--t3);
+      padding: 32px 0;
+    }
+
+    .proj-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(13, 17, 23, .8));
+    }
+
+    /* ================================================================
+   CERTIFICATIONS
+================================================================ */
+
+
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .cert-card {
+      background: var(--bg2, rgba(255, 255, 255, 0.02));
+      border: var(--glass-border);
+      border-radius: var(--r, --radius-md);
+      padding: 20px;
+      transition: border-color var(--tr), transform var(--tr);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      transition: var(--transition-smooth);
+
+    }
+
+    .cert-card:hover {
+      border-color: var(--border2,--royal-blue);
+      transform: translateY(-4px);
+    }
+
+    .cert-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--accent-h);
+      margin-bottom: .4rem;
+    }
+
+    .cert-issuer {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .cert-name {
+      font-size: .90rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 10px
+    }
+
+    .cert-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px
+    }
+
+    .cert-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--mono);
+      font-size: .58rem;
+      padding: 2px 8px;
+      border-radius: 3px;
+      border: 1px solid var(--accent);
+      color: var(--accent-h);
+      background: rgba(31, 111, 235, .08);
+    }
+
+    .status-done {
+      color: var(--accent-h);
+      border-color: rgba(31, 111, 235, .3);
+      background: rgba(31, 111, 235, .1)
+    }
+
+    .status-progress {
+      color: var(--amber);
+      border-color: rgba(210, 153, 34, .3);
+      background: var(--amber-bg)
+    }
+
+    .status-planned {
+      color: var(--t3);
+      border-color: var(--border)
+    }
+
+    .cert-view-btn {
+      font-family: var(--mono);
+      font-size: .56rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 2px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all var(--tr);
+    }
+
+    .cert-view-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent)
+    }
+
+    /* ================================================================
+   FORMATION
+================================================================ */
+    .edu-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px
+    }
+
+    .edu-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 22px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: flex-start;
+      transition: border-color var(--tr);
+    }
+
+    .edu-card:hover {
+      border-color: var(--border2)
+    }
+
+    .edu-year {
+      font-family: var(--mono);
+      font-size: .68rem;
+      color: var(--accent);
+      text-align: right;
+      white-space: nowrap;
+      padding-top: 2px;
+      min-width: 80px;
+    }
+
+    .edu-degree {
+      font-size: .92rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px
+    }
+
+    .edu-school {
+      font-size: .78rem;
+      color: var(--accent-h);
+      margin-bottom: 6px
+    }
+
+    .edu-desc {
+      font-size: .76rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    .edu-badge {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 2px 9px;
+      border-radius: 3px;
+    }
+
+    /* ================================================================
+   SERVICES
+================================================================ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .svc-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 24px;
+      transition: border-color var(--tr), transform var(--tr);
+    }
+
+    .svc-card:hover {
+      border-color: var(--accent-bd,--royal-blue);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 30px 50px -20px var(--royal-blue);
+    }
+
+    .svc-icon {
+      font-size: 1.5rem;
+      margin-bottom: 12px
+    }
+
+    .svc-title {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 6px
+    }
+
+    .svc-desc {
+      font-size: .76rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    /* ================================================================
+   CONTACT
+================================================================ */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 48px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .contact-block {
+      background: rgba(18, 30, 52, .88);
+      border: 1px solid rgba(56, 142, 255, .14);
+      border-radius: var(--r);
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      transition: border-color var(--tr), transform var(--tr), background var(--tr);
+    }
+
+    .contact-block:hover {
+      border-color: rgba(56, 142, 255, .25);
+      background: rgba(31, 111, 235, .05);
+      transform: translateY(-1px);
+    }
+
+    .ci-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      font-size: 1rem;
+      border-radius: 12px;
+      background: rgba(31, 111, 235, .16);
+      color: var(--accent-h);
+      flex-shrink: 0;
+      text-align: center;
+      border: 1px solid rgba(56, 142, 255, .24);
+    }
+
+    .ci-lbl {
+      font-family: var(--mono);
+      font-size: .58rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2px
+    }
+
+    .ci-val {
+      font-size: .82rem;
+      color: var(--t1)
+    }
+
+    .ci-val a {
+      transition: color var(--tr)
+    }
+
+    .ci-val a:hover {
+      color: var(--accent-h)
+    }
+
+    .contact-avail {
+      margin-top: 8px;
+      padding: 14px 16px;
+      background: var(--green-bg);
+      border: 1px solid rgba(46, 160, 67, .25);
+      border-radius: var(--r);
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.6;
+    }
+
+    .contact-avail strong {
+      color: var(--t1);
+      font-weight: 500
+    }
+
+    /* Form */
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 3.5rem;
+      border-radius: var(--radius-xl);
+      border: var(--glass-border);
+      backdrop-filter: blur(20px);
+    }
+
+    .form-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text-primary);
+      transition: var(--transition-smooth);
+    }
+
+    .form-lbl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3);
+      letter-spacing: 1px;
+      text-transform: uppercase
+    }
+
+    .form-ctrl {
+      font-family: var(--sans);
+      font-size: .82rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t1);
+      padding: 9px 12px;
+      border-radius: var(--r);
+      outline: none;
+      transition: border-color var(--tr), box-shadow var(--tr);
+      resize: none;
+    }
+
+    .form-ctrl:focus {
+      border-color: var(--accent-bd);
+      box-shadow: 0 0 0 3px var(--accent-bg)
+    }
+
+    .form-ctrl::placeholder {
+      color: var(--t3)
+    }
+
+    .form-ctrl[rows] {
+      height: 108px
+    }
+
+    .form-msg {
+      font-family: var(--mono);
+      font-size: .62rem;
+      text-align: center;
+      padding: 6px;
+      border-radius: 4px;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px
+    }
+
+    .msg-ok {
+      color: var(--green);
+      background: var(--green-bg)
+    }
+
+    .msg-err {
+      color: var(--red);
+      background: rgba(248, 81, 73, .08)
+    }
+
+    /* ================================================================
+   TOAST — confirmation flottante d'envoi d'email
+================================================================ */
+    #toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+      max-width: min(360px, calc(100vw - 40px));
+    }
+
+    .toast {
+      pointer-events: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(13, 19, 33, .92);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: 12px;
+      padding: 14px 16px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .4);
+      transform: translateX(120%);
+      opacity: 0;
+      transition: transform .38s cubic-bezier(.34, 1.4, .64, 1), opacity .3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .toast.toast-show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .toast.toast-err {
+      border-left-color: var(--red);
+    }
+
+    .toast-icon {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green-bg);
+      color: var(--green);
+      font-size: .9rem;
+    }
+
+    .toast-err .toast-icon {
+      background: rgba(248, 81, 73, .12);
+      color: var(--red);
+    }
+
+    .toast-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .toast-title {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--t1);
+      margin-bottom: 2px;
+    }
+
+    .toast-text {
+      font-size: .74rem;
+      color: var(--t2);
+      line-height: 1.5;
+    }
+
+    .toast-close {
+      flex-shrink: 0;
+      background: none;
+      border: none;
+      color: var(--t3);
+      font-size: .95rem;
+      line-height: 1;
+      padding: 2px;
+      cursor: pointer;
+      transition: color var(--tr);
+    }
+
+    .toast-close:hover {
+      color: var(--t1);
+    }
+
+    .toast-timer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: var(--green);
+      width: 100%;
+      transform-origin: left;
+      animation: toast-shrink linear forwards;
+    }
+
+    .toast-err .toast-timer {
+      background: var(--red);
+    }
+
+    @keyframes toast-shrink {
+      from {
+        transform: scaleX(1)
+      }
+
+      to {
+        transform: scaleX(0)
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .toast {
+        transition: opacity .2s ease;
+        transform: none;
+      }
+
+      .toast-timer {
+        animation: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #toast-container {
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+        max-width: none;
+      }
+
+      .toast {
+        transform: translateY(140%);
+      }
+
+      .toast.toast-show {
+        transform: translateY(0);
+      }
+    }
+
+    /* ================================================================
+   FOOTER
+================================================================ */
+    footer {
+      background: rgba(13, 17, 23, .92);
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      max-width: 100%;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--bordered);
+    }
+
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-brand {
+      font-family: var(--mono);
+      font-size: .75rem;
+      color: var(--t2)
+    }
+
+    .footer-brand span {
+      color: var(--accent-h)
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 8px
+    }
+
+    .footer-soc {
+      font-family: var(--mono);
+      font-size: .6rem;
+      border: 1px solid var(--accent-bd);
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: all var(--tr);
+      color: var(--accent-h);
+    }
+
+    .footer-copy {
+      font-size: .72rem;
+      color: var(--t3)
+    }
+
+    /* ================================================================
+   BACK TO TOP
+================================================================ */
+    .btt {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 100;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--r);
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--t2);
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--sh);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--tr), color var(--tr), border-color var(--tr), transform var(--tr);
+    }
+
+    .btt.show {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .btt:hover {
+      color: var(--accent-h);
+      border-color: var(--accent-bd,--royal-light);
+      transform: translateY(-2px);
+      box-shadow: 0 30px 50px -20px var(--royal-blue);
+    }
+
+    /* ================================================================
+   RESPONSIVE
+================================================================ */
+    @media(max-width:900px) {
+      .nav {
+        padding: 0 20px
+      }
+
+      .nav-links {
+        display: none
+      }
+
+      .ham {
+        display: flex
+      }
+
+      .section,
+      .section-sm {
+        padding: 60px 20px
+      }
+
+      .divider {
+        margin: 0 20px
+      }
+
+      #hero {
+        padding: 40px 20px
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px
+      }
+
+      .hero-avatar-wrap {
+        display: flex;
+        justify-content: center
+      }
+
+      .hero-btns {
+        justify-content: center
+      }
+
+      .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0
+      }
+
+      .stat-item:nth-child(2) {
+        border-right: none
+      }
+
+      .stat-item:nth-child(3) {
+        border-right: 1px solid var(--border);
+        border-top: 1px solid var(--border)
+      }
+
+      .stat-item:nth-child(4) {
+        border-top: 1px solid var(--border)
+      }
+
+      .stat-item {
+        padding: 16px
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px
+      }
+
+      .skills-layout {
+        grid-template-columns: 1fr
+      }
+
+      .exp-item {
+        grid-template-columns: 90px 1fr
+      }
+
+      .proj-grid {
+        grid-template-columns: 1fr
+      }
+
+      .certs-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .contact-wrap {
+        grid-template-columns: 1fr;
+        gap: 32px
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .footer-social {
+        justify-content: center
+      }
+    }
+
+    @media(max-width:560px) {
+      .hero-name {
+        font-size: 1.8rem
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        align-items: center
+      }
+
+      .stats-inner {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .form-2col {
+        grid-template-columns: 1fr
+      }
+
+      .certs-grid {
+        grid-template-columns: 1fr
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr
+      }
+
+      .edu-card {
+        grid-template-columns: 1fr;
+        gap: 4px
+      }
+
+      .edu-year {
+        text-align: left;
+        padding-top: 0
+      }
+
+      .exp-item {
+        grid-template-columns: 1fr;
+        padding-left: 20px
+      }
+
+      .exp-left {
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 4px
+      }
+
+      .exp-item::after {
+        left: 0;
+        top: 0
+      }
+
+      .exp-dot {
+        right: auto;
+        left: -6px
+      }
+    }
+
+    /* Print for CV section */
+    @media print {
+
+      .nav,
+      .mob-menu,
+      .hero-btns,
+      .proj-filters,
+      .btt,
+      footer,
+      .svc-card,
+      .form,
+      .contact-info .contact-avail {
+        display: none !important
+      }
+
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12px
+      }
+
+      .section,
+      .section-sm {
+        padding: 24px 0;
+        max-width: 100%
+      }
+
+      .about-grid,
+      .skills-layout,
+      .proj-grid,
+      .certs-grid,
+      .services-grid,
+      .contact-wrap {
+        grid-template-columns: 1fr
+      }
+
+      .stats-inner {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    /* ================================================================
+   PRELOADER
+================================================================ */
+
+
+  /* ── NERIACORE PRO LOADER V3 - 100% ISOLÉ ── */
+  #nc-page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: radial-gradient(ellipse at center, rgba(3, 8, 20, 0.97) 0%, rgba(0, 0, 0, 1) 100%);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+  }
+  #nc-page-loader.nc-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* Overlay pour bloquer le scroll sans toucher au body */
+  #nc-page-loader::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .nc-loader-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  /* SPINNER FIN */
+  .nc-loader-spinner {
+    position: relative;
+    width: 70px;
+    height: 70px;
+  }
+  .nc-loader-ring {
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: nc-spin 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  .nc-loader-ring:nth-child(1) {
+    border-top: 2px solid var(--accent, #1f6feb);
+    border-right: 2px solid var(--accent, #1f6feb);
+    animation-duration: 1.8s;
+  }
+  .nc-loader-ring:nth-child(2) {
+    inset: 10px;
+    border-bottom: 2px solid #8b5cf6;
+    border-left: 2px solid #8b5cf6;
+    animation-duration: 2.2s;
+    animation-direction: reverse;
+  }
+  .nc-loader-ring:nth-child(3) {
+    inset: 20px;
+    border-top: 2px solid var(--accent-h, #388bfd);
+    animation-duration: 1.5s;
+  }
+  @keyframes nc-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* TEXTE */
+  .nc-loader-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--t1, #E6F4FF);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(31, 111, 235, 0.4);
+    font-family: var(--sans, 'Inter', system-ui, sans-serif);
+    transition: opacity .3s ease;
+  }
+  .nc-loader-sub {
+    font-family: var(--mono, monospace);
+    font-size: 0.72rem;
+    color: rgba(230, 244, 255, 0.5);
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: -15px;
+    transition: opacity .3s ease;
+  }
+
+  /* POINTS */
+  .nc-dots::after {
+    content: '';
+    animation: nc-dots 1.5s steps(3, jump-none) infinite;
+  }
+  @keyframes nc-dots {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+  }
+      
+
+    /* ================================================================
+   MODAL CERTIFICAT
+================================================================ */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 800;
+      background: rgba(0, 0, 0, .82);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .28s ease, visibility .28s ease;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .modal-box {
+      background: var(--bg2);
+      border: 1px solid var(--border2);
+      border-radius: var(--r);
+      width: 100%;
+      max-width: 780px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      transform: scale(.95) translateY(14px);
+      transition: transform .28s ease;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .65);
+      overflow: hidden;
+    }
+
+    .modal-overlay.open .modal-box {
+      transform: none
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+      gap: 12px;
+    }
+
+    .modal-title {
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--t1);
+      flex: 1;
+      min-width: 0
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-shrink: 0
+    }
+
+    .modal-dl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--accent-h);
+      background: var(--accent-bg);
+      border: 1px solid var(--accent-bd);
+      padding: 5px 12px;
+      border-radius: 5px;
+      transition: all var(--tr);
+      text-decoration: none;
+    }
+
+    .modal-dl:hover {
+      background: var(--accent);
+      color: #fff
+    }
+
+    .modal-close-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: var(--r);
+      color: var(--t2);
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+      background: none;
+      cursor: pointer;
+    }
+
+    .modal-close-btn:hover {
+      color: var(--red);
+      border-color: rgba(248, 81, 73, .4);
+      background: rgba(248, 81, 73, .08)
+    }
+
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .modal-pdf-wrap {
+      width: 100%;
+      min-height: 400px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--bg3)
+    }
+
+    .modal-pdf-wrap iframe,
+    .modal-pdf-wrap embed {
+      width: 100%;
+      height: 480px;
+      border: none;
+      display: block
+    }
+
+    .modal-pdf-fallback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 12px;
+      text-align: center;
+      padding: 32px;
+    }
+
+    .modal-pdf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    .modal-pdf-fallback .pdf-icon {
+      font-size: 2.5rem;
+      opacity: .5
+    }
+
+    .modal-pdf-fallback p {
+      font-size: .8rem;
+      color: var(--t2);
+      line-height: 1.6
+    }
+
+    .modal-pdf-fallback small {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3)
+    }
+
+    /* ================================================================
+   MODAL DÉTAILS PROJET
+================================================================ */
+    .modal-box--lg {
+      max-width: 920px;
+    }
+
+    .proj-thumb-count {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1;
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: #fff;
+      background: rgba(10, 15, 25, .68);
+      border: 1px solid rgba(255, 255, 255, .14);
+      padding: 3px 9px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      backdrop-filter: blur(4px);
+    }
+
+    /* ── Carousel dans le modal détails ── */
+    .pm-carousel {
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg3);
+    }
+
+    .pm-carousel-track {
+      display: flex;
+      transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .pm-carousel-track img {
+      width: 100%;
+      flex: 0 0 100%;
+      max-height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pm-carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(10, 15, 25, .6);
+      border: 1px solid rgba(255, 255, 255, .16);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--tr);
+      backdrop-filter: blur(4px);
+    }
+
+    .pm-carousel-nav:hover {
+      background: rgba(31, 111, 235, .55);
+    }
+
+    .pm-carousel-prev {
+      left: 10px
+    }
+
+    .pm-carousel-next {
+      right: 10px
+    }
+
+    .pm-carousel-play {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(10, 15, 25, .6);
+      border: 1px solid rgba(255, 255, 255, .16);
+      color: #fff;
+      font-size: .68rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--tr);
+      backdrop-filter: blur(4px);
+    }
+
+    .pm-carousel-play:hover {
+      background: rgba(31, 111, 235, .55);
+    }
+
+    .pm-carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+    }
+
+    .pm-carousel-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .35);
+      border: none;
+      padding: 0;
+      transition: background var(--tr), transform var(--tr);
+    }
+
+    .pm-carousel-dot.active {
+      background: #fff;
+      transform: scale(1.25);
+    }
+
+    .pm-thumb {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    .pm-cat {
+      font-family: var(--mono);
+      font-size: .62rem;
+      color: var(--accent);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pm-desc {
+      font-size: .86rem;
+      color: var(--t2);
+      line-height: 1.8;
+    }
+
+    .pm-section-lbl {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: var(--t3);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .pm-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pm-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ================================================================
+   LOADER — barre de progression
+================================================================ */
+    .nc-loader-bar-track {
+      width: 200px;
+      height: 3px;
+      border-radius: 2px;
+      background: rgba(230, 244, 255, .12);
+      overflow: hidden;
+    }
+
+    .nc-loader-bar-fill {
+      height: 100%;
+      width: 0%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-h), #8b5cf6);
+      background-size: 200% 100%;
+      animation: nc-bar-shimmer 2.4s linear infinite;
+      transition: width .3s ease;
+    }
+
+    @keyframes nc-bar-shimmer {
+      0% { background-position: 0% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    .nc-loader-pct {
+      font-family: var(--mono);
+      font-size: .68rem;
+      color: rgba(230, 244, 255, .55);
+      letter-spacing: 1px;
+    }
+
+    /* ================================================================
+   RESPONSIVE — compléments ultra-pro
+================================================================ */
+    @media (max-width: 900px) {
+      .form {
+        padding: 1.6rem;
+      }
+
+      .proj-thumb {
+        height: 190px;
+      }
+
+      .modal-box--lg {
+        max-height: 94vh;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 14px
+      }
+
+      .section,
+      .section-sm {
+        padding: 48px 16px
+      }
+
+      #hero {
+        padding: 32px 16px
+      }
+
+      .hero-btns {
+        width: 100%
+      }
+
+      .hero-btns .btn {
+        flex: 1 1 auto;
+        justify-content: center
+      }
+
+      .form {
+        padding: 1.1rem
+      }
+
+      .modal-header {
+        padding: 12px 14px
+      }
+
+      .modal-body {
+        padding: 14px
+      }
+
+      .proj-body {
+        padding: 16px 14px 18px
+      }
+
+      .pf-btn {
+        padding: 5px 10px;
+        font-size: .58rem
+      }
+
+      .stats-inner {
+        padding: 20px
+      }
+
+      .nc-loader-text {
+        font-size: .92rem;
+        letter-spacing: 2px
+      }
+
+      .nc-loader-bar-track {
+        width: 150px
+      }
+    }
+
+    @media (max-width: 340px) {
+      .stats-inner {
+        grid-template-columns: 1fr
+      }
+
+      .stat-item {
+        border-right: none !important;
+        border-bottom: 1px solid var(--border);
+        padding: 12px
+      }
+
+      .stat-item:last-child {
+        border-bottom: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOAST -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- PRELOADER -->
+
+<!-- NERIACORE PRO LOADER -->
+<div id="nc-page-loader">
+  <div class="nc-loader-wrap">
+    <div class="nc-loader-spinner">
+      <div class="nc-loader-ring"></div>
+      <div class="nc-loader-ring"></div>
+      <div class="nc-loader-ring"></div>
+    </div>
+    <div class="nc-loader-text" id="nc-loader-text">INITIALISATION<span class="nc-dots"></span></div>
+    <div class="nc-loader-sub" id="nc-loader-sub">TECHNICIEN RÉSEAUX &amp; TÉLÉCOMS</div>
+    <div class="nc-loader-bar-track"><div class="nc-loader-bar-fill" id="nc-loader-bar-fill"></div></div>
+    <div class="nc-loader-pct" id="nc-loader-pct">0%</div>
+  </div>
+</div>
+
+  
+  <!-- MODAL CERTIFICAT -->
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title" id="cert-modal-title">Certificat</div>
+        <div class="modal-actions">
+          <a class="modal-dl" id="cert-modal-dl" href="#" download aria-label="Télécharger le certificat"><i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger</a>
+          <button type="button" class="modal-close-btn" id="cert-modal-close" aria-label="Fermer le modal"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-pdf-wrap" id="cert-modal-pdf"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DÉTAILS PROJET -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <div class="modal-box modal-box--lg">
+      <div class="modal-header">
+        <div class="modal-title" id="project-modal-title">Détails du projet</div>
+        <div class="modal-actions">
+          <button type="button" class="modal-close-btn" id="project-modal-close" aria-label="Fermer le modal"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="modal-body" id="project-modal-body"><!-- injecté par openProjectModal() --></div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav" id="main-nav" aria-label="Navigation principale">
+      <div class="nav-brand">
+        <!--<div class="nav-brand-dot"></div>-->
+        <i class="fa-solid fa-network-wired icon-premium"></i> Nérias Metombou
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" data-sec="hero">Accueil</a></li>
+        <li><a href="#about" data-sec="about">À propos</a></li>
+        <li><a href="#skills" data-sec="skills">Compétences</a></li>
+        <li><a href="#exp" data-sec="exp">Expérience</a></li>
+        <li><a href="#projects" data-sec="projects">Projets</a></li>
+        <li><a href="#certs" data-sec="certs">Certificats</a></li>
+        <li><a href="#edu" data-sec="edu">Formation</a></li>
+        <li><a href="#contact" data-sec="contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button type="button" class="theme-btn" id="theme-btn" title="Changer de thème" aria-label="Basculer thème sombre/clair">
+  <i class="fa-solid fa-moon icon-premium"></i>
+</button>
+<button type="button" class="ham" id="ham" aria-label="Menu" aria-controls="mob-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <nav class="mob-menu" id="mob-menu" aria-label="Menu mobile" aria-hidden="true">
+      <a href="#hero" onclick="closeMob()">Accueil</a>
+      <a href="#about" onclick="closeMob()">À propos</a>
+      <a href="#skills" onclick="closeMob()">Compétences</a>
+      <a href="#exp" onclick="closeMob()">Expérience</a>
+      <a href="#projects" onclick="closeMob()">Projets</a>
+      <a href="#certs" onclick="closeMob()">Certificats</a>
+      <a href="#edu" onclick="closeMob()">Formation</a>
+      <a href="#contact" onclick="closeMob()">Contact</a>
+    </nav>
+  </header>
+  <main class="page-wrap" id="main-content">
+
+    <!-- ================================================================
+     HERO
+================================================================ -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <div class="hero-available">Disponible — Stage / Emploi</div>
+
+          <h1 class="hero-name">
+            METOMBOU<br><span>Nérias Sènakpon</span>
+          </h1>
+
+          <p class="hero-role">Technicien Réseaux &amp; Télécommunications · Fibre Optique · Support Informatique N1</p>
+
+          <div class="hero-terminal">
+            <span id="typed-text"></span><span class="cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Jeune technicien diplômé en <strong>Génie Télécom &amp; TIC</strong> à l'UCAO-UUC de Cotonou.
+            Expérience pratique en maintenance réseau et support informatique au
+            <strong>Ministère de l'Économie et des Finances du Bénin</strong>.
+            À l'aise sur Cisco, Linux, la virtualisation et le développement web PHP/Laravel.
+            Je cherche à contribuer à des projets techniques concrets.
+          </p>
+
+          <div class="hero-btns">
+            <a class="btn btn-ghost" href="./Documents/CV_METOMBOU_Nerias.pdf">
+              <span class="btn-icon"><i class="fa-regular fa-eye icon-premium"></i></span> Voir mon CV
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span> Email
+            </a>
+            <a class="btn btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank"
+              rel="noopener noreferrer">
+              <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span> LinkedIn
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
+              <span class="btn-icon"><i class="fa-brands fa-github icon-premium"></i></span> GitHub
+            </a>
+          </div>
+<div class="hero-contact">
+  <a href="tel:+2290152240507">
+    <span class="btn-icon"><i class="fa-solid fa-phone icon-premium"></i></span>
+    +229 01 52 24 05 07
+  </a>
+
+  <a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">
+    <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span>
+    WhatsApp
+  </a>
+
+  <a href="mailto:neriasmetombou@gmail.com">
+    <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span>
+    neriasmetombou@gmail.com
+  </a>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Cotonou%2C+B%C3%A9nin" target="_blank" rel="noopener noreferrer">
+    <span class="btn-icon"><i class="fa-solid fa-location-dot icon-premium"></i></span>
+    Cotonou, Bénin
+  </a>
+</div>
+        </div>
+        <div class="hero-avatar-wrap">
+          <div class="hero-image">
+            <img src="./img/profile.png" alt="Nérias Metombou - Portrait professionnel" fetchpriority="high" decoding="async">
+            <style>
+              .hero-image {
+                position: relative;
+              }
+
+              .hero-image::before {
+                content: '';
+                position: absolute;
+                inset: -20px;
+                background: linear-gradient(135deg, var(--royal-blue), var(--royal-ultra));
+                border-radius: 50%;
+                filter: blur(40px);
+                opacity: 0.3;
+                animation: pulse 4s ease-in-out infinite;
+              }
+
+              .hero-image img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                border: 3px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+                transition: var(--transition-smooth);
+                animation: morph 10s ease-in-out infinite;
+                position: relative;
+                z-index: 2;
+              }
+
+              @keyframes morph {
+
+                0%,
+                100% {
+                  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                }
+
+                33% {
+                  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+                }
+
+                66% {
+                  border-radius: 50% 50% 50% 50% / 40% 60% 40% 60%;
+                }
+              }
+            </style>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- STATS -->
+    <div class="stats-band">
+      <div class="stats-inner">
+
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="3">0</div>
+          <div class="stat-lbl">Mois d'expérience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="1">0</div>
+          <div class="stat-lbl">Diplômes &amp; Certifications</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="2">0</div>
+          <div class="stat-lbl">Projets réalisés</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val counter" data-t="3">0</div>
+          <div class="stat-lbl">Années de formation</div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================
+     À PROPOS
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="about">
+      <div class="sec-eyebrow">À propos</div>
+      <h2 class="sec-title">Qui suis-je ?</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Je m'appelle <strong>Nérias Sènakpon Ivan Prosper Metombou</strong>, diplômé d'une
+            <strong>Licence en Génie Télécom &amp; TIC</strong> à l'UCAO-UUC de Cotonou (Bénin), promotion 2025.
+          </p>
+          <p>
+            Pendant mon stage au <strong>Ministère de l'Économie et des Finances</strong> (mars–juin 2025),
+            j'ai assuré la maintenance des postes de travail, la surveillance du réseau Wi-Fi interne,
+            le diagnostic de pannes réseau .
+          </p>
+          <p>
+            Mon projet de fin d'études portait sur la conception d'une
+            <strong>infrastructure Wi-Fi MeSH sécurisée</strong> (WPA2-Enterprise, VLAN, portail captif,
+            contrôleur centralisé) simulée sur GNS3 et VMware pour le siège de l'UCAO-UUC.
+          </p>
+          <p>
+            Polyvalent, je combine des compétences en réseaux Cisco, fibre optique, sécurité réseau,
+            administration Linux et développement web front-end avec PHP/Laravel.
+            Rigoureux et autonome, je cherche à intégrer une équipe technique pour y apporter
+            une contribution concrète.
+          </p>
+        </div>
+
+ <div class="about-card reveal-l">
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-graduation-cap icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Diplôme</div>
+      <div class="about-card-val">Licence Génie Télécom &amp; TIC</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-building-columns icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Établissement</div>
+      <div class="about-card-val">UCAO-UUC — Cotonou, Bénin</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-briefcase icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Expérience</div>
+      <div class="about-card-val">Stage — Ministère Économie &amp; Finances BJ</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-location-dot icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Localisation</div>
+      <div class="about-card-val">Cotonou, Bénin · Remote possible</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-globe icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Langues</div>
+      <div class="about-card-val">Français · Anglais technique · Fon</div>
+    </div>
+  </div>
+  <div class="about-card-row">
+    <span class="btn-icon"><i class="fa-solid fa-rocket icon-premium"></i></span>
+    <div>
+      <div class="about-card-lbl">Disponibilité</div>
+      <div class="about-card-val">Stage / Emploi — dès maintenant</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    
+    <!-- ================================================================
+     FORMATION
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="edu">
+      <div class="sec-eyebrow">Formation</div>
+      <h2 class="sec-title">Parcours académique</h2>
+
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2022<br>↓<br>2025</div>
+          <div>
+            <div class="edu-degree">Licence en Génie Télécom &amp; TIC</div>
+            <div class="edu-school">UCAO-UUC — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Spécialité : Réseaux et Télécommunications.<br>
+              Enseignements : protocoles réseau Cisco, fibre optique (OptiSystem), réseaux mobiles (GSM/4G),
+              sécurité réseau, systèmes Linux, virtualisation, développement web PHP/Laravel, bases de données MySQL.
+            </div>
+            <span class="edu-badge">PFE : Infrastructure Wi-Fi MeSH sécurisée — GNS3 &amp; VMware</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-year">2021<br>↓<br>2022</div>
+          <div>
+            <div class="edu-degree">Baccalauréat Série D — Biologie &amp; Géologie</div>
+            <div class="edu-school">CEG DANTOKPA — Cotonou, Bénin</div>
+            <div class="edu-desc">
+              Sciences naturelles, mathématiques, physique-chimie.
+              Obtenu en juin 2022.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- ================================================================
+     EXPÉRIENCE
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="exp">
+      <div class="sec-eyebrow">Expérience</div>
+      <h2 class="sec-title">Parcours professionnel</h2>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period">Mars 2025<br>Juin 2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Stagiaire — Maintenance Systèmes &amp; Réseau</div>
+            <div class="exp-org">Ministère de l'Économie et des Finances · Cotonou, Bénin</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Installation, configuration et restauration de systèmes d'exploitation (Windows,
+                Linux) sur les postes de travail du ministère.</div>
+              <div class="exp-task">Contrôle, surveillance et maintenance des points d'accès Wi-Fi du réseau interne
+                ministériel.</div>
+              <div class="exp-task">Diagnostic et résolution de pannes réseau (connectivité, DNS, DHCP) pour les agents.
+              </div>
+              <div class="exp-task">Déploiement et activation de suites Microsoft Office sur les PC.</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">Windows</span>
+              <span class="exp-tag">Linux</span>
+              <span class="exp-tag">Wi-Fi</span>
+              <span class="exp-tag">DHCP</span>
+              <span class="exp-tag">DNS</span>
+              <span class="exp-tag">Support N1</span>
+              <span class="exp-tag">Inventaire</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period">2022<br>2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Projets académiques — Technicien en formation</div>
+            <div class="exp-org">UCAO-UUC · Cotonou, Bénin</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Conception et déploiement simulé d'une infrastructure réseau Wi-Fi MeSH sécurisée
+                (WPA2-Enterprise, VLAN, contrôleur centralisé, portail captif) sur GNS3 et VMware — Projet de fin
+                d'études.</div>
+              <div class="exp-task">Déployement d'une architecture réseau hiérarchisée en trois
+                couches (Core, Distribution, Access), intégrant les services réseau essentiels tels que le
+                DHCP, le DNS et la journalisation (Syslog) sur GNS3.</div>
+              <div class="exp-task">Intégration d'un contrôleur sans fil (WLC) permettant la gestion centralisée des
+                points d’accès Mesh ; </div>
+              <div class="exp-task">Assurer la sécurité du réseau à l’aide d’un pare-feu OPNsense, incluant un
+                portail captif pour l’authentification des utilisateurs, et une segmentation
+                logique en zones réseau (DMZ, LAN, WAN).</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">GNS3</span>
+              <span class="exp-tag">VMware</span>
+              <span class="exp-tag">Wi-Fi MeSH</span>
+              <span class="exp-tag">WPA2-Enterprise</span>
+              <span class="exp-tag">Cisco</span>
+              <span class="exp-tag">Laravel</span>
+              <span class="exp-tag">OptiSystem</span>
+            </div>
+          </div>
+        </div>
+
+           <div class="exp-item reveal">
+          <div class="exp-left">
+            <div class="exp-dot"></div>
+            <div class="exp-period"> 2024<br>Juin 2025</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Ancien membre &amp; UCAO Tech</div>
+            <div class="exp-org">Université Catholique de l'Afrique de l'Ouest — 2024 - 2025</div>
+            <div class="exp-tasks">
+              <div class="exp-task">Participation aux activités du Digital club</div>
+              <div class="exp-task">Colaboration sur des mini-projets de développement web</div>
+              <div class="exp-task">Initiation à des outils pro tels que Git / Github.</div>
+            </div>
+            <div class="exp-tags">
+              <span class="exp-tag">HTML / CSS</span>
+              <span class="exp-tag">Wordpres</span>
+              <span class="exp-tag">Laravel</span>
+              <span class="exp-tag">PHP</span>
+              <span class="exp-tag">Js</span>
+              <span class="exp-tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        <!-- ================================================================
+     CERTIFICATIONS
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="certs">
+      <div class="sec-eyebrow">Certificats , diplômes & badges</div>
+      <h2 class="sec-title">Certificats , diplômes & badges  </h2>
+
+      <div class="certs-grid" id="certs-grid" aria-live="polite"><!-- injecté par renderCerts() --></div>
+    </section>
+    
+    
+    
+        <!-- ================================================================
+     SERVICES
+================================================================ -->
+    <hr class="divider">
+    <section class="section section-sm" id="services">
+  <div class="sec-eyebrow">Services</div>
+  <h2 class="sec-title">Ce que je peux apporter</h2>
+  <div class="services-grid">
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-network-wired icon-premium"></i></span></div>
+      <div class="svc-title">Support réseau N1</div>
+      <div class="svc-desc">Diagnostic de pannes, configuration d'équipements réseau Cisco, surveillance Wi-Fi, DHCP/DNS.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-desktop icon-premium"></i></span></div>
+      <div class="svc-title">Maintenance informatique</div>
+      <div class="svc-desc">Installation / restauration d'OS (Windows, Linux), déploiement logiciels, inventaire parc matériel.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-code icon-premium"></i></span></div>
+      <div class="svc-title">Développement web</div>
+      <div class="svc-desc">Sites web responsive HTML/CSS/JS, applications PHP/Laravel, formulaires, gestion de base de données MySQL.</div>
+    </div>
+    
+    <div class="svc-card reveal">
+      <div class="svc-icon"><span class="btn-icon"><i class="fa-solid fa-diagram-project icon-premium"></i></span></div>
+      <div class="svc-title">Simulation réseau</div>
+      <div class="svc-desc">Conception et documentation d'architectures réseau sur Packet Tracer et GNS3.</div>
+    </div>
+    
+
+  </div>
+</section>
+
+   <!-- ================================================================
+     COMPÉTENCES
+================================================================ -->
+<hr class="divider">
+<section class="section" id="skills">
+  <div class="sec-eyebrow">Compétences</div>
+  <h2 class="sec-title">Savoir-faire technique</h2>
+  <p class="sec-sub">
+    Compétences développées au cours de ma formation, de mes projets pratiques
+    et de mon expérience en environnement informatique et réseau.
+  </p>
+
+  <div class="skills-layout">
+
+    <!-- ============================= -->
+    <!-- 01 — RÉSEAUX & TÉLÉCOMS -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-network-wired icon-premium"></i>
+        </span>
+        Réseaux &amp; Télécommunications
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux des réseaux</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Adressage IP / Subnetting</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>VLAN / Trunk / STP / SVI</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Routage statique / OSPF</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>DHCP / DNS / NAT / ACL</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Réseaux Wi-Fi / WLAN / WLC</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux des réseaux mobiles</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Fondamentaux fibre optique / FTTH</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- 02 — SYSTÈMES & CYBERSÉCURITÉ -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-shield-halved icon-premium"></i>
+        </span>
+        Systèmes &amp; Cybersécurité
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Windows / Linux</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Support &amp; maintenance informatique</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>OPNsense / Firewall / NAT</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>MikroTik RouterOS</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Virtualisation / VMware</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Wi-Fi sécurisé / WPA2-Enterprise</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Kali Linux / outils réseau</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>PowerShell / Terminal Linux</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- 03 — DÉVELOPPEMENT & AUTOMATISATION -->
+    <!-- ============================= -->
+    <div class="skill-group reveal">
+      <div class="skill-group-title">
+        <span class="btn-icon">
+          <i class="fa-solid fa-code icon-premium"></i>
+        </span>
+        Développement &amp; Automatisation
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>HTML5</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>CSS3 / Responsive Design</span>
+          <span>Intermédiaire</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>JavaScript / DOM / Interactions</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>PHP / MySQL</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Laravel</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Python / Scripts &amp; automatisation</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-row">
+          <span>Git / GitHub</span>
+          <span>Débutant</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    <!-- ================================================================
+     PROJETS
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="projects">
+  <div class="sec-eyebrow">Projets</div>
+  <h2 class="sec-title">Réalisations</h2>
+  <div class="proj-filters reveal">
+    <button type="button" class="pf-btn active" data-f="all">Tous</button>
+    <button type="button" class="pf-btn" data-f="reseau">Réseaux</button>
+    <button type="button" class="pf-btn" data-f="web">Web</button>
+    <button type="button" class="pf-btn" data-f="sec">Sécurité</button>
+  </div>
+  <div class="proj-grid" id="proj-grid" aria-live="polite"><!-- injecté par renderProjects() --></div>
+  <p class="proj-empty" id="proj-empty" hidden>Aucun projet dans cette catégorie pour le moment.</p>
+</section>
+
+    <!-- ================================================================
+     MODAL DES DEMOS
+================================================================ -->
+    <div class="modal-overlay" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-title">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="modal-title" id="video-title">Démonstration</div>
+
+          <button type="button" class="modal-close-btn" id="video-modal-close" onclick="closeVideoModal()"
+            aria-label="Fermer la vidéo">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <video id="project-video" class="video-embed" controls autoplay playsinline preload="metadata"></video>
+          <div class="modal-pdf-fallback" id="video-modal-error" style="display:none">
+            <div class="pdf-icon"><i class="fa-solid fa-film" aria-hidden="true"></i></div>
+            <p>Impossible de charger cette vidéo pour le moment.</p>
+            <div class="modal-pdf-actions">
+              <a id="video-open-link" class="modal-dl" href="#" target="_blank" rel="noopener">Ouvrir la vidéo</a>
+            </div>
+            <small id="video-modal-error-file"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+     CONTACT
+================================================================ -->
+    <hr class="divider">
+    <section class="section" id="contact">
+      <div class="sec-eyebrow">Contact</div>
+      <h2 class="sec-title">Me contacter</h2>
+
+<div class="contact-wrap">
+  <div class="contact-info reveal-l">
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-solid fa-phone icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">Téléphone</div>
+        <div class="ci-val"><a href="tel:+2290152240507">+229 01 52 24 05 07</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">WhatsApp</div>
+        <div class="ci-val"><a href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">+229 01 52 24 05 07</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">Email</div>
+        <div class="ci-val"><a href="mailto:neriasmetombou@gmail.com">neriasmetombou@gmail.com</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-block">
+      <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span>
+      <div>
+        <div class="ci-lbl">LinkedIn</div>
+        <div class="ci-val"><a href="https://linkedin.com/in/metombounerias" target="_blank" rel="noopener noreferrer">linkedin.com/in/metombounerias</a></div>
+      </div>
+    </div>
+    
+    <div class="contact-avail">
+      Je suis disponible pour un <strong>stage</strong>, une <strong>alternance</strong> ou un <strong>premier emploi</strong> en support réseau, technicien télécom ou développeur web junior.<br>
+      Réponse habituelle sous 24h.
+    </div>
+  </div>
+
+        <div class="contact-right reveal">
+          <form class="form" id="contact-form" novalidate>
+            <div class="form-2col">
+              <div class="form-field">
+                <label class="form-lbl" for="c-name">Votre nom</label>
+                <input class="form-ctrl" id="c-name" name="from_name" type="text" placeholder="Jean Dupont"
+                  autocomplete="name" aria-describedby="err-name" required>
+                <span class="field-err-msg" id="err-name">Merci d'indiquer votre nom (2 caractères minimum).</span>
+              </div>
+              <div class="form-field">
+                <label class="form-lbl" for="c-email">Email</label>
+                <input class="form-ctrl" id="c-email" name="from_email" type="email" placeholder="jean@email.com"
+                  autocomplete="email" aria-describedby="err-email" required>
+                <span class="field-err-msg" id="err-email">Merci d'indiquer une adresse email valide.</span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-lbl" for="c-sub">Sujet</label>
+              <input class="form-ctrl" id="c-sub" name="subject" type="text"
+                placeholder="Stage · Emploi · Collaboration · Question" aria-describedby="err-sub" required>
+              <span class="field-err-msg" id="err-sub">Merci d'indiquer un sujet (3 caractères minimum).</span>
+            </div>
+            <div class="form-field">
+              <label class="form-lbl" for="c-msg">Message</label>
+              <textarea class="form-ctrl" id="c-msg" name="message" rows="5" placeholder="Votre message..."
+                aria-describedby="err-msg" required></textarea>
+              <span class="field-err-msg" id="err-msg">Votre message doit contenir au moins 10 caractères.</span>
+            </div>
+            <button class="btn btn-primary btn-start" type="submit" id="form-submit-btn">
+              <span id="form-btn-text">Envoyer le message</span>
+              <span class="form-spinner" aria-hidden="true"></span>
+              <i class="fas fa-paper-plane btn-icon--spaced" aria-hidden="true"></i>
+            </button>
+            <div class="form-msg" id="form-msg" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- end page-wrap -->
+
+  <!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span>METOMBOU Nérias</span> · Cotonou, Bénin · 2026
+    </div>
+    
+    <div class="footer-social">
+      <a class="footer-soc btn-ghost" href="mailto:neriasmetombou@gmail.com">
+        <span class="btn-icon"><i class="fa-regular fa-envelope icon-premium"></i></span> Email
+      </a>
+      <a class="footer-soc btn-ghost" href="https://linkedin.com/in/metombounerias" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-linkedin icon-premium"></i></span> LinkedIn
+      </a>
+      <a class="footer-soc btn-ghost" href="https://wa.me/2290152240507" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-whatsapp icon-premium"></i></span> WhatsApp
+      </a>
+      <a class="footer-soc btn-ghost" href="https://github.com/nerias400" target="_blank" rel="noopener noreferrer">
+        <span class="btn-icon"><i class="fa-brands fa-github icon-premium"></i></span> GitHub
+      </a>
+    </div>
+    
+    <div class="footer-copy">
+      Technicien Réseaux &amp; Télécommunications · Licence GIT/TIC
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button type="button" class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">
+  <i class="fa-solid fa-arrow-up icon-premium"></i>
+</button>
+  <!-- ================================================================
+     JAVASCRIPT
+================================================================ -->
+  <script>
+    /* ── Sanitize helper (XSS protection) ── */
+    function esc(s) {
+      const d = document.createElement('div');
+      d.appendChild(document.createTextNode(String(s)));
+      return d.innerHTML;
+    }
+
+    /* ================================================================
+       DONNÉES — PROJETS & CERTIFICATS
+       Source unique de vérité : ajouter/modifier un projet ou un
+       certificat ne demande plus de toucher au HTML, juste ce tableau.
+       `images` : la 1ère entrée sert de couverture sur la card ; le
+       modal détails affiche toutes les entrées en carousel (nav +
+       dots + swipe tactile + flèches clavier). Un seul élément dans
+       le tableau = carousel désactivé automatiquement (juste l'image).
+    ================================================================ */
+    const projects = [
+      {
+        id: 'wifi-mesh-ucao',
+        cat: 'reseau sec',
+        catLabel: 'Réseaux · Sécurité — PFE Licence',
+        icon: 'fa-network-wired',
+        images: [
+          './img/projets/projet_1/projet_1.png',
+          './img/projets/projet_1/projet_1-2.png',
+          './img/projets/projet_1/projet_1-3.png',
+          './img/projets/projet_1/projet_1-4.png'
+        ],
+        alt: "Schéma de l'infrastructure Wi-Fi MeSH sécurisée déployée pour l'UCAO-UUC",
+        title: 'Infrastructure Wi-Fi MeSH sécurisée — UCAO-UUC',
+        desc: "Conception et déploiement simulé d'un réseau Wi-Fi MeSH complet pour le siège de l'UCAO-UUC. Authentification WPA2-Enterprise, segmentation VLAN, contrôleur centralisé et portail captif. Entièrement simulé sur GNS3 + VMware Workstation.",
+        details: "Ce Projet de Fin d'Études a consisté à concevoir puis simuler, de bout en bout, une infrastructure Wi-Fi MeSH sécurisée pour le siège de l'UCAO-UUC : plan d'adressage, segmentation VLAN par usage, authentification WPA2-Enterprise avec serveur RADIUS, portail captif pour les invités, et centralisation des journaux (Syslog) pour le suivi des accès. L'ensemble a été validé par simulation sur GNS3 couplé à des machines virtuelles VMware Workstation, avec tests de connectivité, de bascule et de charge avant rédaction du rapport de mémoire.",
+        stack: ['GNS3', 'VMware', 'WPA2-Enterprise', 'VLAN', 'Syslog', 'Portail captif'],
+        links: [
+          { type: 'pdf', label: 'Rapport PDF', title: 'Memoire de Licence Professionnelle — UCAO-UUC', file: './Documents/memoire-licence-professionnelle.pdf' },
+          // Placeholder — remplace par le vrai chemin du fichier de config exporté (ex: show run) quand tu l'auras.
+          { type: 'config', label: 'Fichier de config', title: 'Configuration réseau — Wi-Fi MeSH UCAO-UUC', file: './Documents/config-wifi-mesh.txt' }
+        ]
+      },
+      {
+        id: 'portfolio-web',
+        cat: 'web',
+        catLabel: 'Développement Web',
+        icon: 'fa-code',
+        images: [
+          './img/projets/projet_2/projet_2.jpg',
+          './img/projets/projet_2/projet_2-2.jpg',
+          './img/projets/projet_2/projet_2-3.jpg',
+          './img/projets/projet_2/projet_2-4.jpg'
+        ],
+        alt: 'Aperçu du portfolio professionnel en ligne',
+        title: 'Portfolio professionnel (ce projet)',
+        desc: "Portfolio web responsive en HTML5/CSS3/JS, sans dépendance externe. Dark/light mode, animations au scroll, formulaire de contact sécurisé. Directement publiable sur GitHub Pages.",
+        details: "Ce portfolio est un fichier HTML unique, pensé pour être publié tel quel sur GitHub Pages sans build ni dépendance externe lourde. Il embarque un mode sombre/clair persistant, des animations au scroll (Intersection Observer), un système de modals réutilisable (certificats, démos vidéo, détails projet avec carousel), une validation de formulaire en direct et un envoi d'email via EmailJS. L'accent a été mis sur l'accessibilité (focus trap, aria-*, navigation clavier) et la performance (lazy-loading des images, scripts non-bloquants, CSS sans framework).",
+        stack: ['HTML5', 'CSS3', 'JavaScript', 'Responsive', 'GitHub Pages'],
+        links: [
+          { type: 'live', label: 'Voir le site', file: 'https://nerias400.github.io/' },
+          { type: 'github', label: 'GitHub', file: 'https://github.com/nerias400' },
+          { type: 'demo', label: 'Démo', title: 'Portfolio Professionnel', file: './demo/projet_2.mp4' }
+        ]
+      },
+      {
+        id: 'lan-l2-l3',
+        cat: 'reseau sec',
+        catLabel: 'Réseaux · L2-L3',
+        icon: 'fa-network-wired',
+        images: [
+          './img/projets/projet_3/projet_3.png',
+          './img/projets/projet_3/projet_3-1.png',
+          './img/projets/projet_3/projet_3-2.png',
+          './img/projets/projet_3/projet_3-3.png'
+          './img/projets/projet_3/projet_3-4.png'
+        ],
+        alt: 'projet déploiement Réseau LAN L2 L3',
+        title: 'Infrastructure LAN L2-L3',
+        desc: "Mise en place d'une infrastructure LAN d'entreprise basée sur les couches OSI L3 et L2. Configuration et verification des équipements Cisco, tests de connectivité et validation de l'infrastructure fonctionnelle, segmentée et administrable.",
+        details: "Déploiement simulé d'une infrastructure LAN d'entreprise multi-VLAN sur équipements Cisco : configuration du routage inter-VLAN (L3), du VTP pour la propagation des VLAN, du Spanning Tree pour éviter les boucles, et du DHCP pour l'attribution dynamique des adresses. Chaque étape a été suivie de tests de connectivité et de vérification (show run, ping, traceroute) pour valider une infrastructure fonctionnelle, segmentée et administrable — dans une démarche de diagnostic proche d'un environnement professionnel réel.",
+        stack: ['Cisco', 'VLAN', 'VTP', 'STP', 'DHCP'],
+        links: [
+          // Ajoute { type: 'github', label: 'GitHub', file: '...' } ici dès que le repo est en ligne.
+          { type: 'config', label: 'Fichier de config', title: 'Configuration réseau — LAN L2-L3', file: './Documents/config-lan-l2-l3.txt' }
+        ]
+      }
+    ];
+
+    const certs = [
+      {
+        issuer: 'UCAO-UUC',
+        name: 'Licence — Génie Télécom &amp; TIC (Réseaux &amp; Télécommunications)',
+        icon: 'fa-building-columns',
+        status: 'done',
+        statusLabel: '✓ Obtenu — 2025',
+        modalTitle: 'Attestation de réussite — Licence GIT/TIC, UCAO-UUC',
+        file: './Documents/attestation-succes-licence.pdf'
+      }
+    ];
+
+    /* ── Rendu d'une card projet ──
+       Chaque type de lien a une icône et une action dédiées, pour que
+       le visiteur reconnaisse immédiatement la nature du contenu avant
+       même de cliquer :
+       - pdf     → visualiseur document (rapport, mémoire...)
+       - config  → visualiseur document (fichier de config équipement réseau)
+       - demo    → lecteur vidéo (démo du projet)
+       - github  → dépôt de code source (nouvel onglet)
+       - live    → site / app web en ligne (nouvel onglet)
+       Le bouton "Voir le projet" ouvre toujours le modal détail complet
+       (carousel d'images inclus) — voir renderProjectCard(). */
+    const LINK_META = {
+      pdf: { icon: 'fa-file-pdf', label: 'Rapport PDF' },
+      config: { icon: 'fa-gears', label: 'Fichier de config' },
+      demo: { icon: 'fa-circle-play', label: 'Démo' },
+      github: { icon: 'fa-brands fa-github', label: 'GitHub' },
+      live: { icon: 'fa-arrow-up-right-from-square', label: 'Voir le site' }
+    };
+
+    function linkIconHtml(type) {
+      const meta = LINK_META[type];
+      if (!meta) return '';
+      const cls = meta.icon.startsWith('fa-brands') ? meta.icon : `fa-solid ${meta.icon}`;
+      return `<i class="${cls}"></i>`;
+    }
+
+    function projectLinkHtml(p, link) {
+      const label = esc(link.label || (LINK_META[link.type] || {}).label || 'Lien');
+      const icon = linkIconHtml(link.type);
+      if (link.type === 'pdf') {
+        return `<button type="button" class="proj-lk" onclick="openCertModal('${esc(link.title)}','${esc(link.file)}','pdf')" aria-label="Voir le document — ${label}">${icon}${label}</button>`;
+      }
+      if (link.type === 'config') {
+        return `<button type="button" class="proj-lk" onclick="openCertModal('${esc(link.title)}','${esc(link.file)}','config')" aria-label="Voir le fichier de configuration — ${label}">${icon}${label}</button>`;
+      }
+      if (link.type === 'demo') {
+        return `<button type="button" class="proj-lk" onclick="openVideoModal('${esc(link.title)}','${esc(link.file)}')" aria-label="Voir la démo vidéo du projet">${icon}${label}</button>`;
+      }
+      // github / live / lien externe générique
+      return `<a class="proj-lk" href="${esc(link.file)}" target="_blank" rel="noopener noreferrer">${icon}${label}</a>`;
+    }
+
+    /* Types de liens affichés comme icônes rapides directement sur la
+       card (destinations externes qui font quitter le site) — tout
+       le reste (pdf/config/demo) est réservé au modal détail, sous
+       "Ressources", pour ne pas surcharger la card. */
+    const QUICK_LINK_TYPES = ['github', 'live'];
+
+    function projectQuickLinkHtml(link) {
+      const meta = LINK_META[link.type];
+      if (!meta) return '';
+      return `<a class="proj-quick-lk" href="${esc(link.file)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(meta.label)}" title="${esc(meta.label)}">${linkIconHtml(link.type)}</a>`;
+    }
+
+    function renderProjectCard(p) {
+      const hasGallery = p.images.length > 1;
+      const quickLinks = p.links.filter(l => QUICK_LINK_TYPES.includes(l.type));
+      return `
+    <div class="proj-card reveal" data-cat="${esc(p.cat)}" data-id="${esc(p.id)}">
+      <div class="proj-thumb proj-thumb-clickable" onclick="openProjectModal('${esc(p.id)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProjectModal('${esc(p.id)}');}" role="button" tabindex="0" aria-label="Voir le détail du projet — ${esc(p.title)}">
+        <img src="${esc(p.images[0])}" alt="${esc(p.alt)}" loading="lazy" width="600" height="240">
+        <div class="proj-thumb-overlay"></div>
+        ${hasGallery ? `<span class="proj-thumb-count"><i class="fa-solid fa-images"></i> ${p.images.length}</span>` : ''}
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat"><span class="btn-icon"><i class="fa-solid ${esc(p.icon)} icon-premium"></i></span>${esc(p.catLabel)}</div>
+        <div class="proj-name">${esc(p.title)}</div>
+        <div class="proj-desc">${esc(p.desc)}</div>
+        <div class="proj-stack">
+          ${p.stack.map(t => `<span class="proj-tech">${esc(t)}</span>`).join('')}
+        </div>
+        <div class="proj-footer">
+          ${quickLinks.length ? `<div class="proj-quicklinks">${quickLinks.map(projectQuickLinkHtml).join('')}</div>` : '<span></span>'}
+          <button type="button" class="proj-cta" onclick="openProjectModal('${esc(p.id)}')" aria-label="Voir le projet en détail">Voir le projet<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>`;
+    }
+
+    function renderCertCard(c) {
+      return `
+        <div class="cert-card reveal">
+          <div class="cert-icon"><span class="btn-icon"><i class="fa-solid ${esc(c.icon)} icon-premium"></i></span></div>
+          <div class="cert-issuer">${esc(c.issuer)}</div>
+          <div class="cert-name">${c.name}</div>
+          <div class="cert-footer">
+            <span class="cert-status status-${esc(c.status)}">${esc(c.statusLabel)}</span>
+            <button type="button" class="cert-view-btn"
+              onclick="openCertModal('${esc(c.modalTitle)}','${esc(c.file)}')"
+              aria-label="Voir le document — ${esc(c.issuer)}">Voir diplôme</button>
+          </div>
+        </div>`;
+    }
+
+    function renderProjects() {
+      const grid = document.getElementById('proj-grid');
+      grid.innerHTML = projects.map(renderProjectCard).join('');
+    }
+
+    function renderCerts() {
+      const grid = document.getElementById('certs-grid');
+      grid.innerHTML = certs.map(renderCertCard).join('');
+    }
+
+    /* Rendu immédiat — avant l'observer de reveal-on-scroll plus bas,
+       pour que les cards générées soient bien observées dès le premier
+       passage de querySelectorAll('.reveal'). */
+    renderProjects();
+    renderCerts();
+
+    /* ── Theme toggle ── */
+const html = document.documentElement;
+const themeBtn = document.getElementById('theme-btn');
+
+function setTheme(t) {
+  html.setAttribute('data-theme', t);
+  
+  // CORRECTION ICI : innerHTML au lieu de textContent
+  themeBtn.innerHTML = t === 'dark' 
+    ? '<i class="fa-solid fa-sun icon-premium"></i>' 
+    : '<i class="fa-solid fa-moon icon-premium"></i>';
+    
+  themeBtn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+  
+  try { 
+    localStorage.setItem('theme', t); 
+  } catch (e) { }
+}
+
+themeBtn.addEventListener('click', () => {
+  setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+});
+
+// Apply saved theme
+try { 
+  const saved = localStorage.getItem('theme'); 
+  if (saved) setTheme(saved); 
+} catch (e) { }
+
+    /* ── Mobile menu ── */
+    const ham = document.getElementById('ham');
+    const mobMenu = document.getElementById('mob-menu');
+
+    function updateMobileMenuState(isOpen) {
+      ham.classList.toggle('open', isOpen);
+      mobMenu.classList.toggle('open', isOpen);
+      ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      mobMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    }
+
+    ham.addEventListener('click', () => {
+      updateMobileMenuState(!ham.classList.contains('open'));
+    });
+
+    document.querySelectorAll('#mob-menu a').forEach(link => {
+      link.addEventListener('click', closeMob);
+    });
+
+    function closeMob() {
+      updateMobileMenuState(false);
+    }
+
+    /* ── Active nav link on scroll ──
+       Scoped to the top-level page sections only (not modal/preloader
+       internals, which also carry ids and would otherwise be observed). */
+    const sections = document.querySelectorAll('.page-wrap > [id]');
+    const navAs = document.querySelectorAll('.nav-links a[data-sec]');
+
+    const secObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navAs.forEach(a => {
+            const isActive = a.dataset.sec === e.target.id;
+            a.classList.toggle('active', isActive);
+            if (isActive) {
+              a.setAttribute('aria-current', 'page');
+            } else {
+              a.removeAttribute('aria-current');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(s => secObserver.observe(s));
+
+    /* ── Back to top ── */
+    const btt = document.getElementById('btt');
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    /* ── Reveal on scroll ── */
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('on'), i * 65);
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => revealObs.observe(el));
+
+    /* ── Counters ── */
+    const ctrObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          countUp(e.target);
+          ctrObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter').forEach(el => ctrObs.observe(el));
+
+    function countUp(el) {
+      const target = parseInt(el.dataset.t, 10);
+      const dur = 1200;
+      const start = performance.now();
+      function step(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = p < .5 ? 2 * p * p : (4 - 2 * p) * p - 1;
+        el.textContent = Math.round(ease * target);
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    }
+
+    /* ── Terminal typing — hero signature ── */
+    const roles = [
+      'Technicien Réseaux & Télécommunications',
+      'Support Informatique N1',
+      'Fibre Optique & Réseaux Mobiles',
+      'Sécurité Réseau — notions',
+      'Développeur Web PHP / Laravel',
+    ];
+    let ri = 0, ci = 0, deleting = false;
+    const typedEl = document.getElementById('typed-text');
+
+    function typeLoop() {
+      const current = roles[ri];
+      if (!deleting) {
+        typedEl.textContent = current.slice(0, ++ci);
+        if (ci === current.length) {
+          deleting = true;
+          setTimeout(typeLoop, 2000);
+          return;
+        }
+        setTimeout(typeLoop, 55);
+      } else {
+        typedEl.textContent = current.slice(0, --ci);
+        if (ci === 0) {
+          deleting = false;
+          ri = (ri + 1) % roles.length;
+          setTimeout(typeLoop, 300);
+          return;
+        }
+        setTimeout(typeLoop, 28);
+      }
+    }
+    typeLoop();
+
+    /* ── Project filters ── */
+    const projEmptyEl = document.getElementById('proj-empty');
+    document.querySelectorAll('[data-f]').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-f]').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        const f = this.dataset.f;
+        let visibleCount = 0;
+        document.querySelectorAll('.proj-card').forEach(card => {
+          const cats = card.dataset.cat || '';
+          const show = f === 'all' || cats.split(' ').includes(f);
+          card.style.display = show ? '' : 'none';
+          if (show) visibleCount++;
+        });
+        if (projEmptyEl) projEmptyEl.hidden = visibleCount > 0;
+      });
+    });
+
+    /* ── Preloader ── */
+
+/* ── NERIACORE LOADER — écran d'intro premium avec durée minimale garantie ──
+   La barre progresse de façon lissée sur toute la durée MIN_DISPLAY_MS
+   (au lieu de foncer à 90% puis rester figée), et se cale sur le
+   chargement réel de la page si celui-ci dépasse ce minimum. */
+(function() {
+  const loader = document.getElementById('nc-page-loader');
+  if (!loader) return;
+  const barFill = document.getElementById('nc-loader-bar-fill');
+  const pctEl = document.getElementById('nc-loader-pct');
+  const textEl = document.getElementById('nc-loader-text');
+  const subEl = document.getElementById('nc-loader-sub');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Séquence de statuts façon "boot" — cohérente avec le profil
+  // technicien réseaux/télécoms, affichée au fil de la progression.
+  const STAGES = [
+    { at: 0, main: 'INITIALISATION', sub: 'TECHNICIEN RÉSEAUX & TÉLÉCOMS' },
+    { at: 20, main: 'CHARGEMENT DES MODULES', sub: 'Assets · Scripts · Styles' },
+    { at: 45, main: 'CONNEXION SÉCURISÉE', sub: 'Handshake établi' },
+    { at: 72, main: 'COMPILATION DE L\u2019INTERFACE', sub: 'Rendu des composants' },
+    { at: 93, main: 'FINALISATION', sub: 'Derniers réglages' },
+    { at: 100, main: 'PRÊT', sub: 'Bienvenue' }
+  ];
+  let currentStage = -1;
+  function updateStage(progress) {
+    let idx = 0;
+    for (let i = 0; i < STAGES.length; i++) if (progress >= STAGES[i].at) idx = i;
+    if (idx === currentStage) return;
+    currentStage = idx;
+    const s = STAGES[idx];
+    if (textEl) textEl.style.opacity = 0;
+    if (subEl) subEl.style.opacity = 0;
+    setTimeout(() => {
+      if (textEl) { textEl.innerHTML = s.main + '<span class="nc-dots"></span>'; textEl.style.opacity = 1; }
+      if (subEl) { subEl.textContent = s.sub; subEl.style.opacity = 1; }
+    }, reduceMotion ? 0 : 220);
+  }
+
+  // Durée minimale d'affichage de l'écran d'intro, même si la page est
+  // déjà chargée avant. Respecte prefers-reduced-motion (accessibilité).
+  const MIN_DISPLAY_MS = reduceMotion ? 0 : 1300;
+  const SAFETY_TIMEOUT_MS = 5000; // filet si le réseau est vraiment lent
+
+  const started = performance.now();
+  let progress = 0;
+  let pageLoaded = false;
+  let rafHandle = null;
+
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+
+  function setProgress(p) {
+    progress = Math.min(p, 100);
+    if (barFill) barFill.style.width = progress + '%';
+    if (pctEl) pctEl.textContent = Math.round(progress) + '%';
+    updateStage(progress);
+  }
+
+  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function tick() {
+    const elapsed = performance.now() - started;
+    // Tant que la page n'est pas chargée, la barre suit une courbe
+    // lissée cadencée sur MIN_DISPLAY_MS, plafonnée à 92% pour ne
+    // jamais annoncer 100% avant que ce soit vraiment vrai.
+    const t = MIN_DISPLAY_MS > 0 ? Math.min(elapsed / MIN_DISPLAY_MS, 1) : 1;
+    const target = Math.min(easeOutCubic(t) * 92, 92);
+    if (!pageLoaded && target > progress) setProgress(target);
+    if (!pageLoaded || elapsed < MIN_DISPLAY_MS) {
+      rafHandle = requestAnimationFrame(tick);
+    }
+  }
+  rafHandle = requestAnimationFrame(tick);
+
+  function finish() {
+    pageLoaded = true;
+    const elapsed = performance.now() - started;
+    const wait = Math.max(MIN_DISPLAY_MS - elapsed, 0);
+    setTimeout(() => {
+      if (rafHandle) cancelAnimationFrame(rafHandle);
+      setProgress(100);
+      setTimeout(() => {
+        loader.classList.add('nc-hide');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+        window.scrollTo(0, scrollTop);
+        setTimeout(() => loader.remove(), reduceMotion ? 0 : 900);
+      }, 260); // court palier à 100% — confirme visuellement la fin du chargement
+    }, wait);
+  }
+
+  if (document.readyState === 'complete') {
+    finish();
+  } else {
+    window.addEventListener('load', finish);
+    // Filet de sécurité : si 'load' tarde anormalement (réseau lent),
+    // on ne bloque jamais l'utilisateur au-delà de 14s.
+    setTimeout(() => { if (!pageLoaded) finish(); }, SAFETY_TIMEOUT_MS);
+  }
+})();
+
+    
+
+    /* ── Reveal-r observer ── */
+    document.querySelectorAll('.reveal-r').forEach(el => revealObs.observe(el));
+
+    /* ── Modal Certificat ── */
+    /* ================================================================
+       Focus trap générique — utilisé par tous les modals (certificat,
+       projet, vidéo) pour garder le Tab à l'intérieur du
+       modal ouvert. `arrowNav`, si fourni, gère aussi les flèches
+       gauche/droite pour naviguer un carousel pendant que le modal a
+       le focus clavier.
+    ================================================================ */
+    function attachFocusTrap(modalEl, arrowNav) {
+      modalEl.addEventListener('keydown', e => {
+        if (!modalEl.classList.contains('open')) return;
+        if (arrowNav) {
+          if (e.key === 'ArrowRight' && pmImages.length > 1) { pmMove(1); return; }
+          if (e.key === 'ArrowLeft' && pmImages.length > 1) { pmMove(-1); return; }
+        }
+        if (e.key !== 'Tab') return;
+        const focusable = [...modalEl.querySelectorAll('button,a,video,[tabindex]:not([tabindex="-1"])')];
+        if (!focusable.length) return;
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+        else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+      });
+    }
+
+    /* Swipe tactile générique pour un conteneur de carousel (mobile) */
+    function attachCarouselSwipe(containerEl) {
+      let touchStartX = null;
+      containerEl.addEventListener('touchstart', e => {
+        if (!e.target.closest('.pm-carousel')) return;
+        touchStartX = e.touches[0].clientX;
+        pmStopAuto();
+      }, { passive: true });
+      containerEl.addEventListener('touchend', e => {
+        if (touchStartX === null || pmImages.length <= 1) return;
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40) pmMove(dx < 0 ? 1 : -1);
+        touchStartX = null;
+        pmRestartAuto();
+      }, { passive: true });
+    }
+
+    const certModal = document.getElementById('cert-modal');
+    const certModalTitle = document.getElementById('cert-modal-title');
+    const certModalPdf = document.getElementById('cert-modal-pdf');
+    const certModalDl = document.getElementById('cert-modal-dl');
+    const certModalClose = document.getElementById('cert-modal-close');
+    let lastFocusedEl = null; // shared by both modals to restore focus on close
+
+    function openCertModal(name, file, kind) {
+      kind = kind || 'pdf';
+      const meta = kind === 'config'
+        ? { icon: '<i class="fa-solid fa-gears" aria-hidden="true"></i>', text: 'Ce fichier de configuration est prêt à s’ouvrir dans un nouvel onglet, ou à être téléchargé pour consultation dans un éditeur.' }
+        : { icon: '<i class="fa-solid fa-file-pdf" aria-hidden="true"></i>', text: 'Le document est prêt à s’ouvrir dans un nouvel onglet pour un affichage fiable sur mobile.' };
+      lastFocusedEl = document.activeElement;
+      certModalTitle.textContent = name;
+      certModalDl.href = file;
+      certModalDl.download = file.split('/').pop();
+      certModalDl.target = '_blank';
+      certModalDl.rel = 'noopener';
+      certModalPdf.innerHTML = `
+        <div class="modal-pdf-fallback">
+          <div class="pdf-icon">${meta.icon}</div>
+          <p>${meta.text}</p>
+          <div class="modal-pdf-actions">
+            <a class="modal-dl" href="${esc(file)}" target="_blank" rel="noopener">Ouvrir</a>
+            <a class="modal-dl" href="${esc(file)}" download="${esc(file.split('/').pop())}">Télécharger</a>
+          </div>
+          <small>Fichier attendu : ${esc(file)}</small>
+        </div>
+      `;
+      certModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => certModalClose.focus(), 80);
+    }
+
+    function closeCertModal() {
+      certModal.classList.remove('open');
+      document.body.style.overflow = '';
+      certModalPdf.innerHTML = '';
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    certModalClose.addEventListener('click', closeCertModal);
+    certModal.addEventListener('click', e => { if (e.target === certModal) closeCertModal(); });
+
+    /* ── Modal Détails Projet ── */
+    const projectModal = document.getElementById('project-modal');
+    const projectModalTitle = document.getElementById('project-modal-title');
+    const projectModalBody = document.getElementById('project-modal-body');
+    const projectModalClose = document.getElementById('project-modal-close');
+
+    /* ── Carousel du modal détails (état du projet actuellement ouvert) ── */
+    let pmImages = [];
+    let pmIndex = 0;
+    let pmAutoTimer = null;
+    let pmAutoPlaying = true;
+    const PM_AUTO_DELAY = 4000;
+
+    function pmRenderCarousel(p) {
+      pmImages = p.images;
+      pmIndex = 0;
+      pmAutoPlaying = true;
+      if (pmImages.length <= 1) {
+        // Une seule image : pas de carousel, juste l'image (pas de nav/dots inutiles)
+        return `<img class="pm-thumb" src="${esc(pmImages[0])}" alt="${esc(p.alt)}" loading="lazy">`;
+      }
+      return `
+        <div class="pm-carousel" id="pm-carousel">
+          <div class="pm-carousel-track" id="pm-carousel-track">
+            ${pmImages.map((src, i) => `<img src="${esc(src)}" alt="${esc(p.alt)} — image ${i + 1}/${pmImages.length}" loading="${i === 0 ? 'eager' : 'lazy'}">`).join('')}
+          </div>
+          <button type="button" class="pm-carousel-nav pm-carousel-prev" onclick="pmMove(-1)" aria-label="Image précédente">‹</button>
+          <button type="button" class="pm-carousel-nav pm-carousel-next" onclick="pmMove(1)" aria-label="Image suivante">›</button>
+          <button type="button" class="pm-carousel-play" id="pm-carousel-play" onclick="pmToggleAuto()" aria-label="Mettre en pause le défilement automatique">⏸</button>
+          <div class="pm-carousel-dots">
+            ${pmImages.map((_, i) => `<button type="button" class="pm-carousel-dot${i === 0 ? ' active' : ''}" onclick="pmGoTo(${i}, true)" aria-label="Aller à l'image ${i + 1}"></button>`).join('')}
+          </div>
+        </div>`;
+    }
+
+    function pmUpdateCarousel() {
+      const track = document.getElementById('pm-carousel-track');
+      if (!track) return;
+      track.style.transform = `translateX(-${pmIndex * 100}%)`;
+      document.querySelectorAll('.pm-carousel-dot').forEach((d, i) => d.classList.toggle('active', i === pmIndex));
+    }
+
+    function pmGoTo(i, userInitiated) {
+      pmIndex = (i + pmImages.length) % pmImages.length;
+      pmUpdateCarousel();
+      if (userInitiated) pmRestartAuto(); // une interaction manuelle relance le cycle plutôt que de couper juste après
+    }
+
+    function pmMove(delta) {
+      pmGoTo(pmIndex + delta, true);
+    }
+
+    function pmStopAuto() {
+      if (pmAutoTimer) { clearInterval(pmAutoTimer); pmAutoTimer = null; }
+    }
+
+    function pmStartAuto() {
+      pmStopAuto();
+      if (pmImages.length <= 1 || !pmAutoPlaying) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      pmAutoTimer = setInterval(() => pmGoTo(pmIndex + 1, false), PM_AUTO_DELAY);
+    }
+
+    function pmRestartAuto() {
+      if (pmAutoPlaying) pmStartAuto();
+    }
+
+    function pmToggleAuto() {
+      pmAutoPlaying = !pmAutoPlaying;
+      const btn = document.getElementById('pm-carousel-play');
+      if (btn) {
+        btn.textContent = pmAutoPlaying ? '⏸' : '▶';
+        btn.setAttribute('aria-label', pmAutoPlaying ? 'Mettre en pause le défilement automatique' : 'Reprendre le défilement automatique');
+      }
+      if (pmAutoPlaying) pmStartAuto(); else pmStopAuto();
+    }
+
+    function openProjectModal(id) {
+      const p = projects.find(x => x.id === id);
+      if (!p) return;
+      lastFocusedEl = document.activeElement;
+      projectModalTitle.textContent = p.title;
+      projectModalBody.innerHTML = `
+        ${pmRenderCarousel(p)}
+        <div class="pm-cat"><span class="btn-icon"><i class="fa-solid ${esc(p.icon)} icon-premium"></i></span>${esc(p.catLabel)}</div>
+        <p class="pm-desc">${esc(p.details || p.desc)}</p>
+        <div>
+          <div class="pm-section-lbl">Stack technique</div>
+          <div class="pm-stack">${p.stack.map(t => `<span class="proj-tech">${esc(t)}</span>`).join('')}</div>
+        </div>
+        <div>
+          <div class="pm-section-lbl">Ressources</div>
+          <div class="pm-links">${p.links.map(l => projectLinkHtml(p, l)).join('')}</div>
+        </div>
+      `;
+      projectModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => projectModalClose.focus(), 80);
+      pmStartAuto();
+      const carEl = document.getElementById('pm-carousel');
+      if (carEl) {
+        carEl.addEventListener('mouseenter', pmStopAuto);
+        carEl.addEventListener('mouseleave', pmRestartAuto);
+      }
+    }
+
+    function closeProjectModal() {
+      projectModal.classList.remove('open');
+      document.body.style.overflow = '';
+      projectModalBody.innerHTML = '';
+      pmStopAuto();
+      pmImages = [];
+      pmIndex = 0;
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    projectModalClose.addEventListener('click', closeProjectModal);
+    projectModal.addEventListener('click', e => { if (e.target === projectModal) closeProjectModal(); });
+
+    /* Swipe tactile sur le carousel (mobile) — coupe l'auto pendant l'interaction */
+    attachCarouselSwipe(projectModalBody);
+
+    /* Focus trap + navigation clavier du carousel */
+    attachFocusTrap(projectModal, true);
+    /* Note: Escape-key handling for this modal is registered once, together
+       with the video modal, in the unified keydown listener further down. */
+    attachFocusTrap(certModal);
+
+    /* ── Smooth scroll + close mobile menu on in-page navigation ──
+       (native `scroll-behavior:smooth` in the CSS already handles the
+       animation; this also accounts for the fixed nav bar and closes
+       the mobile menu after navigating.) */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#' || href.length < 2) return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          closeMob();
+        }
+      });
+    });
+
+    /* ================================================================
+       MODAL VIDÉO (Démo projet)
+       Ces fonctions sont volontairement globales : elles sont appelées
+       depuis les attributs onclick="openVideoModal(...)" du HTML.
+    ================================================================ */
+    const videoModal = document.getElementById('video-modal');
+    const projectVideo = document.getElementById('project-video');
+    const videoModalClose = document.getElementById('video-modal-close');
+    const videoModalError = document.getElementById('video-modal-error');
+    const videoModalErrorFile = document.getElementById('video-modal-error-file');
+    const videoOpenLink = document.getElementById('video-open-link');
+
+    function openVideoModal(title, file) {
+      lastFocusedEl = document.activeElement;
+      document.getElementById('video-title').textContent = title;
+      videoModalError.style.display = 'none';
+      projectVideo.style.display = '';
+      projectVideo.muted = false;
+      projectVideo.setAttribute('playsinline', 'true');
+      projectVideo.src = file;
+      projectVideo.load();
+      videoOpenLink.href = file;
+      videoOpenLink.setAttribute('download', file.split('/').pop());
+      videoModal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      projectVideo.play().catch(() => {
+        // Certaines versions mobiles bloquent l'autoplay. On laisse le lecteur
+        // visible et on offre un accès manuel via le lien de secours.
+      });
+      setTimeout(() => videoModalClose.focus(), 80);
+    }
+
+    projectVideo.addEventListener('error', () => {
+      if (!projectVideo.getAttribute('src')) return; // ignore the reset in closeVideoModal()
+      projectVideo.style.display = 'none';
+      videoModalErrorFile.textContent = `Fichier attendu : ${projectVideo.getAttribute('src')}`;
+      videoModalError.style.display = '';
+    });
+
+    function closeVideoModal() {
+      projectVideo.pause();
+      projectVideo.removeAttribute('src');
+      projectVideo.load();
+      videoModalError.style.display = 'none';
+      projectVideo.style.display = '';
+      videoModal.classList.remove('open');
+      document.body.style.overflow = '';
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+
+    videoModalClose.addEventListener('click', closeVideoModal);
+
+    videoModal.addEventListener('click', e => {
+      if (e.target === videoModal) closeVideoModal();
+    });
+
+    /* Focus trap for the video modal (mirrors the certificate modal) */
+    attachFocusTrap(videoModal);
+
+    /* Single global Escape handler closes whichever modal is open */
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      if (certModal.classList.contains('open')) closeCertModal();
+      if (videoModal.classList.contains('open')) closeVideoModal();
+      if (projectModal.classList.contains('open')) closeProjectModal();
+      if (ham.classList.contains('open')) closeMob();
+    });
+
+    /* ================================================================
+       TOAST — confirmation flottante (envoi d'email, etc.)
+    ================================================================ */
+    const toastContainer = document.getElementById('toast-container');
+
+    function showToast({ type = 'ok', title, text, duration = 5500 }) {
+      const el = document.createElement('div');
+      el.className = 'toast' + (type === 'err' ? ' toast-err' : '');
+      el.setAttribute('role', type === 'err' ? 'alert' : 'status');
+      el.innerHTML = `
+        <div class="toast-icon">${type === 'err' ? '<i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>' : '<i class="fa-solid fa-circle-check" aria-hidden="true"></i>'}</div>
+        <div class="toast-body">
+          <div class="toast-title">${esc(title)}</div>
+          <div class="toast-text">${esc(text)}</div>
+        </div>
+        <button type="button" class="toast-close" aria-label="Fermer la notification"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        <div class="toast-timer" style="animation-duration:${duration}ms"></div>
+      `;
+      toastContainer.appendChild(el);
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('toast-show')));
+
+      let dismissed = false;
+      let timeoutId;
+      function dismiss() {
+        if (dismissed) return;
+        dismissed = true;
+        clearTimeout(timeoutId);
+        el.classList.remove('toast-show');
+        setTimeout(() => el.remove(), 380);
+      }
+      timeoutId = setTimeout(dismiss, duration);
+      el.querySelector('.toast-close').addEventListener('click', dismiss);
+      return dismiss;
+    }
+
+    /* ================================================================
+       FORMULAIRE DE CONTACT — validation + envoi EmailJS
+    ================================================================ */
+    let formSending = false;
+
+    function fieldValidate(id, errId, condition) {
+      const el = document.getElementById(id);
+      const err = document.getElementById(errId);
+      if (condition) {
+        el.classList.add('fc-err');
+        if (err) err.classList.add('show');
+        return false;
+      } else {
+        el.classList.remove('fc-err');
+        if (err) err.classList.remove('show');
+        return true;
+      }
+    }
+
+    /* Live validation on blur */
+    ['c-name', 'c-email', 'c-sub', 'c-msg'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('blur', () => {
+        if (id === 'c-name') fieldValidate('c-name', 'err-name', el.value.trim().length < 2);
+        if (id === 'c-email') fieldValidate('c-email', 'err-email', !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(el.value.trim()));
+        if (id === 'c-sub') fieldValidate('c-sub', 'err-sub', el.value.trim().length < 3);
+        if (id === 'c-msg') fieldValidate('c-msg', 'err-msg', el.value.trim().length < 10);
+      });
+    });
+
+    const contactForm = document.getElementById('contact-form');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault(); // no page reload — handled entirely in JS
+
+      if (formSending) return; // guards against double-clicks / double submits
+
+      const name = document.getElementById('c-name').value.trim();
+      const email = document.getElementById('c-email').value.trim();
+      const sub = document.getElementById('c-sub').value.trim();
+      const msg = document.getElementById('c-msg').value.trim();
+      const out = document.getElementById('form-msg');
+      const btn = document.getElementById('form-submit-btn');
+      const btnTx = document.getElementById('form-btn-text');
+
+      // Validate every field
+      let valid = true;
+      valid = fieldValidate('c-name', 'err-name', name.length < 2) && valid;
+      valid = fieldValidate('c-email', 'err-email', !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) && valid;
+      valid = fieldValidate('c-sub', 'err-sub', sub.length < 3) && valid;
+      valid = fieldValidate('c-msg', 'err-msg', msg.length < 10) && valid;
+
+      if (!valid) {
+        out.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Veuillez corriger les erreurs ci-dessus.';
+        out.className = 'form-msg msg-err show';
+        return;
+      }
+
+      // Loading state — disable the button, show the spinner, block double clicks
+      formSending = true;
+      btn.disabled = true;
+      btn.classList.add('btn-loading');
+      btnTx.textContent = 'Envoi en cours…';
+      out.className = 'form-msg';
+      out.textContent = '';
+
+      // EmailJS est chargé en `defer` (perf) : on s'assure qu'il est bien
+      // initialisé avant le premier envoi, une seule fois.
+      if (!window.__emailjsInited) {
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+        window.__emailjsInited = true;
+      }
+
+      emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          reply_to: email,
+          to_name: 'Nérias',
+          subject: sub,
+          message: msg
+        }
+      )
+        .then(function () {
+          out.innerHTML = '<i class="fa-solid fa-circle-check" aria-hidden="true"></i> Message envoyé avec succès.';
+          out.className = 'form-msg msg-ok show';
+          showToast({
+            type: 'ok',
+            title: 'Message envoyé',
+            text: `Merci ${name.split(' ')[0]}, votre message est bien parti. Je réponds généralement sous 24-48h.`
+          });
+          contactForm.reset();
+        })
+        .catch(function (error) {
+          out.innerHTML = '<i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Erreur lors de l\'envoi. Merci de réessayer ou de m\'écrire directement par email.';
+          out.className = 'form-msg msg-err show';
+          showToast({
+            type: 'err',
+            title: "Échec de l'envoi",
+            text: "Une erreur est survenue. Réessayez ou écrivez-moi directement par email.",
+            duration: 7000
+          });
+          console.error('EmailJS error — vérifie le Template (To Email) et le Service sur dashboard.emailjs.com :', error);
+        })
+        .finally(() => {
+          btn.disabled = false;
+          btn.classList.remove('btn-loading');
+          btnTx.textContent = 'Envoyer le message';
+          formSending = false;
+        });
+    });
+
+  </script>
+</body>
+
+</html>
